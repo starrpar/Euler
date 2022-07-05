@@ -25,8 +25,8 @@ public class App
                 }
                 else{
                     notDivisible = true;
+                    break;
                 }
-                break;
             }
         }
 

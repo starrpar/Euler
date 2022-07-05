@@ -1,4 +1,4 @@
-//package euler_3;
+package euler_3;
 
 import java.util.ArrayList;
 
@@ -6,20 +6,24 @@ public class App
 {
     public static void main( String[] args )
     {
-        long input = 600851475143L;
-        //long input = 1851475143;
-        //long input = 13195;
+        //long input = 600851475143L;
+        //long input = 1851475143L;
+        //long input = 13534565; //Q: is the 'L' not required?
+        long input = 13534565L;
+        //long input = 13195L;
+        
         long startTime = System.currentTimeMillis();
         method1(input);
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
-        System.out.println("method1: " + elapsedTime);
-
+        System.out.println("method1: " + elapsedTime + " milliseconds");
+        
+        
         long startTime2 = System.currentTimeMillis();
         method2(input);
         long stopTime2 = System.currentTimeMillis();
         long elapsedTime2 = stopTime2 - startTime2;
-        System.out.println("method2: " + elapsedTime2);
+        System.out.println("method2: " + elapsedTime2 + " milliseconds");
     }
 
     private static void method1(long x)
@@ -56,7 +60,7 @@ public class App
                 //if candidates[j] is divisible by anything other than 1 an itself, it is not a prime
                 if(candidates.get(j)%k == 0){
                     notaprime = true;
-                    continue;
+                    break;
                 }
             }
             if(!notaprime){
@@ -66,6 +70,7 @@ public class App
         }
 
         for(int m = 0; m < primes.size(); m++){
+            System.out.println(primes.get(m));
             sum+=primes.get(m);
         }
 
