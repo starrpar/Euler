@@ -1,4 +1,4 @@
-package src.main.java.euler_8;
+package euler_8;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -45,7 +45,7 @@ public class App
             //System.out.println("------> " + tmp);
             listOfProducts.add(tmp);
         }
-        //System.out.println(numLeadingZero);
+        System.out.println("Number of values skipped because of leading zeros: " + numLeadingZero);
         
         for(int n = 0; n < listOfProducts.size(); n++){
             long currentProduct = 0;

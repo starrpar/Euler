@@ -1,4 +1,4 @@
-
+package euler_6;
 
 public class App 
 {
@@ -6,7 +6,7 @@ public class App
     {
         int n, m = 0;
         int delta = 0;
-        int limit = 1002;
+        int limit = 100;
         for(int i = 1; i <= limit; i++){
             //square of values
             n = i*i;

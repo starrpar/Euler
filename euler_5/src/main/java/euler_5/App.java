@@ -1,4 +1,4 @@
-package euler_5.src.main.java.euler_5;
+package euler_5;
 
 import java.util.*;
 

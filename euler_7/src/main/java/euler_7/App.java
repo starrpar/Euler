@@ -1,4 +1,4 @@
-
+package euler_7;
 
 import java.util.ArrayList;
 

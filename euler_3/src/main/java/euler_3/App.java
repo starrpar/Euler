@@ -1,4 +1,4 @@
-package euler_3;
+//package euler_3;
 
 import java.util.ArrayList;
 
@@ -6,8 +6,8 @@ public class App
 {
     public static void main( String[] args )
     {
-        //long input = 600851475143L;
-        long input = 1851475143;
+        long input = 600851475143L;
+        //long input = 1851475143;
         //long input = 13195;
         long startTime = System.currentTimeMillis();
         method1(input);

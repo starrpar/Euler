@@ -1,4 +1,4 @@
-package euler_6;
+package euler_9;
 
 import static org.junit.Assert.assertTrue;
 

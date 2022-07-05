@@ -1,4 +1,4 @@
-package euler_5.src.test.java.euler_5;
+package euler_5;
 
 import static org.junit.Assert.assertTrue;
 
