@@ -27,46 +27,53 @@ public class App {
     public static void main(String[] args) {
         long j = 0L;
         int k = 0;
+        int limit = 100000;
         List<Long> factors = new ArrayList<Long>();
 
         for (int i = 1; i < limit; i++) {
-            while (k <= 500) {
-                j = calculateTheNextTriangleNumber(i);
-                factors = determineFactorsOfThatTriangleNumber(j);
-                k = determineTheQuantityOfFactorsForThatTN(factors);
-                // stop when first triangle number has 501+ factors (i.e. > 500) - these are NOT
-                // base factors,
-                // but rather ALL factors (multiples count - so all EVEN numbers are included,
-                // even though
-                // they are all multiples of 2)
+            if (k > 500) {
+                break;
             }
+            // System.out.println("Most recent triangle number: " + j + "(k is: " + k +
+            // ")");
+            // reset k, factors
+            k = 0;
+            factors = null;
+            j = calculateTheNextTriangleNumber(i);
+            factors = determineFactorsOfThatTriangleNumber(j);
+            k = determineTheQuantityOfFactorsForThatTN(factors);
+            // stop when first triangle number has 501+ factors (i.e. > 500) - these are NOT
+            // base factors,
+            // but rather ALL factors (multiples count - so all EVEN numbers are included,
+            // even though
+            // they are all multiples of 2)
         }
-        System.out.println("First triangle number with over 500 factors is: " + j + ", with " + k + " factors");
+
+        System.out.println(
+                "Last triangle number - presumably with over 500 factors - is: " + j + ", with " + k + " factors");
     }
 
     private static long calculateTheNextTriangleNumber(int numberOfTriangleNumber) {
         long sum = 0;
-        for (int i = 0; i < numberOfTriangleNumber; i++) {
+        for (int i = 1; i <= numberOfTriangleNumber; i++) {
             sum += i;
         }
         return sum;
     }
 
-    private static List<Integer> determineFactorsOfThatTriangleNumber(int triangleNumber) {
-        ArrayList<Integer> factors = new ArrayList<Integer>();
-        int numPrime = 0;
-        Boolean divisible = false;
-        for (int i = 1; triangleNumber; i++) {
-            for (int j = 1; j < i; j++) {
-                if (i % j == 0) {
-                    factors.add(i);
-                }
+    private static List<Long> determineFactorsOfThatTriangleNumber(long triangleNumber) {
+        ArrayList<Long> factors = new ArrayList<Long>();
+
+        for (long i = 1; i <= triangleNumber; i++) {
+            // first part is simply to always capture '1'
+            if ((triangleNumber / i == triangleNumber) || (triangleNumber % i == 0)) {
+                factors.add(i);
             }
         }
         return factors;
     }
 
-    private static int determineTheQuantityOfFactorsForThatTN(List<Integer> factors) {
+    private static int determineTheQuantityOfFactorsForThatTN(List<Long> factors) {
         return factors.size();
     }
 }
