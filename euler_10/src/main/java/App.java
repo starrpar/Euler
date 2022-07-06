@@ -11,7 +11,7 @@ public class App {
      * Find the sum of all the primes below two million.
      */
     public static void main(String[] args) {
-        long limit = 7L;
+        long limit = 10L;
         //long limit = 2000000L;
         List<Integer> primes = new ArrayList<Integer>();
 
