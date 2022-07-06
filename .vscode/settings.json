@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "euler_14/src/main/java"
+        "euler_14/src/main/java",
+        "euler_15/src/main/java"
     ],
     "java.configuration.updateBuildConfiguration": "interactive"
 }
