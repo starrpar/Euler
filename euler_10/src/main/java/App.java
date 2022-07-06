@@ -1,3 +1,5 @@
+
+
 import java.util.List;
 import java.util.ArrayList;
 
@@ -9,8 +11,8 @@ public class App {
      * Find the sum of all the primes below two million.
      */
     public static void main(String[] args) {
-        // long limit = 10L;
-        long limit = 2000000;
+        long limit = 7L;
+        //long limit = 2000000L;
         List<Integer> primes = new ArrayList<Integer>();
 
         long startTime = System.currentTimeMillis();
@@ -24,7 +26,7 @@ public class App {
             // System.out.println(currentPrime);
             sum += currentPrime;
         }
-        System.out.println("Primes below " + limit + " sume to: " + sum);
+        System.out.println("Primes below " + limit + " sum to: " + sum);
         System.out.println("findAllPrimesBelow: " + elapsedTime + " milliseconds");
     }
 
@@ -33,7 +35,7 @@ public class App {
         Boolean divisible = false;
         for (int i = 2; i < limit; i++) {
             divisible = false;
-            for (int j = 2; j < i; j++) {
+            for (int j = 2; j < i; j++) { // < vs. <= because dividing primes by themselves will eliminate them from selection
                 if (i % j == 0) {
                     divisible = true;
                     continue;
