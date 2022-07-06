@@ -13,14 +13,14 @@ public class App {
     public static void main(String[] args) {
         //long limit = 10L;
         long limit = 2000000L;
-        List<Integer> primes = new ArrayList<Integer>();
+        List<Long> primes = new ArrayList<Long>();
 
         long startTime = System.currentTimeMillis();
         primes = findAllPrimesBelow(limit);
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
 
-        int currentPrime, sum = 0;
+        long currentPrime, sum = 0;
         for (int i = 0; i < primes.size(); i++) {
             currentPrime = primes.get(i);
   
@@ -31,10 +31,10 @@ public class App {
         System.out.println("findAllPrimesBelow: " + elapsedTime + " milliseconds");
     }
 
-    private static List<Integer> findAllPrimesBelow(long limit) {
-        ArrayList<Integer> primes = new ArrayList<Integer>();
+    private static List<Long> findAllPrimesBelow(long limit) {
+        ArrayList<Long> primes = new ArrayList<Long>();
         Boolean divisible = false;
-        for (int i = 2; i < limit; i++) {
+        for (long i = 2; i < limit; i++) {
             divisible = false;
             for (int j = 2; j < i; j++) { // < vs. <= because dividing primes by themselves will eliminate them from selection
                 if((i%50000 == 0) && (j%(50000) == 0)){
