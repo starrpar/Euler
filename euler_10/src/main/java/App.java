@@ -24,7 +24,7 @@ public class App {
             // System.out.println(currentPrime);
             sum += currentPrime;
         }
-        System.out.println("Primes below " + limit + " sume to: " + sum);
+        System.out.println("Primes below " + limit + " sum to: " + sum);
         System.out.println("findAllPrimesBelow: " + elapsedTime + " milliseconds");
     }
 
