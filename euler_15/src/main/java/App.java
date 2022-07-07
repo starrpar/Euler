@@ -1,3 +1,11 @@
+import java.util.Dictionary;
+import java.util.Hashtable;
+import java.util.List;
+
+import javafx.geometry.Point2D;
+//import euler_15.classes.point_2d;
+
+import java.util.ArrayList;
 
 public class App {
     /*
@@ -50,17 +58,83 @@ public class App {
         // i.e. rows a - b - c
         // columns 1 - 2 - 3
         // to ease navigation "down" (from a to b to c); and "right" (from 1 to 2 to 3)
+        //
+        // another alternative to keep everything in integers (vs. a, b & c)
+        // 1.1 - 1.2 - 1.3
+        // 2.1 - 2.2 - 2.3
+        // 3.1 - 3.2 - 3.3
 
-        defineGrid();
-        initiateStartingPoint();
+        // int n = 21; // 21x21 grid (the nodes of a 20x20 "squares" grid)
+        int n = 3; // 3x3 grid
+
+        // defineGrid(n);
+        defineGridofPoints(n);
+        // initiateStartingPoint();
+        // identifyPossiblePaths();
+        // navigate();
+
+        // one 2nd thought...
+        // don't need to create a grid at all, just "do the math" for the answer
+        // all points that are "not on the far right or bottom" have 2 choices - right
+        // or down; those on the far right and on the bottom have one choice (down, or
+        // right, respectively);
+        // the final point at the far right, bottom has no choices - cannot go further
+        // right or further down - that is the "end point" for all paths...
+        // so...
+        // if there are 6 paths for a square that has 12 choices (the 3x3), then there
+        // are presumably x (number of choices in a 20x20) divided by 2 for a 20x20
+        // the 12 in the 3x3 amounts to 2x2 of nodes with 2 choices (= 8) plus 2 (far
+        // right) + 2 (bottom) with 1 choice each + 0 (end point) with 0 choices = 12
+        // so for 20x20, we have 19x19 with 2 choices each (19x19=361 * 2 = 722) + 19 +
+        // 19 with 1 choice each = 38 + 0 (end point) = 722 + 38 = 760
+        // actually I was mistaken in my terminology - I was calling a 3x3 what a 2x2 is
+        // in the problem description, so if a 2x2 has 3 "nodes" per row and column,
+        // then a 20x20 has 21 nodes for each - so 20x20 = 400 x 2 = 800 + 20 + 20 =
+        // 840.
+    }
+
+    private static void defineGrid(int dimension) {
+        Dictionary<Integer, List<Integer>> grid = new Hashtable<>();
+        List<Integer> columns = new ArrayList<Integer>();
+
+        for (int j = 1; j <= dimension; j++) {
+            columns.add(j);
+        }
+        for (int i = 1; i <= dimension; i++) {
+            grid.put(i, columns);
+        }
+        System.out.println(grid);
+    }
+
+    private static void defineGridofPoints(int dimension) {
+        List<Point_2D> grid = new ArrayList<Point_2D>();
+
+        for (int i = 1; i <= dimension; i++) {
+            for (int j = 1; j <= dimension; j++) {
+                Point_2D ij = new Point_2D(i, j);
+                grid.add(ij);
+            }
+        }
+
+        Point_2D point7 = grid.get(7);
+        point7.seen = Boolean.TRUE;
+
+        System.out.println(grid);
+        System.out.println();
+        System.out.println(grid.get(7));
+        System.out.println(grid.get(7).seen);
+        System.out.println(grid.get(6).seen);
+    }
+
+    private static void initiateStartingPoint(int x, int y) {
 
     }
 
-    private static void defineGrid() {
+    private static void identifyPossiblePaths() {
 
     }
 
-    private static void initiateStartingPoint() {
+    private static void navigate() {
 
     }
 }
