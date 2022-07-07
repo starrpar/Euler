@@ -2,12 +2,16 @@ import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
 
+import javafx.geometry.Dimension2D;
 import javafx.geometry.Point2D;
 //import euler_15.classes.point_2d;
 
 import java.util.ArrayList;
 
 public class App {
+
+    private static List<Point_2D> grid = new ArrayList<Point_2D>();
+
     /*
      * Problem statement:
      * Starting in the top left corner of a 2×2 grid, and only being able to move to
@@ -64,14 +68,27 @@ public class App {
         // 2.1 - 2.2 - 2.3
         // 3.1 - 3.2 - 3.3
 
-        // int n = 21; // 21x21 grid (the nodes of a 20x20 "squares" grid)
-        int n = 3; // 3x3 grid
+        int n = 21; // 21x21 grid (the nodes of a 20x20 "squares" grid)
+        // int n = 3; // 3x3 grid
+        List<Integer> pointSet = new ArrayList<Integer>();
 
         // defineGrid(n);
         defineGridofPoints(n);
-        // initiateStartingPoint();
-        // identifyPossiblePaths();
-        // navigate();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                pointSet.add(convertXYValueToPointNumber(i, j, n));
+            }
+        }
+
+        System.out.println(pointSet);
+
+        int point1Number = convertXYValueToPointNumber(1, 1, n);
+        System.out.println(point1Number);
+
+        Point_2D point1 = initiateStartingPoint(0);
+        System.out.println("Starting point: " + point1);
+        identifyPossiblePaths(point1);
+        navigate(point1);
 
         // one 2nd thought...
         // don't need to create a grid at all, just "do the math" for the answer
@@ -107,7 +124,6 @@ public class App {
     }
 
     private static void defineGridofPoints(int dimension) {
-        List<Point_2D> grid = new ArrayList<Point_2D>();
 
         for (int i = 1; i <= dimension; i++) {
             for (int j = 1; j <= dimension; j++) {
@@ -126,15 +142,25 @@ public class App {
         System.out.println(grid.get(6).seen);
     }
 
-    private static void initiateStartingPoint(int x, int y) {
+    private static int convertXYValueToPointNumber(int x, int y, int dimension) {
+        int localX = (x - 1) * dimension;
+        int localY = y;
+        int pointNum = 0;
 
+        pointNum = localX + localY;
+
+        return pointNum;
     }
 
-    private static void identifyPossiblePaths() {
-
+    private static Point_2D initiateStartingPoint(int n) {
+        return grid.get(n);
     }
 
-    private static void navigate() {
+    private static void identifyPossiblePaths(Point_2D startingPoint) {
+        System.out.println("not yet implemented");
+    }
 
+    private static void navigate(Point_2D startingPoint) {
+        System.out.println("not yet implemented");
     }
 }
