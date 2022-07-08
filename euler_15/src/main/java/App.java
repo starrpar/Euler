@@ -11,6 +11,8 @@ import java.util.ArrayList;
 public class App {
 
     private static List<Point_2D> grid = new ArrayList<Point_2D>();
+    private static int dimension = 2; // 20
+    private static int nodesSquare = dimension + 1;
 
     /*
      * Problem statement:
@@ -68,21 +70,21 @@ public class App {
         // 2.1 - 2.2 - 2.3
         // 3.1 - 3.2 - 3.3
 
-        int n = 21; // 21x21 grid (the nodes of a 20x20 "squares" grid)
+        // int n = 21; // 21x21 grid (the nodes of a 20x20 "squares" grid)
         // int n = 3; // 3x3 grid
         List<Integer> pointSet = new ArrayList<Integer>();
 
         // defineGrid(n);
-        defineGridofPoints(n);
-        for (int i = 1; i <= n; i++) {
-            for (int j = 1; j <= n; j++) {
-                pointSet.add(convertXYValueToPointNumber(i, j, n));
+        defineGridofPoints(nodesSquare);
+        for (int i = 1; i <= nodesSquare; i++) {
+            for (int j = 1; j <= nodesSquare; j++) {
+                pointSet.add(convertXYValueToPointNumber(i, j, nodesSquare));
             }
         }
 
         System.out.println(pointSet);
 
-        int point1Number = convertXYValueToPointNumber(1, 1, n);
+        int point1Number = convertXYValueToPointNumber(1, 1, nodesSquare);
         System.out.println(point1Number);
 
         Point_2D point1 = initiateStartingPoint(0);
@@ -152,12 +154,181 @@ public class App {
         return pointNum;
     }
 
-    private static Point_2D initiateStartingPoint(int n) {
-        return grid.get(n);
+    private static Point_2D initiateStartingPoint(int nodesSquare) {
+        return grid.get(nodesSquare);
     }
 
     private static void identifyPossiblePaths(Point_2D startingPoint) {
-        System.out.println("not yet implemented");
+        System.out.println("In the process of being implemented");
+        // from 1.1, can go to either 1.2 or 2.1
+        // from each successive node, can do same until reach end of line either to the
+        // extreme right or extreme bottom
+        // need to determine a deterministic approach/pattern to make sure each overall
+        // path has been covered once and only once
+        // could record such path and compare to ensure no repeats
+        // could also set a deterministic pattern that only goes to a new path each time
+        // (but without verification)
+        // so for example
+        // - right first, then continue right all the way to right border, then go down
+        // all the way to the bottom
+        // - right first, all the way to 1 node shy of right border, then down, the
+        // right again, then all the way down to the bottom
+        // - rinse and repeat until only 1 right, then down 1, then right to right
+        // border, then all the way down to the bottom
+        // - then down first, the all the way to the right, then all the way down
+        // - then repeat the one back until all but one back
+        // - then ...
+
+        // may want to think opposite, from the end backwards
+        // from last point, can get there from above or from the left
+        // from above, can get there from above that, or from left
+        // from left, can get there from above, or from left
+        // do smallest square first - 2 x 2 has 3 nodes by 3 nodes (the example)
+        // last node from above or left
+        // node above from above or left
+        // node above that only from left
+        // node left from above or left
+        // node above that from above or left
+        // node left of that from above only
+        // node above middle, which is node left of top, far right node, from left only
+        // node left of middle, which is node above bottom far left, from above only
+        // first node is initial node only
+
+        // for a 2x2:
+        // 1.1 -> 1.2 -> 2.2
+        // 1.1 -> 2.1 -> 2.2
+
+        // for 3x3 building on 2x2, have 2 add'l outside paths,
+        // plus 2 sets of 2x2 paths (so 4)
+
+        // for a 3x3:
+        // 1.1 -> 1.2 -> 1.3 -> 2.3 -> 3.3 (outside along right side)
+
+        // 1.1 -> 1.2 -> 2.2 -> 2.3 -> 3.3
+        // 1.1 -> 1.2 -> 2.2 -> 3.2 -> 3.3 \ these all go through the center
+        // 1.1 -> 2.1 -> 2.2 -> 2.3 -> 3.3 /
+        // 1.1 -> 2.1 -> 2.2 -> 3.2 -> 3.3
+
+        // 1.1 -> 2.1 -> 3.1 -> 3.2 -> 3.3 (outside along bottom)
+
+        // for 4x4 building on 3x3, have 2 add'l outside paths
+        // plus 9 paths - 3 sets of 2x2 paths plus 3 separate outside paths
+        // for both of original directions (right and down)
+        // so 18 paths - 6 sets of 2x2 and 6 outside paths
+
+        // for a 4x4:
+        // 1right first (10)
+        // 2then right again (4)
+        // 3then right again (1)
+        // 4only choice is down (1)
+        // 1.1 -> 1.2 -> 1.3 -> 1.4 -> 2.4 -> 3.4 -> 4.4 (outside along right side)
+        // 3then down (3)
+        // 4then right (1) (only choice is down)
+        // 1.1 -> 1.2 -> 1.3 -> 2.3 -> 2.4 -> 3.4 -> 4.4 (along lower right side)
+        // 4then down again (2)
+        // 1.1 -> 1.2 -> 1.3 -> 2.3 -> 3.3 -> 3.4 -> 4.4 (through center of lower right
+        // 2x2)
+        // 1.1 -> 1.2 -> 1.3 -> 2.3 -> 3.3 -> 4.3 -> 4.4 (through center of lower right
+        // 2x2)
+        // 2then down (6)
+        // 3then right (3)
+        // 4then right again (1) (only choice is down)
+        // 1.1 -> 1.2 -> 2.2 -> 2.3 -> 2.4 -> 3.4 -> 4.4 (along lower right side)
+        // 4then down again(2)
+        // 1.1 -> 1.2 -> 2.2 -> 2.3 -> 3.3 -> 3.4 -> 4.4 (through center of lower right
+        // 2x2)
+        // 1.1 -> 1.2 -> 2.2 -> 2.3 -> 3.3 -> 4.3 -> 4.4 (through center of lower right
+        // 2x2)
+        // 3then down again (3)
+        // 4then down again (2)
+        // 1.1 -> 1.2 -> 2.2 -> 3.2 -> 3.3 -> 3.4 -> 4.4 (through center of lower right
+        // 2x2)
+        // 1.1 -> 1.2 -> 2.2 -> 3.2 -> 3.3 -> 4.3 -> 4.4 (through center of lower right
+        // 2x2)
+        // 4then right (1) (only choice is right)
+        // 1.1 -> 1.2 -> 2.2 -> 3.2 -> 4.2 -> 4.3 -> 4.4 (along right side of bottom)
+        // 1down first (10)
+        // 2then right (6)
+        // 3then right again (3)
+        // 4then right again(1) (only choice is down)
+        // 1.1 -> 2.1 -> 2.2 -> 2.3 -> 2.4 -> 3.4 -> 4.4 (along lower right side)
+        // 4then down (2)
+        // 1.1 -> 2.1 -> 2.2 -> 2.3 -> 3.3 -> 3.4 -> 4.4 (through center of lower right
+        // 2x2)
+        // 1.1 -> 2.1 -> 2.2 -> 2.3 -> 3.3 -> 4.3 -> 4.4 (through center of lower right
+        // 2x2)
+        // 3then down (3)
+        // 4then right (2)
+        // 1.1 -> 2.1 -> 2.2 -> 3.2 -> 3.3 -> 3.4 -> 4.4 (through center of lower right
+        // 2x2)
+        // 1.1 -> 2.1 -> 2.2 -> 3.2 -> 3.3 -> 4.3 -> 4.4 (through center of lower right
+        // 2x2)
+        // 4then down again (1) (only choice is right)
+        // 1.1 -> 2.1 -> 2.2 -> 3.2 -> 4.2 -> 4.3 -> 4.4 (along right side of bottom)
+        // 2then down again (4)
+        // 3then right (3)
+        // 4then right again (2)
+        // 1.1 -> 2.1 -> 3.1 -> 3.2 -> 3.3 -> 3.4 -> 4.4 (through center of lower right
+        // 2x2)
+        // 1.1 -> 2.1 -> 3.1 -> 3.2 -> 3.3 -> 4.3 -> 4.4 (through center of lower right
+        // 2x2)
+        // 4then down (1) (only choice is right)
+        // 1.1 -> 2.1 -> 3.1 -> 3.2 -> 4.2 -> 4.3 -> 4.4 (along right side of bottom)
+        // 3then down again (1)
+        // 4only choice is right (1)
+        // 1.1 -> 2.1 -> 3.1 -> 4.1 -> 4.2 -> 4.3 -> 4.4 (outside along bottom)
+
+        // analyzing the pattern:
+        // build out all possibilities by adding one node at a time with all
+        // possibilities (limited at right-most, and bottom nodes as special cases)
+
+        // given starting at initial node (1.1)
+        // go to both nodes possible - build out unique paths as that continues until we
+        // reach end point
+
+        // from initial point (passed in); go to both choices
+        // each path can be a List<Point_2D>
+        List<List<Point_2D>> paths = new ArrayList<>();
+        /*
+         * List<Point_2D> tmpPath1 = new ArrayList<>();
+         * List<Point_2D> tmpPath2 = new ArrayList<>();
+         * List<Point_2D> tmpPath3 = new ArrayList<>();
+         * List<Point_2D> tmpPath4 = new ArrayList<>();
+         * List<Point_2D> tmpPath5 = new ArrayList<>();
+         */
+        // go from the beginning all the way to, but not including the last column
+        // (right most) and last row (bottom)
+        List<Point_2D> tmpPath = new ArrayList<>();
+        for (int i = 1; i < nodesSquare; i++) {
+            for (int j = 1; j < nodesSquare; j++) {
+                // how to dynamically create a path (List<Point_2D>) and how to create new ones
+                // with each new added point?
+                // create temp path
+                // then add that path to a list of paths
+                // tmpPath.add(startingPoint);
+                Point_2D currentPoint = grid.get(convertXYValueToPointNumber(i, j, nodesSquare) - 1);
+                // skip initial point (passed in)
+                if (i == 1 && j == 1) {
+                    tmpPath.add(grid.get(convertXYValueToPointNumber(i, j, nodesSquare) - 1));
+                    continue;
+                }
+                // temp - initially just add next 2 adjacent points
+                if (i == 1 && j == 2) {
+                    tmpPath.add(currentPoint); // on this line, the ArrayList *does* contain the content expected (2
+                                               // points with correct data (1, 1) and (1, 2))
+                    paths.add(tmpPath); // at this step the ArrayList is added to the List<List<Point_2D>>, but says "
+                                        // Format specifier '%s' " instead of having the contents of the ArrayList
+                    continue;
+                } else if (i == 2 && j == 1) {
+                    tmpPath.add(currentPoint); // on this line, the ArrayList *does* contain the content expected (3
+                                               // points with correct data (1, 1), (1, 2) and (2, 1))
+                    paths.add(tmpPath);
+                    continue;
+                } else {
+                    continue; // for now just skip all other points
+                }
+            }
+        }
     }
 
     private static void navigate(Point_2D startingPoint) {
