@@ -84,12 +84,12 @@ public class App {
 
         System.out.println(pointSet);
 
-        int point1Number = convertXYValueToPointNumber(1, 1, nodesSquare);
-        System.out.println(point1Number);
-
-        Point_2D point1 = initiateStartingPoint(0);
-        System.out.println("Starting point: " + point1);
-        identifyPossiblePaths(point1);
+        // int point1Number = convertXYValueToPointNumber(1, 1, nodesSquare);
+        // System.out.println(point1Number);
+        // Point_2D point1 = initiateStartingPoint(0);
+        // System.out.println("Starting point: " + point1);
+        // identifyPossiblePaths(point1);
+        identifyPossiblePaths();
         navigate(point1);
 
         // one 2nd thought...
@@ -112,19 +112,20 @@ public class App {
         // 840.
     }
 
-    private static void defineGrid(int dimension) {
-        Dictionary<Integer, List<Integer>> grid = new Hashtable<>();
-        List<Integer> columns = new ArrayList<Integer>();
-
-        for (int j = 1; j <= dimension; j++) {
-            columns.add(j);
-        }
-        for (int i = 1; i <= dimension; i++) {
-            grid.put(i, columns);
-        }
-        System.out.println(grid);
-    }
-
+    /*
+     * private static void defineGrid(int dimension) {
+     * Dictionary<Integer, List<Integer>> grid = new Hashtable<>();
+     * List<Integer> columns = new ArrayList<Integer>();
+     * 
+     * for (int j = 1; j <= dimension; j++) {
+     * columns.add(j);
+     * }
+     * for (int i = 1; i <= dimension; i++) {
+     * grid.put(i, columns);
+     * }
+     * System.out.println(grid);
+     * }
+     */
     private static void defineGridofPoints(int dimension) {
 
         for (int i = 1; i <= dimension; i++) {
@@ -288,7 +289,9 @@ public class App {
 
         // from initial point (passed in); go to both choices
         // each path can be a List<Point_2D>
-        List<List<Point_2D>> paths = new ArrayList<>();
+        // List<List<Point_2D>> paths = new ArrayList<>();
+        Dictionary<Integer, List<Point_2D>> paths = new Hashtable<>();
+
         /*
          * List<Point_2D> tmpPath1 = new ArrayList<>();
          * List<Point_2D> tmpPath2 = new ArrayList<>();
@@ -312,21 +315,67 @@ public class App {
                     tmpPath.add(grid.get(convertXYValueToPointNumber(i, j, nodesSquare) - 1));
                     continue;
                 }
-                // temp - initially just add next 2 adjacent points
-                if (i == 1 && j == 2) {
-                    tmpPath.add(currentPoint); // on this line, the ArrayList *does* contain the content expected (2
-                                               // points with correct data (1, 1) and (1, 2))
-                    paths.add(tmpPath); // at this step the ArrayList is added to the List<List<Point_2D>>, but says "
-                                        // Format specifier '%s' " instead of having the contents of the ArrayList
-                    continue;
-                } else if (i == 2 && j == 1) {
-                    tmpPath.add(currentPoint); // on this line, the ArrayList *does* contain the content expected (3
-                                               // points with correct data (1, 1), (1, 2) and (2, 1))
-                    paths.add(tmpPath);
-                    continue;
-                } else {
-                    continue; // for now just skip all other points
-                }
+                /*
+                 * // temp - initially just add next 2 adjacent points
+                 * if (i == 1 && j == 2) {
+                 * tmpPath.add(currentPoint); // on this line, the ArrayList *does* contain the
+                 * content expected (2
+                 * // points with correct data (1, 1) and (1, 2))
+                 * paths.put(i, tmpPath); // at this step the ArrayList is added to the
+                 * List<List<Point_2D>>, but says
+                 * // "
+                 * // Format specifier '%s' " instead of having the contents of the ArrayList
+                 * continue;
+                 * } else if (i == 2 && j == 1) {
+                 * tmpPath.add(currentPoint); // on this line, the ArrayList *does* contain the
+                 * content expected (3
+                 * // points with correct data (1, 1), (1, 2) and (2, 1))
+                 * paths.put(i, tmpPath);
+                 * continue;
+                 * } else {
+                 * continue; // for now just skip all other points
+                 * }
+                 */
+                // have points being successfully added now;
+                // now to create the adjacency identification/management approach
+                // should simply consist of a +1 horizontally or +1 vertically move
+                // and some sort of tracking to ensure both happen when they can (until the far
+                // right or bottom borders)
+
+                // so approach should be:
+                // 1. [EASY] start at beginning
+                // 2. [THIS IS THE HARD PART] add points per some algorithm that makes use of
+                // every point combination without repeating paths or missing any points
+                // Question: do we follow a pattern, or let the system "autonavigate" and
+                // track where we've been (marking points as seen = TRUE) instead
+                // 3. [(fairly) EASY] when get to right side or bottom, change points navigation
+                // to ONLY go
+                // along that border to end
+                // 4. [EASY] add path to Dictionary when reach last point (nodesSquare,
+                // nodesSquare)
+
+                // go right, then go all right, then all down
+                // increase in j (y) fully first, then increase in i (x) fully
+                // go right, then down, then all right, then all down
+                // one step in j, then one in i, then continue in j until to right side, then
+                // increase in i until end
+                // go right twice, then down, then all right, then all down
+                // two j, one i, all j, all i
+                // continue this pattern until at the last column (which has already been done
+                // as first path)
+                // three j, one i, all j, all i
+                // go down first, then go all right, then all down
+                // rinse/repeat same
+                // lastly go all down until last row, then all right
+                // this doesn't account for multiple downs in a row
+
+                // thinking from the opposite direction
+                // coming in at the end, you can get there by coming down from above, or to the
+                // right from the bottom
+                // above or from the left, you can get there by coming from above or the left of
+                // the point above the last point
+                // or above or from the left to the last point on the bottom row, short of the
+                // last point
             }
         }
     }
