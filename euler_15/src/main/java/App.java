@@ -315,6 +315,18 @@ public class App {
                     tmpPath.add(grid.get(convertXYValueToPointNumber(i, j, nodesSquare) - 1));
                     continue;
                 }
+
+                // next combo would be i = 1, j = 2
+                // then i = 2, j = 1
+                // and finally i = 2, j = 2
+                // but we have to also go to i = 1, j = 3, i = 3, j = 1, i = 3, j = 2, i = 2, j
+                // = 3 and i = 3, j = 3
+
+                // the rule on which way to go from each node is easy (both right and down
+                // except at right-most border and bottom);
+                // trying to determine how to ensure every possible path is navigated is the
+                // elusive part
+
                 /*
                  * // temp - initially just add next 2 adjacent points
                  * if (i == 1 && j == 2) {
@@ -376,6 +388,9 @@ public class App {
                 // the point above the last point
                 // or above or from the left to the last point on the bottom row, short of the
                 // last point
+
+                // solve the easy one first
+                // see above for 2x2 and 3x3
             }
         }
     }
