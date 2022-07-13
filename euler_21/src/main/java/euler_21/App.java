@@ -20,16 +20,20 @@ public class App {
      */
     public static void main(String[] args) {
         // calculate proper divisors of all numbers under 10000 and store same
-        int limit = 10;
+        int limit = 10000;
         Dictionary<Integer, List<Integer>> listOfDivisors = calcDivisors(limit);
 
         // calculate sum of various divisors
         Dictionary<Integer, Integer> sumsOfDivisors = calcSumOfDivisors(listOfDivisors);
 
-        for (int i = 0; i < sumsOfDivisors.size(); i++) {
+        for (int i = 1; i <= sumsOfDivisors.size(); i++) { // i needs to be value of Key, not index of collection
             int sum = sumsOfDivisors.get(i);
             System.out.println("i: " + i + ", sum: " + sum);
         }
+
+        // determine for each value under 10000, if its sum of divisors results in a
+        // number whose sum of divisors equals the original value
+
     }
 
     private static Dictionary<Integer, List<Integer>> calcDivisors(int limit) {
@@ -62,8 +66,9 @@ public class App {
         Dictionary<Integer, Integer> divisorSums = new Hashtable<>();
         List<Integer> divisorList = new ArrayList<Integer>();
 
-        for (int i = 0; i <= divisors.size(); i++) {
+        for (int i = 1; i <= divisors.size(); i++) { // i needs to be value of Key, not index of collection
             divisorList = divisors.get(i);
+            sum = 0;
             if (divisorList != null && !divisorList.isEmpty()) {
                 for (int j = 0; j < divisorList.size(); j++) {
                     sum += divisorList.get(j);
