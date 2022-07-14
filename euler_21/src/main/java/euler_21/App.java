@@ -28,27 +28,22 @@ public class App {
 
         for (int i = 1; i <= sumsOfDivisors.size(); i++) { // i needs to be value of Key, not index of collection
             int sum = sumsOfDivisors.get(i);
-            System.out.println("i: " + i + ", sum: " + sum);
         }
-
         // determine for each value under 10000, if its sum of divisors results in a
         // number whose sum of divisors equals the original value
-
+        int overallSum = findAmicableNumbers(sumsOfDivisors);
+        System.out.println("Overall sum: " + overallSum);
     }
 
     private static Dictionary<Integer, List<Integer>> calcDivisors(int limit) {
         List<Integer> divisors = new ArrayList<Integer>();
         Dictionary<Integer, List<Integer>> integersAndTheirDivisors = new Hashtable<>();
-        Boolean divisible = false;
         for (int i = 1; i < limit; i++) {
-            divisible = false;
             divisors = new ArrayList<Integer>();
             ;
             for (int j = 1; j < i; j++) {
                 if (i % j == 0) {
-                    divisible = true;
                     divisors.add(j);
-                    System.out.println("i: " + i + " is divisible by j: " + j);
                     continue;
                 }
             }
@@ -72,7 +67,6 @@ public class App {
             if (divisorList != null && !divisorList.isEmpty()) {
                 for (int j = 0; j < divisorList.size(); j++) {
                     sum += divisorList.get(j);
-                    System.out.println("i,j: " + i + "," + j + ", adding " + divisorList.get(j));
                 }
 
                 divisorSums.put(i, sum);
@@ -81,5 +75,25 @@ public class App {
             }
         }
         return divisorSums;
+    }
+
+    private static int findAmicableNumbers(Dictionary<Integer, Integer> divisorSums) {
+        int sum = 0;
+        int amicableNumbersSum = 0;
+        Dictionary<Integer, Integer> amicableNumbers = new Hashtable<>();
+
+        for (int i = 1; i <= divisorSums.size(); i++) { // i needs to be value of Key, not index of collection
+            sum = divisorSums.get(i);
+
+            if (sum > 0 && divisorSums.get(sum) != null && sum != i) {
+                if ((divisorSums.get(sum)).equals(i)) {
+                    amicableNumbers.put(i, sum);
+                    amicableNumbersSum += i;
+                }
+            }
+
+        }
+
+        return amicableNumbersSum;
     }
 }
