@@ -4,7 +4,7 @@ import java.util.Enumeration;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
-public class App {
+public class 7 {
 
     /*
      * Problem statement:
