@@ -1,10 +1,10 @@
-import java.util.List;
-import java.util.ArrayList;
+//import java.util.List;
+//import java.util.ArrayList;
 import java.util.Enumeration;
 import java.util.Dictionary;
 import java.util.Hashtable;
 
-public class 7 {
+public class App {
 
     /*
      * Problem statement:
@@ -27,7 +27,7 @@ public class 7 {
      */
     public static void main(String[] args) {
         long chainLength = 0L;
-        long seedCausingLongestChainLength = 0L;
+        //long seedCausingLongestChainLength = 0L;
         int limit = 25000;
         Dictionary<Integer, Long> lengths = new Hashtable<>();
 
@@ -61,7 +61,7 @@ public class 7 {
     private static void checkForGreatestLength(Dictionary<Integer, Long> chainLengths) {
         Long highestChainLengthValue = 0L;
         Long currentChainLength = 0L;
-        Integer currentKey = 0;
+        //Integer currentKey = 0;
 
         for (Enumeration e = chainLengths.keys(); e.hasMoreElements();) {
             Object a = e.nextElement();

@@ -1,9 +1,9 @@
-import java.util.Dictionary;
-import java.util.Hashtable;
+//import java.util.Dictionary;
+//import java.util.Hashtable;
 import java.util.List;
 
-import javafx.geometry.Dimension2D;
-import javafx.geometry.Point2D;
+//import javafx.geometry.Dimension2D;
+//import javafx.geometry.Point2D;
 //import euler_15.classes.point_2d;
 
 import java.util.ArrayList;
@@ -86,10 +86,10 @@ public class App {
 
         // int point1Number = convertXYValueToPointNumber(1, 1, nodesSquare);
         // System.out.println(point1Number);
-        // Point_2D point1 = initiateStartingPoint(0);
+        Point_2D point1 = initiateStartingPoint(0);
         // System.out.println("Starting point: " + point1);
-        // identifyPossiblePaths(point1);
-        identifyPossiblePaths();
+        identifyPossiblePaths(point1);
+        //identifyPossiblePaths();
         navigate(point1);
 
         // one 2nd thought...
@@ -290,7 +290,8 @@ public class App {
         // from initial point (passed in); go to both choices
         // each path can be a List<Point_2D>
         // List<List<Point_2D>> paths = new ArrayList<>();
-        Dictionary<Integer, List<Point_2D>> paths = new Hashtable<>();
+        
+        //Dictionary<Integer, List<Point_2D>> paths = new Hashtable<>();
 
         /*
          * List<Point_2D> tmpPath1 = new ArrayList<>();
@@ -309,7 +310,9 @@ public class App {
                 // create temp path
                 // then add that path to a list of paths
                 // tmpPath.add(startingPoint);
-                Point_2D currentPoint = grid.get(convertXYValueToPointNumber(i, j, nodesSquare) - 1);
+                
+                //Point_2D currentPoint = grid.get(convertXYValueToPointNumber(i, j, nodesSquare) - 1);
+                
                 // skip initial point (passed in)
                 if (i == 1 && j == 1) {
                     tmpPath.add(grid.get(convertXYValueToPointNumber(i, j, nodesSquare) - 1));
