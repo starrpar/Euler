@@ -1,5 +1,3 @@
-package euler_29;
-
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
