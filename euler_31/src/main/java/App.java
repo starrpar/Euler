@@ -1,17 +1,12 @@
 public class App {
     /*
-     * Surprisingly there are only three numbers that can be written as the sum of
-     * fourth powers of their digits:
+     * In the United Kingdom the currency is made up of pound (£) and pence (p). There are eight coins in general circulation:
+     * 1p, 2p, 5p, 10p, 20p, 50p, £1 (100p), and £2 (200p).
+     * It is possible to make £2 in the following way:
      * 
-     * 1634 = 1^4 + 6^4 + 3^4 + 4^4
-     * 8208 = 8^4 + 2^4 + 0^4 + 8^4
-     * 9474 = 9^4 + 4^4 + 7^4 + 4^4
-     * As 1 = 1^4 is not a sum it is not included.
+     * 1×£1 + 1×50p + 2×20p + 1×5p + 1×2p + 3×1p
+     * How many different ways can £2 be made using any number of coins?
      * 
-     * The sum of these numbers is 1634 + 8208 + 9474 = 19316.
-     * 
-     * Find the sum of all the numbers that can be written as the sum of fifth
-     * powers of their digits.
      */
     public static void main(String[] args) {
         //
