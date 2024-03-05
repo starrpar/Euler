@@ -38,6 +38,9 @@ std::list<long> findAllPrimesBelow(long limit){
 }
 
 bool isPrime(long value){
+    if(value == 1){
+        return true;
+    }
 
     if(value < 2){
         return false;
@@ -100,12 +103,12 @@ bool testIfBoolFullyTruncatableLtoR(long currentValue){
                 amtToDivideBy = amtToDivideBy * multiple;
             }
 
-            //cout << "Before: " << currentValue << endl;
+            //cout << "LtoR Before: " << currentValue << endl;
         }
 
         if(amtToDivideBy > 1){
             currentValue = currentValue%amtToDivideBy;
-            //cout << "After: " << currentValue << endl;
+            //cout << "LtoR After: " << currentValue << endl;
             retVal = testIfBoolFullyTruncatableLtoR(currentValue);
         }
     }
@@ -119,20 +122,23 @@ int main()
 {
     string s = "Hello World";
     cout << s << endl;
-    int max = 10000000;
+    int max = 400000;
     std::list<long> primesFound;
     std::list<long> primesPotentiallyTruncatable;
     std::list<long> primesPotentiallyTruncatableToPrint;
     std::list<long> primesTruncatable;
     primesFound = findAllPrimesBelow(max);
-    cout << primesFound.size() << endl;
+    cout << endl << primesFound.size() << endl;
 
-    for(int i = 0; i < primesFound.size(); i++){
+     for(int i = 0; i < primesFound.size(); i++){
         long currentPrime = primesFound.front();
-        //cout << currentPrime << endl;
+        if(currentPrime < 100){
+            cout << currentPrime << endl;
+        } 
         primesFound.pop_front();
 
         if(testIfBoolFullyTruncatableRtoL(currentPrime)){
+            cout << "************* Prime: " << currentPrime << "*************" << endl;
             primesPotentiallyTruncatableToPrint.push_front(currentPrime);
             primesPotentiallyTruncatable.push_front(currentPrime);
         }
@@ -140,7 +146,7 @@ int main()
 
     cout << "Primes potentially truncatable: " << primesPotentiallyTruncatableToPrint.size() << endl;
     while(primesPotentiallyTruncatableToPrint.empty()){
-        //cout << primesPotentiallyTruncatableToPrint.front() << endl;
+        cout << primesPotentiallyTruncatableToPrint.front() << endl;
         primesPotentiallyTruncatableToPrint.pop_front();
     }
 
@@ -149,7 +155,11 @@ int main()
         //cout << currentPrime << endl;
         primesPotentiallyTruncatable.pop_front();
 
+        if(currentPrime == 13){
+            cout << currentPrime << endl;
+        }
         if(testIfBoolFullyTruncatableLtoR(currentPrime)){
+            cout << "************* Prime: " << currentPrime << "*************" << endl;
             primesTruncatable.push_front(currentPrime);
         }
     }
@@ -160,28 +170,3 @@ int main()
         primesTruncatable.pop_front();
     }
 }
-
-
-/*    private static List<Long> findAllPrimesBelow(long limit) {
-        ArrayList<Long> primes = new ArrayList<Long>();
-        Boolean divisible = false;
-        for (long i = 2; i < limit; i++) {
-            divisible = false;
-            for (int j = 2; j < i; j++) { // < vs. <= because dividing primes by themselves will eliminate them from selection
-                if((i%50000 == 0) && (j%(50000) == 0)){
-                    System.out.println("i,j: " + i + " :: " + j);
-                }
-                if (i % j == 0) {
-                    divisible = true;
-                    continue;
-                }
-            }
-            if (!divisible) {
-                primes.add(i);
-                divisible = false;
-                continue;
-            }
-        }
-        return primes;
-    }
-*/
