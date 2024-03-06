@@ -1,6 +1,18 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.ResultSetMetaData;
+import java.sql.SQLException;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Donation {
 
@@ -33,51 +45,96 @@ public class Donation {
         this.Donor.middleInitial = "";
     }
 
+    private final Logger logger = LogManager.getLogger(this);
+
     // A feature that allows the shelter staff to record details of the donations,
     // such as the donor's name, type of donation (money, food, clothing, etc.),
     // quantity or amount donated, and the date of the donation.
     public void register(DonorName name, DonationType type, Double amountDonated, LocalDateTime date) {
         //write data to database
-        //add DB connection
+        String sqlQuery = "INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values(\""+name+"\",\""+type+"\","+amountDonated+",\""+date+"\")";
+        logger.log(Level.INFO, "Register(): Running query: " + sqlQuery);
 
-        //add query
+        sqlConnectAndExecute(sqlQuery);
 
-
-
-        //meanwhile simply print out data for given donor
-        System.out.println();
-        System.out.println("\nRegister():");
-        System.out.print(name.firstName + " " + name.middleInitial + " " + name.lastName);
-        System.out.print(" contributed a donation of type: <");
-        System.out.print(type.toString().toLowerCase());
-        System.out.print(">, valued in dollar amounts at: ");
-        System.out.print("$" + amountDonated.toString());
-        System.out.print(" on: ");
-        System.out.print(date);
-
-
+        // logger.log(Level.INFO, "Distribute(): number of rows processed: " + numRows);
     }
 
     // A feature to log when and how much of the donations are distributed, capturing
     // the type of donation, quantity or amount distributed, and the date of distribution.
     public void distribute(DonationType type, Double amountDonated, LocalDateTime date) {
         //make adjustments in the database...
-        //add DB connection
 
-        //add query
+        //first off, determine there is enough of given donationtype to distribute
+        String sqlQuery1 = "SELECT * FROM donations_manager.donations WHERE DonationType=\""+type+"\" AND DollarValue="+amountDonated;
+        String sqlQuery2 = "INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values(\""+type+"\","+amountDonated+",\""+date+"\")";
+        String sqlQuery3 = "SELECT * FROM donations_manager.distributions WHERE DonationType=\""+type+"\" AND DollarValue="+amountDonated+" AND Date=\""+date+"\"";
 
-    
 
-        //meanwhile simply print out data of the distribution
-        System.out.println();
-        System.out.println("\nDistribute():");
-        System.out.print("A distribution of donation type: <");
-        System.out.print(type.toString().toLowerCase());
-        System.out.print(">, was dispersed, valued in dollar amounts at: ");
-        System.out.print("$" + amountDonated.toString());
-        System.out.print(" on: ");
-        System.out.print(date);
+        logger.log(Level.INFO, "Distribute(): Running query: " + sqlQuery1);
+        List<Map<String, Object>> results = sqlConnectAndRunQuery(sqlQuery1);
+
+        for (Map<String,Object> map : results) {
+            for(String str : map.keySet()){
+                System.out.println("\n" + str + ": " + map.get(str));
+            }
+        }
+
+        //next, record such distribution was excersized
+        logger.log(Level.INFO, "Distribute(): Running query: " + sqlQuery2);
+        sqlConnectAndExecute(sqlQuery2);
+
+        //then simply verify the data entered in the distributions table correctly
+        logger.log(Level.INFO, "Distribute(): Running query: " + sqlQuery3);
+        results = sqlConnectAndRunQuery(sqlQuery3);
+
+        for (Map<String,Object> map : results) {
+            for(String str : map.keySet()){
+                System.out.println("\n" + str + ": " + map.get(str));
+            }
+        }
     }
+
+    private static List<Map<String, Object>> sqlConnectAndRunQuery(String query) {
+        String connectionUrl = "jdbc:mysql://localhost:3306/donations_manager";
+
+        List<Map<String, Object>> resultList = new ArrayList<>();
+
+        try(Connection connection = DriverManager.getConnection(connectionUrl, "starrp", "ABCD****1234");
+        PreparedStatement ps = connection.prepareStatement(query);
+        ResultSet rs = ps.executeQuery()) {
+            ResultSetMetaData metaData = rs.getMetaData();
+            Integer columnCount = metaData.getColumnCount();
+            while (rs.next()) {
+                Map<String, Object> row = new HashMap<>();
+                for (int i = 1; i <= columnCount; i++) {
+                    row.put(metaData.getColumnName(i), rs.getObject(i));
+                }
+                resultList.add(row);
+            }
+        }
+        catch(SQLException e){
+            //for now just print out SQL Exception contents, but in real app, do appropriate action...
+            System.out.println("SQLException experienced: " + e.getErrorCode() + "; " + e.getLocalizedMessage());
+        }
+
+        return resultList;
+    }
+
+    private static void sqlConnectAndExecute(String query) {
+        String connectionUrl = "jdbc:mysql://localhost:3306/donations_manager";
+
+        try{
+            Connection connection = DriverManager.getConnection(connectionUrl, "starrp", "ABCD****1234");
+            PreparedStatement ps = connection.prepareStatement(query);
+            ps.execute();
+        }
+        catch(SQLException e){
+            //for now just print out SQL Exception contents, but in real app, do appropriate action...
+            System.out.println("SQLException experienced: " + e.getErrorCode() + "; " + e.getLocalizedMessage());
+        }
+    }
+
 
     // Your solution should have the capacity to generate two types of reports:
     // (1) An inventory report displaying the current status of donations, grouped by type.
@@ -103,6 +160,18 @@ public class Donation {
 
     public void generateInventoryReport(LocalDateTime date){
         //get all current donations status by donation type from DB - use date to specify appropriate query
+        //add DB connection
+        //DB =
+        //provide string as temp workaround for logging
+        String DB = "MySQL_database";
+        logger.log(Level.INFO, "GenerateInventoryReport(): Connecting to DB: " + DB);
+
+        //add query
+        String query = "";
+        logger.log(Level.INFO, "GenerateInventoryReport(): query: " + query);
+    
+        //meanwhile simply print out data of the distribution
+        logger.log(Level.INFO, "GenerateInventoryReport(): Creating a report for donation inventory by type for \"as of\" date of: " + date);
 
         //output values by donation type
         System.out.println("\nInventory report by donation type:");
@@ -180,9 +249,17 @@ public class Donation {
 
         //access data from DB using a query based to get list of all donors and all amounts donated by each donor
         //add DB connection
+        //DB =
+        //provide string as temp workaround for logging
+        String DB = "MySQL_database";
+        logger.log(Level.INFO, "GenerateDonatorReport(): Connecting to DB: " + DB);
 
         //add query
-        
+        String query = "";
+        logger.log(Level.INFO, "GenerateDonatorReport(): query: " + query);
+    
+        //meanwhile simply print out data of the distribution
+        logger.log(Level.INFO, "GenerateDonatorReport(): Creating a report for donations summary by donor");
 
 
         //then summarize all dollar amounts for all donations per donor - place donor's name and total amount in dictionary

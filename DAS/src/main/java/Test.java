@@ -1,10 +1,16 @@
 
 import java.time.LocalDateTime;
 
+import org.apache.logging.log4j.Level;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Test{
 
+    private final Logger logger = LogManager.getLogger(this);
+    
     public Donation.DonorName createDonor(String firstName, String lastName, String MI){
+
         Donation donation = new Donation();
         Donation.DonorName name = donation.Donor;
 
@@ -12,69 +18,85 @@ public class Test{
         name.lastName = lastName;
         name.middleInitial = MI;
 
+        logger.log(Level.INFO, "Testing: Creating donor: " + name);
         return name;
     }
 
     public Donation.DonationType getDonationType(Donation.DonorName name){
-        Donation.DonationType type;
+        Donation.DonationType type = Donation.DonationType.MONEY; //default value
+        
+        logger.log(Level.INFO, "Testing: Generating donation type: " + type + " for donor: " + name);
+        return type;
+    }
 
-        //have a method for looking up amount of donation
-        //type = LookUpDonationType(name);
-
-        //for test purposes, just use one of the enum types (could make this random for testing purposes)
-        type = Donation.DonationType.MONEY;
-
+    public Donation.DonationType getDonationType(Donation.DonorName name, Donation.DonationType type){
+        
+        logger.log(Level.INFO, "Testing: Generating donation type: " + type + " for donor: " + name);
         return type;
     }
 
     public Double getAmountOfDonation(Donation.DonorName name){
-        Double amount;
+        Double amount = 100.00; //default value
 
-        //have a method for looking up amount of donation
-        //amount = LookUpDonationAmount(name);
+        logger.log(Level.INFO, "Testing: Specifying donation amount: " + amount + " for donor: " + name);
+        return amount;
+    }
 
-        //for test purposes, just use some miscellaneous amount (could randomize by timestamp hash)
-        amount = 1380.16;
+    public Double getAmountOfDonation(Donation.DonorName name, Double amount){
 
+        logger.log(Level.INFO, "Testing: Specifying donation amount: " + amount + " for donor: " + name);
         return amount;
     }
 
     public LocalDateTime getDateOfDonation(Donation.DonorName name){
-        LocalDateTime date;
+        LocalDateTime date = LocalDateTime.now(); //default value
 
-        //have a method for looking up date of donation
-        //date = LookUpDateOfDonation(name);
+        logger.log(Level.INFO, "Testing: Setting date as: " + date + " for donor: " + name);
+        return date;
+    }
 
-        //for test purposes, just use today (could randomize)
-        date = LocalDateTime.now();
+    public LocalDateTime getDateOfDonation(Donation.DonorName name, LocalDateTime date){
 
+        logger.log(Level.INFO, "Testing: Setting date as: " + date + " for donor: " + name);
         return date;
     }
 
     public Donation.DonationType getTypeOfDistribution(){
-        Donation.DonationType type;
+        Donation.DonationType type = Donation.DonationType.MONEY; //default value
 
-        //this is just test data
-        type = Donation.DonationType.CLOTHING;
+        logger.log(Level.INFO, "Testing: Setting distribution to be of donation type: " + type);
+        return type;
+    }
 
+    public Donation.DonationType getTypeOfDistribution(Donation.DonationType type){
+
+        logger.log(Level.INFO, "Testing: Setting distribution to be of donation type: " + type);
         return type;
     }
 
     public Double getAmountOfDistribution(){
-        Double amount;
+        Double amount = 100.00; //default value
 
-        //this is just test data
-        amount = 500.00;
+        logger.log(Level.INFO, "Testing: Setting distribution amount: " + amount);
+        return amount;
+    }
 
+    public Double getAmountOfDistribution(Double amount){
+
+        logger.log(Level.INFO, "Testing: Setting distribution amount: " + amount);
         return amount;
     }
     
     public LocalDateTime getDateOfDistribution(){
-        LocalDateTime date;
+        LocalDateTime date = LocalDateTime.now(); //default value
 
-        //this is just test data
-        date = LocalDateTime.now();
+        logger.log(Level.INFO, "Testing: Setting distribution date: " + date);
+        return date;
+    }
 
+    public LocalDateTime getDateOfDistribution(LocalDateTime date){
+
+        logger.log(Level.INFO, "Testing: Setting distribution date: " + date);
         return date;
     }
 }

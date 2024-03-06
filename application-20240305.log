@@ -1,0 +1,488 @@
+2024-03-05 13:34:12.196 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:34:12.172
+2024-03-05 13:34:12.210 [main] INFO  Donation - query: 
+2024-03-05 13:35:03.085 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:35:03.070
+2024-03-05 13:35:03.098 [main] INFO  Donation - query: 
+2024-03-05 13:36:20.088 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:36:20.075
+2024-03-05 13:36:20.093 [main] INFO  Donation - query: 
+2024-03-05 13:38:59.773 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:38:59.755
+2024-03-05 13:38:59.782 [main] INFO  Donation - query: 
+2024-03-05 13:40:37.011 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:40:36.997
+2024-03-05 13:40:37.017 [main] INFO  Donation - query: 
+2024-03-05 13:50:49.751 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:50:49.735
+2024-03-05 13:50:49.756 [main] INFO  Donation - query: 
+2024-03-05 13:54:04.778 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:54:04.746
+2024-03-05 13:54:04.787 [main] INFO  Donation - query: 
+2024-03-05 13:57:38.448 [main] INFO  Donation - registering donation: Sam L Smith donated: $1380.16 of type: MONEY, on: 2024-03-05T13:57:38.433
+2024-03-05 13:57:38.455 [main] INFO  Donation - query: 
+2024-03-05 13:57:38.456 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T13:57:38.433
+2024-03-05 14:02:31.650 [main] INFO  Donation - Connecting to DB: MySQL_database
+2024-03-05 14:02:31.655 [main] INFO  Donation - query: 
+2024-03-05 14:02:31.658 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T14:02:31.639
+2024-03-05 14:02:31.659 [main] INFO  Donation - Connecting to DB: MySQL_database
+2024-03-05 14:02:31.659 [main] INFO  Donation - query: 
+2024-03-05 14:02:31.660 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T14:02:31.658
+2024-03-05 14:07:53.686 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 14:07:53.705 [main] INFO  Donation - Register(): query: 
+2024-03-05 14:07:53.738 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T14:07:53.669
+2024-03-05 14:07:53.786 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 14:07:53.794 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 14:07:53.799 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T14:07:53.786
+2024-03-05 14:07:54.009 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 14:07:54.035 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 14:07:54.038 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T14:07:53.786
+2024-03-05 14:07:54.052 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 14:07:54.053 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 14:07:54.053 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 14:13:31.366 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 14:13:31.391 [main] INFO  Test - Testing: Setting date as: 2024-03-05T14:13:31.382 for donor: Sam L Smith
+2024-03-05 14:13:31.395 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 14:13:31.407 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 14:13:31.410 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 14:13:31.427 [main] INFO  Donation - Register(): query: 
+2024-03-05 14:13:31.438 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T14:13:31.382
+2024-03-05 14:13:31.443 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 14:13:31.449 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 14:13:31.452 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T14:13:31.443
+2024-03-05 14:13:31.457 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 14:13:31.460 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 14:13:31.468 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T14:13:31.443
+2024-03-05 14:13:31.487 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 14:13:31.492 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 14:13:31.494 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 14:15:43.555 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 14:15:43.581 [main] INFO  Test - Testing: Setting date as: 2024-03-05T14:15:43.574 for donor: Sam L Smith
+2024-03-05 14:15:43.591 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 14:15:43.597 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 14:15:43.600 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 14:15:43.601 [main] INFO  Donation - Register(): query: 
+2024-03-05 14:15:43.605 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T14:15:43.574
+2024-03-05 14:15:43.608 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T14:15:43.607
+2024-03-05 14:15:43.612 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 14:15:43.615 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 14:15:43.618 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 14:15:43.619 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 14:15:43.623 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T14:15:43.607
+2024-03-05 14:15:43.626 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 14:15:43.627 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 14:15:43.630 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T14:15:43.607
+2024-03-05 14:15:43.634 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 14:15:43.635 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 14:15:43.635 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 15:03:57.127 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 15:03:57.160 [main] INFO  Test - Testing: Setting date as: 2024-03-05T15:03:57.150 for donor: Sam L Smith
+2024-03-05 15:03:57.161 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 15:03:57.164 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 15:03:57.164 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 15:03:57.165 [main] INFO  Donation - Register(): query: 
+2024-03-05 15:03:57.165 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T15:03:57.150
+2024-03-05 15:03:57.166 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T15:03:57.166
+2024-03-05 15:03:57.167 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 15:03:57.168 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 15:03:57.173 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 15:03:57.174 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 15:03:57.174 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T15:03:57.166
+2024-03-05 15:03:57.180 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 15:03:57.181 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 15:03:57.186 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T15:03:57.166
+2024-03-05 15:03:57.192 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 15:03:57.193 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 15:03:57.193 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 15:59:40.616 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 15:59:40.660 [main] INFO  Test - Testing: Setting date as: 2024-03-05T15:59:40.644 for donor: Sam L Smith
+2024-03-05 15:59:40.661 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 15:59:40.662 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 15:59:40.662 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 15:59:40.662 [main] INFO  Donation - Register(): query: 
+2024-03-05 15:59:40.663 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T15:59:40.644
+2024-03-05 15:59:40.663 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T15:59:40.663
+2024-03-05 15:59:40.664 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 15:59:40.664 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 15:59:40.665 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 15:59:40.665 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 15:59:40.666 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T15:59:40.663
+2024-03-05 15:59:40.667 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 15:59:40.668 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 15:59:40.668 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T15:59:40.663
+2024-03-05 15:59:40.670 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 15:59:40.671 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 15:59:40.672 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 16:05:14.882 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 16:05:14.919 [main] INFO  Test - Testing: Setting date as: 2024-03-05T16:05:14.899 for donor: Sam L Smith
+2024-03-05 16:05:14.922 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 16:05:14.923 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 16:05:14.924 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 16:05:14.925 [main] INFO  Donation - Register(): query: 
+2024-03-05 16:05:14.939 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T16:05:14.899
+2024-03-05 16:05:14.941 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T16:05:14.941
+2024-03-05 16:05:14.955 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 16:05:14.970 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 16:05:14.973 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 16:05:14.999 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 16:05:15.005 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T16:05:14.941
+2024-03-05 16:05:15.040 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 16:05:15.052 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 16:05:15.054 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T16:05:14.941
+2024-03-05 16:05:15.158 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 16:05:15.168 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 16:05:15.171 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 16:20:35.904 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 16:20:35.929 [main] INFO  Test - Testing: Setting date as: 2024-03-05T16:20:35.914 for donor: Sam L Smith
+2024-03-05 16:20:35.930 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 16:20:35.930 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 16:20:35.931 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 16:20:35.931 [main] INFO  Donation - Register(): query: 
+2024-03-05 16:20:35.931 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T16:20:35.914
+2024-03-05 16:20:35.932 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T16:20:35.932
+2024-03-05 16:20:35.942 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 16:20:35.944 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 16:20:35.945 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 16:20:35.945 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 16:20:35.946 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T16:20:35.932
+2024-03-05 16:20:35.948 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 16:20:35.948 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 16:20:35.949 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T16:20:35.932
+2024-03-05 16:20:35.959 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 16:20:35.960 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 16:20:35.960 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 16:22:38.664 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 16:22:38.681 [main] INFO  Test - Testing: Setting date as: 2024-03-05T16:22:38.673 for donor: Sam L Smith
+2024-03-05 16:22:38.683 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 16:22:38.684 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 16:22:38.685 [main] INFO  Donation - Register(): Connecting to DB: MySQL_database
+2024-03-05 16:22:38.685 [main] INFO  Donation - Register(): query: 
+2024-03-05 16:22:38.686 [main] INFO  Donation - Register(): Sam L Smith contributed a donation of type: <money>, valued in dollar amounts at: $1380.16 on: 2024-03-05T16:22:38.673
+2024-03-05 16:22:38.687 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T16:22:38.687
+2024-03-05 16:22:38.689 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 16:22:38.691 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 16:22:38.692 [main] INFO  Donation - Distribute(): Connecting to DB: MySQL_database
+2024-03-05 16:22:38.693 [main] INFO  Donation - Distribute(): query: 
+2024-03-05 16:22:38.694 [main] INFO  Donation - Distribute(): A distribution of donation type: <clothing>, was dispersed, valued in dollar amounts at: $500.0 on: 2024-03-05T16:22:38.687
+2024-03-05 16:22:38.695 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 16:22:38.696 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 16:22:38.696 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T16:22:38.687
+2024-03-05 16:22:38.704 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 16:22:38.704 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 16:22:38.704 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 17:39:52.393 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 17:39:52.418 [main] INFO  Test - Testing: Setting date as: 2024-03-05T17:39:52.407 for donor: Sam L Smith
+2024-03-05 17:39:52.420 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 17:39:52.421 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 17:39:52.423 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations DonorName=Sam L Smith DonationType=MONEY DollarValue=1380.16 Date=2024-03-05T17:39:52.407
+2024-03-05 17:39:52.491 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T17:39:52.490
+2024-03-05 17:39:52.496 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 17:39:52.497 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 17:39:52.497 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType=CLOTHING AND DollarValue=500.0
+2024-03-05 17:39:52.542 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions  DonationType=CLOTHING DollarValue=500.0 Date=2024-03-05T17:39:52.490
+2024-03-05 17:39:52.566 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType=CLOTHING AND DollarValue=500.0 AND Date=2024-03-05T17:39:52.490
+2024-03-05 17:39:52.588 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 17:39:52.588 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 17:39:52.589 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T17:39:52.490
+2024-03-05 17:39:52.590 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 17:39:52.591 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 17:39:52.591 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 17:55:04.371 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 17:55:04.386 [main] INFO  Test - Testing: Setting date as: 2024-03-05T17:55:04.381 for donor: Sam L Smith
+2024-03-05 17:55:04.388 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 17:55:04.388 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 17:55:04.389 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values(name,type,amountDonated,date)
+2024-03-05 17:55:04.436 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T17:55:04.435
+2024-03-05 17:55:04.437 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 17:55:04.437 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 17:55:04.437 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType=CLOTHING AND DollarValue=500.0
+2024-03-05 17:55:04.490 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values(type,amountDonated,date)
+2024-03-05 17:55:04.511 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType=CLOTHING AND DollarValue=500.0 AND Date=2024-03-05T17:55:04.435
+2024-03-05 17:55:04.547 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 17:55:04.547 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 17:55:04.547 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T17:55:04.435
+2024-03-05 17:55:04.550 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 17:55:04.550 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 17:55:04.551 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 17:57:02.453 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 17:57:02.473 [main] INFO  Test - Testing: Setting date as: 2024-03-05T17:57:02.463 for donor: Sam L Smith
+2024-03-05 17:57:02.475 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 17:57:02.476 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 17:57:02.479 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values(name,type,amountDonated,date)
+2024-03-05 17:57:02.523 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T17:57:02.523
+2024-03-05 17:57:02.526 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 17:57:02.526 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 17:57:02.527 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType=CLOTHING AND DollarValue=500.0
+2024-03-05 17:57:02.575 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values(CLOTHING,500.0,2024-03-05T17:57:02.523)
+2024-03-05 17:57:02.602 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType=CLOTHING AND DollarValue=500.0 AND Date=2024-03-05T17:57:02.523
+2024-03-05 17:57:02.623 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 17:57:02.624 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 17:57:02.624 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T17:57:02.523
+2024-03-05 17:57:02.626 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 17:57:02.626 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 17:57:02.627 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 17:58:17.300 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 17:58:17.331 [main] INFO  Test - Testing: Setting date as: 2024-03-05T17:58:17.313 for donor: Sam L Smith
+2024-03-05 17:58:17.332 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 17:58:17.333 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 17:58:17.333 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values(Sam L Smith,MONEY,1380.16,2024-03-05T17:58:17.313)
+2024-03-05 17:58:17.377 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T17:58:17.377
+2024-03-05 17:58:17.377 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 17:58:17.378 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 17:58:17.379 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType=CLOTHING AND DollarValue=500.0
+2024-03-05 17:58:17.422 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values(CLOTHING,500.0,2024-03-05T17:58:17.377)
+2024-03-05 17:58:17.444 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType=CLOTHING AND DollarValue=500.0 AND Date=2024-03-05T17:58:17.377
+2024-03-05 17:58:17.468 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 17:58:17.468 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 17:58:17.468 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T17:58:17.377
+2024-03-05 17:58:17.471 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 17:58:17.471 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 17:58:17.472 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 17:59:56.764 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 17:59:56.795 [main] INFO  Test - Testing: Setting date as: 2024-03-05T17:59:56.780 for donor: Sam L Smith
+2024-03-05 17:59:56.797 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 17:59:56.798 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 17:59:56.798 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","MONEY",1380.16,2024-03-05T17:59:56.780)
+2024-03-05 17:59:56.861 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T17:59:56.861
+2024-03-05 17:59:56.862 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 17:59:56.863 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 17:59:56.864 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType=CLOTHING AND DollarValue=500.0
+2024-03-05 17:59:56.914 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,2024-03-05T17:59:56.861)
+2024-03-05 17:59:56.942 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType=CLOTHING AND DollarValue=500.0 AND Date=2024-03-05T17:59:56.861
+2024-03-05 17:59:56.964 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 17:59:56.965 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 17:59:56.965 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T17:59:56.861
+2024-03-05 17:59:56.976 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 17:59:56.976 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 17:59:56.977 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 18:03:53.970 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 18:03:53.990 [main] INFO  Test - Testing: Setting date as: 2024-03-05T18:03:53.984 for donor: Sam L Smith
+2024-03-05 18:03:53.992 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 18:03:53.992 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 18:03:53.993 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","MONEY",1380.16,"2024-03-05T18:03:53.984")
+2024-03-05 18:03:54.046 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T18:03:54.046
+2024-03-05 18:03:54.047 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 18:03:54.047 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 18:03:54.048 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType=CLOTHING AND DollarValue=500.0
+2024-03-05 18:03:54.088 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T18:03:54.046")
+2024-03-05 18:03:54.114 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType=CLOTHING AND DollarValue=500.0 AND Date=2024-03-05T18:03:54.046
+2024-03-05 18:03:54.138 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 18:03:54.138 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 18:03:54.139 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T18:03:54.046
+2024-03-05 18:03:54.142 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 18:03:54.142 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 18:03:54.142 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 18:05:38.964 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 18:05:38.982 [main] INFO  Test - Testing: Setting date as: 2024-03-05T18:05:38.976 for donor: Sam L Smith
+2024-03-05 18:05:38.985 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 18:05:38.986 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 18:05:38.987 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","MONEY",1380.16,"2024-03-05T18:05:38.976")
+2024-03-05 18:05:39.046 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T18:05:39.046
+2024-03-05 18:05:39.047 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 18:05:39.047 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 18:05:39.048 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType=CLOTHING AND DollarValue=500.0
+2024-03-05 18:05:39.087 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T18:05:39.046")
+2024-03-05 18:05:39.138 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType=CLOTHING AND DollarValue=500.0 AND Date=2024-03-05T18:05:39.046
+2024-03-05 18:05:39.163 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 18:05:39.163 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 18:05:39.164 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T18:05:39.046
+2024-03-05 18:05:39.167 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 18:05:39.168 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 18:05:39.169 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 18:08:25.628 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 18:08:25.648 [main] INFO  Test - Testing: Setting date as: 2024-03-05T18:08:25.642 for donor: Sam L Smith
+2024-03-05 18:08:25.652 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 18:08:25.654 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 18:08:25.655 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","MONEY",1380.16,"2024-03-05T18:08:25.642")
+2024-03-05 18:08:25.722 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T18:08:25.722
+2024-03-05 18:08:25.724 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 18:08:25.729 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 18:08:25.735 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 18:08:25.781 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T18:08:25.722")
+2024-03-05 18:08:25.811 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T18:08:25.722"
+2024-03-05 18:08:25.850 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 18:08:25.851 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 18:08:25.853 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T18:08:25.722
+2024-03-05 18:08:25.855 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 18:08:25.855 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 18:08:25.856 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 18:46:15.113 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 18:46:15.137 [main] INFO  Test - Testing: Setting date as: 2024-03-05T18:46:15.125 for donor: Sam L Smith
+2024-03-05 18:46:15.139 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 18:46:15.139 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 18:46:15.147 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","MONEY",1380.16,"2024-03-05T18:46:15.125")
+2024-03-05 18:46:15.202 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T18:46:15.202
+2024-03-05 18:46:15.202 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 18:46:15.203 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 18:46:15.204 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 18:46:15.237 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T18:46:15.202")
+2024-03-05 18:46:15.271 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T18:46:15.202"
+2024-03-05 18:46:15.296 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 18:46:15.296 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 18:46:15.297 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T18:46:15.202
+2024-03-05 18:46:15.299 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 18:46:15.299 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 18:46:15.300 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 19:29:53.099 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 19:29:53.119 [main] INFO  Test - Testing: Setting date as: 2024-03-05T19:29:53.112 for donor: Sam L Smith
+2024-03-05 19:29:53.124 [main] INFO  Test - Testing: Generating donation type: MONEY for donor: Sam L Smith
+2024-03-05 19:29:53.124 [main] INFO  Test - Testing: Specifying donation amount: 1380.16 for donor: Sam L Smith
+2024-03-05 19:29:53.125 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","MONEY",1380.16,"2024-03-05T19:29:53.112")
+2024-03-05 19:29:53.204 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T19:29:53.204
+2024-03-05 19:29:53.204 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 19:29:53.204 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 19:29:53.205 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 19:29:53.234 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T19:29:53.204")
+2024-03-05 19:29:53.292 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T19:29:53.204"
+2024-03-05 19:29:53.354 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 19:29:53.355 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 19:29:53.355 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T19:29:53.204
+2024-03-05 19:29:53.357 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 19:29:53.357 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 19:29:53.357 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:01:29.308 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:01:29.314 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:01:29.297 for donor: Sam L Smith
+2024-03-05 20:01:29.317 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:01:29.319 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:01:29.320 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:01:29.297")
+2024-03-05 20:01:29.392 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:01:29.297
+2024-03-05 20:01:29.392 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:01:29.392 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:01:29.393 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:01:29.425 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:01:29.297")
+2024-03-05 20:01:29.497 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:01:29.297"
+2024-03-05 20:01:29.541 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:01:29.542 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:01:29.543 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:01:29.297
+2024-03-05 20:01:29.544 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:01:29.545 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:01:29.545 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:02:03.247 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:02:03.264 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:02:03.217 for donor: Sam L Smith
+2024-03-05 20:02:03.265 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:02:03.268 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:02:03.271 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:02:03.217")
+2024-03-05 20:02:03.342 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:02:03.217
+2024-03-05 20:02:03.346 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:02:03.346 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:02:03.347 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:02:03.394 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:02:03.217")
+2024-03-05 20:02:03.452 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:02:03.217"
+2024-03-05 20:02:03.492 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:02:03.493 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:02:03.493 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:02:03.217
+2024-03-05 20:02:03.495 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:02:03.495 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:02:03.496 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:03:37.649 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:03:37.655 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:03:37.592 for donor: Sam L Smith
+2024-03-05 20:03:37.657 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:03:37.657 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:03:37.658 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:03:37.592")
+2024-03-05 20:03:37.720 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:03:37.592
+2024-03-05 20:03:37.720 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:03:37.721 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:03:37.723 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:03:37.758 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:03:37.592")
+2024-03-05 20:03:37.824 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:03:37.592"
+2024-03-05 20:03:37.851 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:03:37.851 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:03:37.852 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:03:37.592
+2024-03-05 20:03:37.854 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:03:37.854 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:03:37.854 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:05:06.844 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:05:06.857 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:05:06.826 for donor: Sam L Smith
+2024-03-05 20:05:06.859 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:05:06.859 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:05:06.860 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:05:06.826")
+2024-03-05 20:05:07.176 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:05:06.826
+2024-03-05 20:05:07.177 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:05:07.177 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:05:07.178 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:05:07.222 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:05:06.826")
+2024-03-05 20:05:07.305 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:05:06.826"
+2024-03-05 20:05:07.332 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:05:07.334 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:05:07.335 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:05:06.826
+2024-03-05 20:05:07.343 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:05:07.344 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:05:07.344 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:06:27.515 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:06:27.548 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:06:27.501 for donor: Sam L Smith
+2024-03-05 20:06:27.549 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:06:27.549 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:06:27.550 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:06:27.501")
+2024-03-05 20:06:27.617 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:06:27.501
+2024-03-05 20:06:27.617 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:06:27.618 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:06:27.618 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:06:27.660 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:06:27.501")
+2024-03-05 20:06:27.719 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:06:27.501"
+2024-03-05 20:06:27.743 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:06:27.744 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:06:27.744 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:06:27.501
+2024-03-05 20:06:27.746 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:06:27.747 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:06:27.747 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:08:56.477 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:08:56.496 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:08:56.427 for donor: Sam L Smith
+2024-03-05 20:08:56.500 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:08:56.509 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:08:56.512 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:08:56.427")
+2024-03-05 20:08:56.603 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:08:56.427
+2024-03-05 20:08:56.604 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:08:56.604 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:08:56.604 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:08:56.796 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:08:56.427")
+2024-03-05 20:08:56.861 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:08:56.427"
+2024-03-05 20:08:56.905 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:08:56.905 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:08:56.905 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:08:56.427
+2024-03-05 20:08:56.907 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:08:56.908 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:08:56.908 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:09:52.524 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:09:52.530 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:09:52.510 for donor: Sam L Smith
+2024-03-05 20:09:52.532 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:09:52.532 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:09:52.533 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:09:52.510")
+2024-03-05 20:09:52.598 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:09:52.510
+2024-03-05 20:09:52.598 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:09:52.598 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:09:52.599 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:09:52.655 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:09:52.510")
+2024-03-05 20:09:52.691 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:09:52.510"
+2024-03-05 20:09:52.713 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:09:52.714 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:09:52.714 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:09:52.510
+2024-03-05 20:09:52.716 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:09:52.717 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:09:52.717 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:11:25.080 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:11:25.087 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:11:25.065 for donor: Sam L Smith
+2024-03-05 20:11:25.088 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:11:25.092 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:11:25.093 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:11:25.065")
+2024-03-05 20:11:26.228 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:11:25.065
+2024-03-05 20:11:26.229 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:11:26.229 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:11:26.229 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:11:26.523 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:11:25.065")
+2024-03-05 20:11:26.589 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:11:25.065"
+2024-03-05 20:11:26.631 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:11:26.631 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:11:26.632 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:11:25.065
+2024-03-05 20:11:26.634 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:11:26.634 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:11:26.634 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-05 20:13:53.342 [main] INFO  Test - Testing: Creating donor: Sam L Smith
+2024-03-05 20:13:53.351 [main] INFO  Test - Testing: Setting date as: 2024-03-05T20:13:53.328 for donor: Sam L Smith
+2024-03-05 20:13:53.356 [main] INFO  Test - Testing: Generating donation type: CLOTHING for donor: Sam L Smith
+2024-03-05 20:13:53.359 [main] INFO  Test - Testing: Specifying donation amount: 500.0 for donor: Sam L Smith
+2024-03-05 20:13:53.360 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date) values("Sam L Smith","CLOTHING",500.0,"2024-03-05T20:13:53.328")
+2024-03-05 20:13:54.997 [main] INFO  Test - Testing: Setting distribution date: 2024-03-05T20:13:53.328
+2024-03-05 20:13:54.998 [main] INFO  Test - Testing: Setting distribution to be of donation type: CLOTHING
+2024-03-05 20:13:54.998 [main] INFO  Test - Testing: Setting distribution amount: 500.0
+2024-03-05 20:13:54.999 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND DollarValue=500.0
+2024-03-05 20:13:55.143 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",500.0,"2024-03-05T20:13:53.328")
+2024-03-05 20:13:55.182 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.distributions WHERE DonationType="CLOTHING" AND DollarValue=500.0 AND Date="2024-03-05T20:13:53.328"
+2024-03-05 20:13:55.214 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-05 20:13:55.214 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-05 20:13:55.215 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-05T20:13:53.328
+2024-03-05 20:13:55.219 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-05 20:13:55.221 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-05 20:13:55.221 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
