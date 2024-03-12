@@ -12,14 +12,12 @@ import org.json.simple.parser.JSONParser;
 // This shelter is in need of a user-friendly tool to accurately record and track the inflow and outflow of donations, and to generate insightful reports about their donation management.
 
 // Here are the core functionalities your solution should address:
-
 // DONE - Donation Registration: A feature that allows the shelter staff to record details of the donations, such as the donor's name, type of donation (money, food, clothing, etc.), quantity or amount donated, and the date of the donation.
 // DONE - Donation Distribution: A feature to log when and how much of the donations are distributed, capturing the type of donation, quantity or amount distributed, and the date of distribution.
 // PARTIALLY DONE - Donation Reports: Your solution should have the capacity to generate two types of reports: (1) An inventory report displaying the current status of donations, grouped by type. (2) A donator report, summarizing the total contributions received from each donor.
 
-// TO DO:
-// 
-// Move instructions to README file for GitHub repository
+// TO DO List:
+// DONE Move instructions to README file for GitHub repository
 // (do so before next checkin; but get some other ToDo's done first)
 // 
 // DONE - 0. Add JSON file data intake
@@ -31,7 +29,8 @@ import org.json.simple.parser.JSONParser;
 //   DONE //ToDo: add logic to determine if distribution data was successfully inserted or not
 //   
 // 2. Add unit testing
-// 3. Add more logging
+// 3. (Add more logging - minor)
+// 4. Improve reporting (even though trivial without better formatting - see below/FUTURE)
 // 
 // FUTURE: Augment reporting functionality with a UI to render the output if customer was wanting such.
 // 
