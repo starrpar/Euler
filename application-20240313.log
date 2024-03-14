@@ -1,0 +1,1408 @@
+2024-03-13 18:53:24.831 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("John S. Dewey","MONEY",100.0,"2024-03-01T00:00",100.0)
+2024-03-13 18:53:25.435 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.436 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Michael  Jones","MONEY",4000.0,"2024-02-25T00:00",4000.0)
+2024-03-13 18:53:25.478 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.479 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Edward S Sweeney","FOOD",10000.0,"2024-01-01T00:00",10000.0)
+2024-03-13 18:53:25.524 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.526 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Michelle  Sonnenberg","CLOTHING",750.0,"2024-02-01T00:00",750.0)
+2024-03-13 18:53:25.561 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.562 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Gertrude  Dux","CLOTHING",3500.0,"2024-01-01T00:00",3500.0)
+2024-03-13 18:53:25.593 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.594 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Jeremiah L. Books","FOOD",2500.0,"2024-03-14T00:00",2500.0)
+2024-03-13 18:53:25.619 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.620 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Ed  Foote","CLOTHING",999.0,"2024-03-07T00:00",999.0)
+2024-03-13 18:53:25.652 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.653 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Wylie  Coyote","MONEY",1600.0,"2024-01-15T00:00",1600.0)
+2024-03-13 18:53:25.685 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.687 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Jennifer  Dowling","FOOD",3000.0,"2024-01-15T00:00",3000.0)
+2024-03-13 18:53:25.714 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.715 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Scape E. Goat","MONEY",150.0,"2024-03-02T00:00",150.0)
+2024-03-13 18:53:25.752 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.757 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Funny  Duckling","CLOTHING",1090.0,"2024-03-01T00:00",1090.0)
+2024-03-13 18:53:25.791 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.792 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Earle S. Grates","MONEY",10000.0,"2024-03-01T00:00",10000.0)
+2024-03-13 18:53:25.831 [main] INFO  Donation - Register query success? false
+2024-03-13 18:53:25.832 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 18:53:25.964 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 18:53:25.965 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:25.966 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:25.967 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:25.969 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:25.970 [main] INFO  Donation - 	ID: 269
+2024-03-13 18:53:25.971 [main] INFO  Donation - 	Remaining: 261.60
+2024-03-13 18:53:25.972 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:25.972 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:25.973 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:25.973 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:25.974 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:25.974 [main] INFO  Donation - 	ID: 270
+2024-03-13 18:53:25.974 [main] INFO  Donation - 	Remaining: 300.00
+2024-03-13 18:53:25.975 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:25.975 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:25.975 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:25.976 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:25.976 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:25.977 [main] INFO  Donation - 	ID: 272
+2024-03-13 18:53:25.977 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:25.977 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:25.978 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:25.978 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:25.978 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:25.979 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:25.979 [main] INFO  Donation - 	ID: 276
+2024-03-13 18:53:25.979 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:25.980 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:25.980 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:25.980 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:25.981 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:25.981 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:25.981 [main] INFO  Donation - 	ID: 281
+2024-03-13 18:53:25.982 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:25.982 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:25.982 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:25.983 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:25.983 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:25.983 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:25.984 [main] INFO  Donation - 	ID: 282
+2024-03-13 18:53:25.985 [main] INFO  Donation - 	Remaining: 300.00
+2024-03-13 18:53:25.985 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:25.986 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.012 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.015 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.016 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.017 [main] INFO  Donation - 	ID: 284
+2024-03-13 18:53:26.026 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.028 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.029 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.029 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.030 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.031 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.032 [main] INFO  Donation - 	ID: 288
+2024-03-13 18:53:26.033 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.033 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.034 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.034 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.035 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.038 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.039 [main] INFO  Donation - 	ID: 293
+2024-03-13 18:53:26.040 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.043 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.044 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.045 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.045 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.046 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.046 [main] INFO  Donation - 	ID: 294
+2024-03-13 18:53:26.047 [main] INFO  Donation - 	Remaining: 300.00
+2024-03-13 18:53:26.047 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.048 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.048 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.049 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.049 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.049 [main] INFO  Donation - 	ID: 296
+2024-03-13 18:53:26.050 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.050 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.051 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.053 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.053 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.054 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.054 [main] INFO  Donation - 	ID: 300
+2024-03-13 18:53:26.054 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.055 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.056 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.056 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.056 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.057 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.057 [main] INFO  Donation - 	ID: 305
+2024-03-13 18:53:26.060 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.060 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.061 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.061 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.061 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.062 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.062 [main] INFO  Donation - 	ID: 306
+2024-03-13 18:53:26.062 [main] INFO  Donation - 	Remaining: 1900.00
+2024-03-13 18:53:26.063 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.063 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.063 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.064 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.065 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.065 [main] INFO  Donation - 	ID: 308
+2024-03-13 18:53:26.066 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.066 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.066 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.066 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.067 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.067 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.067 [main] INFO  Donation - 	ID: 312
+2024-03-13 18:53:26.068 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.068 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.069 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.070 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.071 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.071 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.072 [main] INFO  Donation - 	ID: 317
+2024-03-13 18:53:26.072 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.073 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.074 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.075 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.076 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.077 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.077 [main] INFO  Donation - 	ID: 318
+2024-03-13 18:53:26.078 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.078 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.078 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.079 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.079 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.080 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.081 [main] INFO  Donation - 	ID: 320
+2024-03-13 18:53:26.082 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.083 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.084 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.084 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.086 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.086 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.087 [main] INFO  Donation - 	ID: 324
+2024-03-13 18:53:26.087 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.088 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.088 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.089 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.089 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.090 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.090 [main] INFO  Donation - 	ID: 329
+2024-03-13 18:53:26.092 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.092 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.093 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.093 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.094 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.094 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.094 [main] INFO  Donation - 	ID: 330
+2024-03-13 18:53:26.095 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.096 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.096 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.096 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.097 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.097 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.097 [main] INFO  Donation - 	ID: 332
+2024-03-13 18:53:26.097 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.098 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.098 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.098 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.099 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.099 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.099 [main] INFO  Donation - 	ID: 336
+2024-03-13 18:53:26.106 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.108 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.109 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.110 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.111 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.111 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.111 [main] INFO  Donation - 	ID: 341
+2024-03-13 18:53:26.112 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.112 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.113 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.113 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.113 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.114 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.114 [main] INFO  Donation - 	ID: 342
+2024-03-13 18:53:26.115 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.115 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.115 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.116 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.116 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.116 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.117 [main] INFO  Donation - 	ID: 344
+2024-03-13 18:53:26.117 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.119 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.119 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.121 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.121 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.122 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.122 [main] INFO  Donation - 	ID: 348
+2024-03-13 18:53:26.123 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.124 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.126 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.127 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.127 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.128 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.129 [main] INFO  Donation - 	ID: 353
+2024-03-13 18:53:26.129 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.129 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.130 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.131 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.131 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.134 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.137 [main] INFO  Donation - 	ID: 354
+2024-03-13 18:53:26.138 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.143 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.144 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.145 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.147 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.148 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.148 [main] INFO  Donation - 	ID: 356
+2024-03-13 18:53:26.149 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.150 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.150 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.153 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.153 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.154 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.154 [main] INFO  Donation - 	ID: 360
+2024-03-13 18:53:26.155 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.155 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.159 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.160 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.161 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.161 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.163 [main] INFO  Donation - 	ID: 365
+2024-03-13 18:53:26.164 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.165 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.167 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.171 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.173 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.177 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.178 [main] INFO  Donation - 	ID: 366
+2024-03-13 18:53:26.179 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.180 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.181 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.181 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.182 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.182 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.182 [main] INFO  Donation - 	ID: 368
+2024-03-13 18:53:26.183 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.184 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.186 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.188 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.189 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.190 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.192 [main] INFO  Donation - 	ID: 372
+2024-03-13 18:53:26.193 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.193 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.194 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.196 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.197 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.200 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.203 [main] INFO  Donation - 	ID: 377
+2024-03-13 18:53:26.205 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.206 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.207 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.209 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.210 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.210 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.210 [main] INFO  Donation - 	ID: 378
+2024-03-13 18:53:26.211 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.211 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.211 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.212 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.212 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.212 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.213 [main] INFO  Donation - 	ID: 380
+2024-03-13 18:53:26.213 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.213 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.213 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.213 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.214 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.214 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.214 [main] INFO  Donation - 	ID: 384
+2024-03-13 18:53:26.214 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.215 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.215 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.215 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.215 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.215 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.216 [main] INFO  Donation - 	ID: 389
+2024-03-13 18:53:26.216 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.216 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.216 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.217 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.217 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.217 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.217 [main] INFO  Donation - 	ID: 390
+2024-03-13 18:53:26.218 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.219 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.219 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.220 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.221 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.222 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.223 [main] INFO  Donation - 	ID: 392
+2024-03-13 18:53:26.223 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.223 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.224 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.225 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.226 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.226 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.226 [main] INFO  Donation - 	ID: 396
+2024-03-13 18:53:26.227 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.227 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.227 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.227 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.228 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.228 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.228 [main] INFO  Donation - 	ID: 401
+2024-03-13 18:53:26.228 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.229 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.229 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.229 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.229 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.229 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.230 [main] INFO  Donation - 	ID: 402
+2024-03-13 18:53:26.230 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.230 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.230 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.231 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.231 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.231 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.231 [main] INFO  Donation - 	ID: 404
+2024-03-13 18:53:26.232 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.232 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.232 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.233 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.233 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.233 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.233 [main] INFO  Donation - 	ID: 408
+2024-03-13 18:53:26.233 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.234 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.234 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.234 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.235 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.236 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.236 [main] INFO  Donation - 	ID: 413
+2024-03-13 18:53:26.237 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.237 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.238 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.238 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.238 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.239 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.239 [main] INFO  Donation - 	ID: 414
+2024-03-13 18:53:26.240 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.240 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.242 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.242 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.243 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.244 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.244 [main] INFO  Donation - 	ID: 416
+2024-03-13 18:53:26.244 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.245 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.246 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.247 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.247 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.247 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.248 [main] INFO  Donation - 	ID: 420
+2024-03-13 18:53:26.249 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.250 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.250 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.250 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.251 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.251 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.252 [main] INFO  Donation - 	ID: 425
+2024-03-13 18:53:26.252 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.252 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.253 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.253 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.253 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.253 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.254 [main] INFO  Donation - 	ID: 426
+2024-03-13 18:53:26.254 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.254 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.254 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.255 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.255 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.255 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.255 [main] INFO  Donation - 	ID: 428
+2024-03-13 18:53:26.256 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.256 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.256 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.257 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.258 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.258 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.259 [main] INFO  Donation - 	ID: 432
+2024-03-13 18:53:26.260 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.260 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.260 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.260 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.260 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.261 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.261 [main] INFO  Donation - 	ID: 437
+2024-03-13 18:53:26.261 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.261 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.261 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.261 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.262 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.262 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.262 [main] INFO  Donation - 	ID: 438
+2024-03-13 18:53:26.262 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.263 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.263 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.263 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.263 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.263 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.264 [main] INFO  Donation - 	ID: 440
+2024-03-13 18:53:26.264 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.264 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.265 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.265 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.265 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.266 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.266 [main] INFO  Donation - 	ID: 444
+2024-03-13 18:53:26.266 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.266 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.267 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.267 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.267 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.270 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.271 [main] INFO  Donation - 	ID: 449
+2024-03-13 18:53:26.271 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.271 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.272 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.273 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.273 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.273 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.274 [main] INFO  Donation - 	ID: 450
+2024-03-13 18:53:26.275 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.276 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.277 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.277 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.277 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.278 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.278 [main] INFO  Donation - 	ID: 452
+2024-03-13 18:53:26.278 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.278 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.278 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.279 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.279 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.279 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.279 [main] INFO  Donation - 	ID: 456
+2024-03-13 18:53:26.279 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.280 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.280 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.280 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.280 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.281 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.281 [main] INFO  Donation - 	ID: 461
+2024-03-13 18:53:26.281 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.281 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.281 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.282 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.282 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.282 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.282 [main] INFO  Donation - 	ID: 462
+2024-03-13 18:53:26.283 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.283 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.283 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.283 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.284 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.284 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.285 [main] INFO  Donation - 	ID: 464
+2024-03-13 18:53:26.285 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.286 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.286 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.286 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.287 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.287 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.288 [main] INFO  Donation - 	ID: 468
+2024-03-13 18:53:26.288 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.288 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.288 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.289 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.289 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.289 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.290 [main] INFO  Donation - 	ID: 473
+2024-03-13 18:53:26.290 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.290 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.292 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.293 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.294 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.295 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.296 [main] INFO  Donation - 	ID: 474
+2024-03-13 18:53:26.297 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.297 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.298 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.298 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.298 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.299 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.299 [main] INFO  Donation - 	ID: 476
+2024-03-13 18:53:26.299 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.299 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.300 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.300 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.300 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.300 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.301 [main] INFO  Donation - 	ID: 480
+2024-03-13 18:53:26.302 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.302 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.303 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.303 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.303 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.303 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.304 [main] INFO  Donation - 	ID: 485
+2024-03-13 18:53:26.304 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.304 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.304 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.304 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.305 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.305 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.305 [main] INFO  Donation - 	ID: 486
+2024-03-13 18:53:26.306 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.306 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.306 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.306 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.307 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.307 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.307 [main] INFO  Donation - 	ID: 488
+2024-03-13 18:53:26.307 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.308 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.308 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.309 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.309 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.310 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.310 [main] INFO  Donation - 	ID: 492
+2024-03-13 18:53:26.310 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.310 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.311 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.311 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.311 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.312 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.312 [main] INFO  Donation - 	ID: 497
+2024-03-13 18:53:26.312 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.313 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.313 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.313 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.313 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.314 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.314 [main] INFO  Donation - 	ID: 498
+2024-03-13 18:53:26.314 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.314 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.314 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.315 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.315 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.315 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.315 [main] INFO  Donation - 	ID: 500
+2024-03-13 18:53:26.315 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.315 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.316 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.316 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.316 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.316 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.317 [main] INFO  Donation - 	ID: 504
+2024-03-13 18:53:26.317 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.317 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.317 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.317 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.317 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.318 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.318 [main] INFO  Donation - 	ID: 509
+2024-03-13 18:53:26.319 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.319 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.319 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.319 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.320 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.320 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.320 [main] INFO  Donation - 	ID: 510
+2024-03-13 18:53:26.320 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.321 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.321 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.322 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.322 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.322 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.323 [main] INFO  Donation - 	ID: 512
+2024-03-13 18:53:26.323 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.323 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.324 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.324 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.325 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.325 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.326 [main] INFO  Donation - 	ID: 516
+2024-03-13 18:53:26.327 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.327 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.327 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.327 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.328 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.328 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.328 [main] INFO  Donation - 	ID: 521
+2024-03-13 18:53:26.328 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.328 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.328 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.329 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.329 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.329 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.329 [main] INFO  Donation - 	ID: 522
+2024-03-13 18:53:26.329 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.330 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.330 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.330 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.330 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.330 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.331 [main] INFO  Donation - 	ID: 524
+2024-03-13 18:53:26.331 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.331 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.331 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.332 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.332 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.332 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.332 [main] INFO  Donation - 	ID: 528
+2024-03-13 18:53:26.332 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.333 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.333 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.333 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.333 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.334 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.334 [main] INFO  Donation - 	ID: 533
+2024-03-13 18:53:26.335 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.335 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.336 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.337 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.337 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.337 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.337 [main] INFO  Donation - 	ID: 534
+2024-03-13 18:53:26.338 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.338 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.338 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.338 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.339 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.339 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.339 [main] INFO  Donation - 	ID: 536
+2024-03-13 18:53:26.339 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.340 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.340 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.340 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.340 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.340 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.342 [main] INFO  Donation - 	ID: 540
+2024-03-13 18:53:26.342 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.343 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.343 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.343 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.343 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.344 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.344 [main] INFO  Donation - 	ID: 545
+2024-03-13 18:53:26.344 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.344 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.344 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.345 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.345 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.345 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.345 [main] INFO  Donation - 	ID: 546
+2024-03-13 18:53:26.345 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.346 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.346 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.346 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.346 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.346 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.347 [main] INFO  Donation - 	ID: 548
+2024-03-13 18:53:26.347 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.347 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.348 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.348 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.348 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.349 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.349 [main] INFO  Donation - 	ID: 552
+2024-03-13 18:53:26.349 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.349 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.350 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.350 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.350 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.350 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.350 [main] INFO  Donation - 	ID: 557
+2024-03-13 18:53:26.350 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.351 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.351 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.351 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.352 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.353 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.353 [main] INFO  Donation - 	ID: 558
+2024-03-13 18:53:26.353 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.354 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.354 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.354 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.354 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.355 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.355 [main] INFO  Donation - 	ID: 560
+2024-03-13 18:53:26.355 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.355 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.355 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.356 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.356 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.356 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.356 [main] INFO  Donation - 	ID: 564
+2024-03-13 18:53:26.356 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.357 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.358 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.358 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.358 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.359 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.359 [main] INFO  Donation - 	ID: 569
+2024-03-13 18:53:26.359 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.359 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.360 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.360 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.360 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.360 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.360 [main] INFO  Donation - 	ID: 570
+2024-03-13 18:53:26.360 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.361 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.361 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.361 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.361 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.361 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.361 [main] INFO  Donation - 	ID: 572
+2024-03-13 18:53:26.362 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.362 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.362 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.362 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.363 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.363 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.363 [main] INFO  Donation - 	ID: 576
+2024-03-13 18:53:26.363 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.363 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.364 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.364 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.364 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.364 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.364 [main] INFO  Donation - 	ID: 581
+2024-03-13 18:53:26.364 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.365 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.365 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.365 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.365 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.365 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.365 [main] INFO  Donation - 	ID: 582
+2024-03-13 18:53:26.366 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.366 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.366 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.366 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.366 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.367 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.367 [main] INFO  Donation - 	ID: 584
+2024-03-13 18:53:26.369 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.369 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.370 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.370 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.370 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.370 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.371 [main] INFO  Donation - 	ID: 588
+2024-03-13 18:53:26.371 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.371 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.371 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.371 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.372 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.372 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.372 [main] INFO  Donation - 	ID: 593
+2024-03-13 18:53:26.372 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.373 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.373 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.373 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.373 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.373 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.374 [main] INFO  Donation - 	ID: 594
+2024-03-13 18:53:26.374 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.375 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.375 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.375 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.375 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.376 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.376 [main] INFO  Donation - 	ID: 596
+2024-03-13 18:53:26.376 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.376 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.376 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.377 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.377 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.378 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.378 [main] INFO  Donation - 	ID: 600
+2024-03-13 18:53:26.378 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.378 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.379 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.379 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.379 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.379 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.379 [main] INFO  Donation - 	ID: 605
+2024-03-13 18:53:26.380 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.380 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.380 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.380 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.380 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.381 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.381 [main] INFO  Donation - 	ID: 606
+2024-03-13 18:53:26.381 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.381 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.381 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.381 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.382 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.382 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.382 [main] INFO  Donation - 	ID: 608
+2024-03-13 18:53:26.382 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.383 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.383 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.383 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.383 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.383 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.383 [main] INFO  Donation - 	ID: 612
+2024-03-13 18:53:26.384 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.385 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.385 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.386 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.386 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.387 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.388 [main] INFO  Donation - 	ID: 617
+2024-03-13 18:53:26.388 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.389 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.389 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.389 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.390 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.390 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.393 [main] INFO  Donation - 	ID: 618
+2024-03-13 18:53:26.393 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.394 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.394 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.394 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.395 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.395 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.395 [main] INFO  Donation - 	ID: 620
+2024-03-13 18:53:26.395 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.396 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.396 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.396 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.397 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.397 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.397 [main] INFO  Donation - 	ID: 624
+2024-03-13 18:53:26.397 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.399 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.400 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.401 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.403 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.403 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.404 [main] INFO  Donation - 	ID: 629
+2024-03-13 18:53:26.405 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.406 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.406 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.406 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.407 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.409 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.410 [main] INFO  Donation - 	ID: 630
+2024-03-13 18:53:26.410 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.410 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.411 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.411 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.411 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.412 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.412 [main] INFO  Donation - 	ID: 632
+2024-03-13 18:53:26.412 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.413 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.413 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.413 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.414 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.414 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.415 [main] INFO  Donation - 	ID: 636
+2024-03-13 18:53:26.415 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.416 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.416 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.416 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.417 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.417 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.417 [main] INFO  Donation - 	ID: 641
+2024-03-13 18:53:26.417 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.419 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.420 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.421 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.422 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.423 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.423 [main] INFO  Donation - 	ID: 642
+2024-03-13 18:53:26.423 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.425 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.426 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.427 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.428 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.428 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.429 [main] INFO  Donation - 	ID: 644
+2024-03-13 18:53:26.429 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.429 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.430 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.430 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.430 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.431 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.432 [main] INFO  Donation - 	ID: 648
+2024-03-13 18:53:26.432 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.433 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.433 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.434 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.435 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.441 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.443 [main] INFO  Donation - 	ID: 653
+2024-03-13 18:53:26.444 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.444 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.444 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.444 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.445 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.445 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.445 [main] INFO  Donation - 	ID: 654
+2024-03-13 18:53:26.445 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.445 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.446 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.446 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.446 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.446 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.447 [main] INFO  Donation - 	ID: 656
+2024-03-13 18:53:26.447 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.448 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.448 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.448 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.448 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.449 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.449 [main] INFO  Donation - 	ID: 660
+2024-03-13 18:53:26.449 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.449 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.449 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.450 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.450 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.450 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.450 [main] INFO  Donation - 	ID: 665
+2024-03-13 18:53:26.451 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.451 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.452 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.452 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.453 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.453 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.453 [main] INFO  Donation - 	ID: 666
+2024-03-13 18:53:26.453 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.454 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.454 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.454 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.454 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.454 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.455 [main] INFO  Donation - 	ID: 668
+2024-03-13 18:53:26.455 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.455 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.455 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.455 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.455 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.456 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.456 [main] INFO  Donation - 	ID: 672
+2024-03-13 18:53:26.456 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.456 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.456 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.457 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.458 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.459 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.459 [main] INFO  Donation - 	ID: 677
+2024-03-13 18:53:26.459 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.459 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.460 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.460 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.460 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.460 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.460 [main] INFO  Donation - 	ID: 678
+2024-03-13 18:53:26.461 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.461 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.461 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.461 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.461 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.462 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.462 [main] INFO  Donation - 	ID: 680
+2024-03-13 18:53:26.462 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.463 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.463 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.463 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.463 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.463 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.464 [main] INFO  Donation - 	ID: 684
+2024-03-13 18:53:26.464 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.464 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.464 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.464 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.465 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.465 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.465 [main] INFO  Donation - 	ID: 689
+2024-03-13 18:53:26.466 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.466 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.466 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.466 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.466 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.466 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.467 [main] INFO  Donation - 	ID: 690
+2024-03-13 18:53:26.469 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.469 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.470 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.470 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.470 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.471 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.471 [main] INFO  Donation - 	ID: 692
+2024-03-13 18:53:26.471 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.472 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.472 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.473 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.473 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.473 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.474 [main] INFO  Donation - 	ID: 696
+2024-03-13 18:53:26.475 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.475 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.475 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.476 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.476 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.477 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.477 [main] INFO  Donation - 	ID: 701
+2024-03-13 18:53:26.477 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.478 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.478 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.478 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.478 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.478 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.479 [main] INFO  Donation - 	ID: 702
+2024-03-13 18:53:26.479 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.479 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.480 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.480 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.480 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.480 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.480 [main] INFO  Donation - 	ID: 704
+2024-03-13 18:53:26.480 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.481 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.481 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.481 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.481 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.481 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.482 [main] INFO  Donation - 	ID: 708
+2024-03-13 18:53:26.482 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.482 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.482 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.483 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.483 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.483 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.483 [main] INFO  Donation - 	ID: 713
+2024-03-13 18:53:26.483 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.483 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.484 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.485 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.485 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.485 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.486 [main] INFO  Donation - 	ID: 714
+2024-03-13 18:53:26.487 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.488 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.488 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.489 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.489 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.489 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.489 [main] INFO  Donation - 	ID: 716
+2024-03-13 18:53:26.490 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.490 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.490 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.490 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.491 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.491 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.492 [main] INFO  Donation - 	ID: 720
+2024-03-13 18:53:26.492 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.492 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.492 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.492 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.493 [main] INFO  Donation - 	DonorName: Michelle  Sonnenberg
+2024-03-13 18:53:26.493 [main] INFO  Donation - 	DollarValue: 750.00
+2024-03-13 18:53:26.494 [main] INFO  Donation - 	ID: 725
+2024-03-13 18:53:26.494 [main] INFO  Donation - 	Remaining: 750.00
+2024-03-13 18:53:26.494 [main] INFO  Donation - 	Date: 2024-02-01T00:00
+2024-03-13 18:53:26.494 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.494 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.495 [main] INFO  Donation - 	DonorName: Gertrude  Dux
+2024-03-13 18:53:26.495 [main] INFO  Donation - 	DollarValue: 3500.00
+2024-03-13 18:53:26.495 [main] INFO  Donation - 	ID: 726
+2024-03-13 18:53:26.495 [main] INFO  Donation - 	Remaining: 3500.00
+2024-03-13 18:53:26.496 [main] INFO  Donation - 	Date: 2024-01-01T00:00
+2024-03-13 18:53:26.496 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.496 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.497 [main] INFO  Donation - 	DonorName: Ed  Foote
+2024-03-13 18:53:26.497 [main] INFO  Donation - 	DollarValue: 999.00
+2024-03-13 18:53:26.497 [main] INFO  Donation - 	ID: 728
+2024-03-13 18:53:26.497 [main] INFO  Donation - 	Remaining: 999.00
+2024-03-13 18:53:26.498 [main] INFO  Donation - 	Date: 2024-03-07T00:00
+2024-03-13 18:53:26.498 [main] INFO  Donation - Candidate:
+2024-03-13 18:53:26.498 [main] INFO  Donation - 	DonationType: CLOTHING
+2024-03-13 18:53:26.499 [main] INFO  Donation - 	DonorName: Funny  Duckling
+2024-03-13 18:53:26.499 [main] INFO  Donation - 	DollarValue: 1090.00
+2024-03-13 18:53:26.499 [main] INFO  Donation - 	ID: 732
+2024-03-13 18:53:26.500 [main] INFO  Donation - 	Remaining: 1090.00
+2024-03-13 18:53:26.500 [main] INFO  Donation - 	Date: 2024-03-01T00:00
+2024-03-13 18:53:26.501 [main] INFO  Donation - 269: 261.6
+2024-03-13 18:53:26.502 [main] INFO  Donation - Winner: 269=261.6
+2024-03-13 18:53:26.505 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-13T18:53:23.733372800")
+2024-03-13 18:53:26.530 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 17.400000000000034 WHERE ID = 269
+2024-03-13 18:53:26.570 [main] INFO  Donation - name: Michelle  Sonnenberg
+2024-03-13 18:53:26.570 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle  Sonnenberg" AND Remaining =17.400000000000034
+2024-03-13 18:53:26.586 [main] INFO  Donation - Result of query execution: true
+2024-03-13 18:53:26.587 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-13 18:53:26.587 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 18:53:26.588 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 18:53:26.588 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T18:53:23.733372800
+2024-03-13 18:53:26.589 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 18:53:26.590 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 18:53:26.590 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:02:03.623 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("John S. Dewey","MONEY",100.0,"2024-03-01T00:00",100.0)
+2024-03-13 19:02:04.175 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.176 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Michael  Jones","MONEY",4000.0,"2024-02-25T00:00",4000.0)
+2024-03-13 19:02:04.214 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.215 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Edward S Sweeney","FOOD",10000.0,"2024-01-01T00:00",10000.0)
+2024-03-13 19:02:04.315 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.317 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Michelle  Sonnenberg","CLOTHING",750.0,"2024-02-01T00:00",750.0)
+2024-03-13 19:02:04.372 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.373 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Gertrude  Dux","CLOTHING",3500.0,"2024-01-01T00:00",3500.0)
+2024-03-13 19:02:04.404 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.405 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Jeremiah L. Books","FOOD",2500.0,"2024-03-14T00:00",2500.0)
+2024-03-13 19:02:04.433 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.435 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Ed  Foote","CLOTHING",999.0,"2024-03-07T00:00",999.0)
+2024-03-13 19:02:04.479 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.480 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Wylie  Coyote","MONEY",1600.0,"2024-01-15T00:00",1600.0)
+2024-03-13 19:02:04.513 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.514 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Jennifer  Dowling","FOOD",3000.0,"2024-01-15T00:00",3000.0)
+2024-03-13 19:02:04.539 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.541 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Scape E. Goat","MONEY",150.0,"2024-03-02T00:00",150.0)
+2024-03-13 19:02:04.572 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.575 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Funny  Duckling","CLOTHING",1090.0,"2024-03-01T00:00",1090.0)
+2024-03-13 19:02:04.611 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.612 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Earle S. Grates","MONEY",10000.0,"2024-03-01T00:00",10000.0)
+2024-03-13 19:02:04.643 [main] INFO  Donation - Register query success? false
+2024-03-13 19:02:04.646 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:02:04.698 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:02:04.698 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:02:04.699 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:02:04.701 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:02:04.702 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:02:02.799024300
+2024-03-13 19:02:04.705 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:02:04.706 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:02:04.706 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:03:01.583 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("John S. Dewey","MONEY",100.0,"2024-03-01T00:00",100.0)
+2024-03-13 19:03:02.289 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.291 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Michael  Jones","MONEY",4000.0,"2024-02-25T00:00",4000.0)
+2024-03-13 19:03:02.328 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.329 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Edward S Sweeney","FOOD",10000.0,"2024-01-01T00:00",10000.0)
+2024-03-13 19:03:02.365 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.366 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Michelle  Sonnenberg","CLOTHING",750.0,"2024-02-01T00:00",750.0)
+2024-03-13 19:03:02.399 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.400 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Gertrude  Dux","CLOTHING",3500.0,"2024-01-01T00:00",3500.0)
+2024-03-13 19:03:02.465 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.466 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Jeremiah L. Books","FOOD",2500.0,"2024-03-14T00:00",2500.0)
+2024-03-13 19:03:02.504 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.511 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Ed  Foote","CLOTHING",999.0,"2024-03-07T00:00",999.0)
+2024-03-13 19:03:02.547 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.548 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Wylie  Coyote","MONEY",1600.0,"2024-01-15T00:00",1600.0)
+2024-03-13 19:03:02.574 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.575 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Jennifer  Dowling","FOOD",3000.0,"2024-01-15T00:00",3000.0)
+2024-03-13 19:03:02.604 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.606 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Scape E. Goat","MONEY",150.0,"2024-03-02T00:00",150.0)
+2024-03-13 19:03:02.631 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.631 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Funny  Duckling","CLOTHING",1090.0,"2024-03-01T00:00",1090.0)
+2024-03-13 19:03:02.656 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.657 [main] INFO  Donation - Register(): Running query: INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values("Earle S. Grates","MONEY",10000.0,"2024-03-01T00:00",10000.0)
+2024-03-13 19:03:02.684 [main] INFO  Donation - Register query success? false
+2024-03-13 19:03:02.686 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:03:02.734 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:03:02.735 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:03:02.736 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:03:02.739 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:03:02.741 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:03:00.734742300
+2024-03-13 19:03:02.745 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:03:02.745 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:03:02.746 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:06:22.557 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:06:23.132 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:06:23.134 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:06:23.136 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:06:23.136 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:06:23.137 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:06:21.643939100
+2024-03-13 19:06:23.140 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:06:23.141 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:06:23.142 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:06:54.826 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:06:55.453 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:06:55.454 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:06:55.455 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:06:55.455 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:06:55.456 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:06:53.923307400
+2024-03-13 19:06:55.458 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:06:55.459 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:06:55.459 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:09:11.554 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:09:12.250 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:09:12.254 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:09:12.257 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:09:12.258 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:09:12.259 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:09:10.722972900
+2024-03-13 19:09:12.267 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:09:12.268 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:09:12.268 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:10:23.440 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:10:24.129 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:10:24.131 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:10:24.134 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:10:24.134 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:10:24.135 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:10:22.630140500
+2024-03-13 19:10:24.137 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:10:24.138 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:10:24.138 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:14:08.374 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:14:08.988 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:14:08.990 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:14:08.992 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:14:08.992 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:14:08.993 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:14:07.450638300
+2024-03-13 19:14:08.995 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:14:08.996 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:14:08.996 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:15:43.371 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:15:43.921 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:15:43.922 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:15:43.923 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:15:43.923 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:15:43.924 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:15:42.491064400
+2024-03-13 19:15:43.925 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:15:43.925 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:15:43.926 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:16:46.060 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:16:46.630 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:16:46.630 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:16:46.632 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:16:46.632 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:16:46.632 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:16:45.036286800
+2024-03-13 19:16:46.634 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:16:46.634 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:16:46.635 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:17:02.517 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:17:03.266 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:17:03.269 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:17:03.270 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:17:03.270 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:17:03.271 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:17:01.577451500
+2024-03-13 19:17:03.274 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:17:03.275 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:17:03.275 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 19:58:15.238 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 19:58:15.899 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 19:58:15.900 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 19:58:15.901 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 19:58:15.901 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 19:58:15.902 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T19:58:14.279901600
+2024-03-13 19:58:15.904 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 19:58:15.904 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 19:58:15.904 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:01:09.480 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:01:10.145 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 20:01:10.146 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:01:10.147 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:01:10.148 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:01:10.148 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:01:08.646814100
+2024-03-13 20:01:10.150 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:01:10.151 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:01:10.151 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:03:30.290 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:03:30.978 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 20:03:30.979 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:03:30.982 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:03:30.983 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:03:30.984 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:03:29.490884600
+2024-03-13 20:03:30.985 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:03:30.986 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:03:30.986 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:04:36.366 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:04:37.009 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 20:04:37.011 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:04:37.012 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:04:37.012 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:04:37.013 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:04:35.482657900
+2024-03-13 20:04:37.015 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:04:37.015 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:04:37.016 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:08:14.483 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:08:15.073 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 20:08:15.074 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:08:15.075 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:08:15.075 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:08:15.076 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:08:13.563240100
+2024-03-13 20:08:15.077 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:08:15.078 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:08:15.078 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:11:42.306 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:11:42.944 [main] INFO  Donation - Determine if sufficient funds exist - potential donations to select from: 
+2024-03-13 20:11:42.949 [main] INFO  Donation - 270: 300.0
+2024-03-13 20:11:42.951 [main] INFO  Donation - Winner: 270=300.0
+2024-03-13 20:11:42.952 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-13T20:11:41.361130100")
+2024-03-13 20:11:42.996 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 55.80000000000001 WHERE ID = 270
+2024-03-13 20:11:43.065 [main] INFO  Donation - name: Gertrude  Dux
+2024-03-13 20:11:43.066 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude  Dux" AND Remaining =55.80000000000001
+2024-03-13 20:11:43.084 [main] INFO  Donation - Result of query execution: true
+2024-03-13 20:11:43.085 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-13 20:11:43.086 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:11:43.086 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:11:43.087 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:11:41.361130100
+2024-03-13 20:11:43.089 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:11:43.090 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:11:43.090 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:13:16.038 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:13:16.660 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-13 20:13:16.662 [main] INFO  Donation - 272: 999.0
+2024-03-13 20:13:16.663 [main] INFO  Donation - Winner: 272=999.0
+2024-03-13 20:13:16.664 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-13T20:13:15.131581900")
+2024-03-13 20:13:16.705 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 754.8 WHERE ID = 272
+2024-03-13 20:13:16.769 [main] INFO  Donation - name: Ed  Foote
+2024-03-13 20:13:16.770 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed  Foote" AND Remaining =754.8
+2024-03-13 20:13:16.794 [main] INFO  Donation - Result of query execution: true
+2024-03-13 20:13:16.795 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-13 20:13:16.796 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:13:16.796 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:13:16.797 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:13:15.131581900
+2024-03-13 20:13:16.799 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:13:16.799 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:13:16.799 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:18:48.460 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:18:49.236 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-13 20:18:49.237 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:18:49.239 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:18:49.240 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:18:49.243 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:18:47.653184300
+2024-03-13 20:18:49.245 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:18:49.246 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:18:49.246 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:23:12.131 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:23:12.802 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-13 20:23:12.803 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:23:12.850 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:23:12.880 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:23:12.881 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:23:11.334599200
+2024-03-13 20:23:12.882 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:23:12.883 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:23:12.884 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:24:40.709 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:24:41.349 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-13 20:24:41.349 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:24:41.350 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:24:41.350 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:24:41.351 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:24:39.819840600
+2024-03-13 20:24:41.352 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:24:41.352 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:24:41.353 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:25:37.765 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:25:38.341 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-13 20:25:38.341 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:25:38.342 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:25:38.343 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:25:38.343 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:25:36.940880400
+2024-03-13 20:25:38.344 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:25:38.345 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:25:38.345 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:26:22.678 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:26:23.237 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-13 20:26:23.238 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-13 20:26:23.239 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:26:23.239 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:26:23.240 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:26:21.831298700
+2024-03-13 20:26:23.242 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:26:23.242 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:26:23.242 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-13 20:29:08.576 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-13 20:29:08.619 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-13 20:29:08.619 [main] INFO  Donation - 761: 750.0
+2024-03-13 20:29:08.621 [main] INFO  Donation - Winner: 761=750.0
+2024-03-13 20:29:08.621 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-13T20:29:06.612128600")
+2024-03-13 20:29:08.647 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 505.8 WHERE ID = 761
+2024-03-13 20:29:08.686 [main] INFO  Donation - name: Michelle Sonnenberg
+2024-03-13 20:29:08.686 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =505.8
+2024-03-13 20:29:08.703 [main] INFO  Donation - Result of query execution: true
+2024-03-13 20:29:08.704 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-13 20:29:08.705 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-13 20:29:08.705 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-13 20:29:08.705 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-13T20:29:06.612128600
+2024-03-13 20:29:08.707 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-13 20:29:08.708 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-13 20:29:08.708 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor

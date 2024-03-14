@@ -16,7 +16,7 @@
         {
             "name": "Edward S Sweeney",
             "donationType": "Food",
-            "value": 10000,
+            "value": 9999,
             "date": "1/1/2024"
         },
         {
@@ -70,19 +70,19 @@
         {
             "name": "Earle S. Grates",
             "donationType": "Money",
-            "value": 10000,
+            "value": 9000,
             "date": "03/01/2024"
         },
         {
             "name": "Jerry Smith",
             "donationType": "Food",
-            "value": 1843.5,
+            "value": 1843,
             "date": "02/29/2024"
         },
         {
             "name": "Willie J. Smoots",
             "donationType": "Misc",
-            "value": 649.55,
+            "value": 649,
             "date": "01/01/2024"
         },
         {

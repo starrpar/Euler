@@ -1,9 +1,3 @@
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,7 +18,11 @@ public class Donation {
 
         @Override
         public String toString() {
-            return firstName + " " + mI + " " + lastName;
+            if (mI == "") {
+                return firstName + " " + lastName;
+            } else {
+                return firstName + " " + mI + " " + lastName;
+            }
         }
 
         public DonorName SetName(String s) {
@@ -69,11 +67,15 @@ public class Donation {
         }
 
         public void setMI(String mi) {
+            if (mi.contains(".")) {
+                mi = mi.replace(".", "");
+            }
             mI = mi;
         }
     }
 
     // this is just one design choice, but it works if the field is static enough
+    // (not frequently changing)
     public enum DonationType {
         MONEY,
         FOOD,
@@ -82,6 +84,7 @@ public class Donation {
         // add fields as necessary to expand supported donation type set
     }
 
+    // #region private members and getter/setter methods
     private DonorName donorName;
     private DonationType donationType;
     private Double donationAmount;
@@ -118,6 +121,7 @@ public class Donation {
     public void setDonationDate(LocalDateTime date) {
         donationDate = date;
     }
+    // #endregion
 
     public Donation() {
         this.donorName = new DonorName();
@@ -126,41 +130,54 @@ public class Donation {
         this.donorName.mI = "";
     }
 
+    // #region externally exposed methods
     private final Logger logger = LogManager.getLogger(this);
 
     // A feature that allows the shelter staff to record details of the donations,
     // such as the donor's name, type of donation (money, food, clothing, etc.),
     // quantity or amount donated, and the date of the donation.
-    public void register(DonorName name, DonationType type, Double amountDonated, LocalDateTime date) {
+    public void register(DonorName name, DonationType type, Double amountDonated, LocalDateTime date,
+            boolean logInputs) {
         // write data to database
         String sqlQuery = "INSERT INTO donations_manager.donations(DonorName,DonationType,DollarValue,Date,Remaining) values(\""
                 + name + "\",\"" + type + "\"," + amountDonated + ",\"" + date + "\"," + amountDonated + ")";
-        logger.log(Level.INFO, "Register(): Running query: " + sqlQuery);
+        if (logInputs) {
+            logger.log(Level.INFO, "Register(): Running query: " + sqlQuery);
+        }
+        boolean success = DataAccess.sqlConnectAndExecute(sqlQuery);
 
-        // Just to note: this seems to consistently return 'false', yet succeed in
-        // inserting data into the DB
-        logger.log(Level.INFO, "Register query success? " + sqlConnectAndExecute(sqlQuery));
+        if (logInputs) {
+            // Just to note: this seems to consistently return 'false', yet succeed in
+            // inserting data into the DB
+            logger.log(Level.INFO, "Register query success? " + success);
+        }
     }
 
     // A feature to log when and how much of the donations are distributed,
     // capturing
     // the type of donation, quantity or amount distributed, and the date of
     // distribution.
-    public void distribute(DonationType type, Double amountDonated, LocalDateTime date) {
+    public void distribute(DonationType type, Double amountDonated, LocalDateTime date, boolean logCandidates) {
         // make distribution adjustments in the database...
 
         // determine there is enough of given donationtype to distribute
         List<Map<String, Object>> availableDonations = determineSufficientDonationsExist(type, amountDonated, date);
 
-        logger.log(Level.INFO, "Determine if sufficient funds exist - potential donations to select from: ");
+        logger.log(Level.INFO, "Determine if sufficient funds exist - ");
+        if (logCandidates) {
+            logger.log(Level.INFO, "\tpotential donations to select from:");
+        }
 
         List<KeyValuePair> amounts = new ArrayList<KeyValuePair>();
         Double amount = 0.00;
         Integer id = 0;
 
         // log out potentially available donations for visibility/debugging
+
         for (Map<String, Object> map : availableDonations) {
-            logger.log(Level.INFO, "Candidate:");
+            if (logCandidates) {
+                logger.log(Level.INFO, "Candidate:");
+            }
             for (String str : map.keySet()) {
 
                 if (str.contains("Remaining") && (Double.valueOf(map.get(str).toString())) >= amountDonated) {
@@ -169,7 +186,9 @@ public class Donation {
                 if (str.contains("ID")) {
                     id = (Integer) map.get(str);
                 }
-                logger.log(Level.INFO, "\t" + str + ": " + map.get(str));
+                if (logCandidates) {
+                    logger.log(Level.INFO, "\t" + str + ": " + map.get(str));
+                }
             }
             KeyValuePair kvp = new KeyValuePair((id.toString()), amount.toString());
             amounts.add(kvp);
@@ -202,7 +221,6 @@ public class Donation {
         // were recorded in a 3rd CurrentBalance (by DonationType) table - for now are
         // doing this manually with these queries
         KeyValuePair kvp = null;
-        Double newRemainingAmount = 0.00;
         if (sufficientFundsOfTypeExist) {
             kvp = registerDistribution(selectedDonor, type, amountDonated, date);
 
@@ -217,19 +235,21 @@ public class Donation {
         }
 
     }
+    // #endregion
 
-    public List<Map<String, Object>> determineSufficientDonationsExist(DonationType type, Double amountDonated,
+    // #region private data handling methods
+    private List<Map<String, Object>> determineSufficientDonationsExist(DonationType type, Double amountDonated,
             LocalDateTime date) {
         String checkForResourcesQuery = "SELECT * FROM donations_manager.donations WHERE DonationType=\"" + type
                 + "\" AND Remaining >=" + amountDonated;
 
         logger.log(Level.INFO, "Distribute(): Running query: " + checkForResourcesQuery);
-        List<Map<String, Object>> results = sqlConnectAndRunQuery(checkForResourcesQuery);
+        List<Map<String, Object>> results = DataAccess.sqlConnectAndRunQuery(checkForResourcesQuery);
 
         return results;
     }
 
-    public KeyValuePair registerDistribution(KeyValuePair donorAndAmount, DonationType type, Double amountDonated,
+    private KeyValuePair registerDistribution(KeyValuePair donorAndAmount, DonationType type, Double amountDonated,
             LocalDateTime date) {
         String distributeQuery = "INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values(\""
                 + type + "\"," + amountDonated + ",\"" + date + "\")";
@@ -243,14 +263,14 @@ public class Donation {
 
         // record such distribution was excersized...
         logger.log(Level.INFO, "Distribute(): Running query: " + distributeQuery);
-        sqlConnectAndExecute(distributeQuery);
+        DataAccess.sqlConnectAndExecute(distributeQuery);
 
         logger.log(Level.INFO, "Distribute(): Running query: " + reduceRemainingQuery);
-        sqlConnectAndExecute(reduceRemainingQuery);
+        DataAccess.sqlConnectAndExecute(reduceRemainingQuery);
 
         KeyValuePair donorAndAmountRemaining = null;
 
-        List<String> names = sqlConnectAndRunSimpleQuery(getNameFromIDQuery);
+        List<String> names = DataAccess.sqlConnectAndRunSimpleQuery(getNameFromIDQuery);
         for (String name : names) {
             logger.log(Level.INFO, "name: " + name);
             donorAndAmountRemaining = new KeyValuePair(name, newRemainingAmount.toString());
@@ -260,87 +280,20 @@ public class Donation {
         return donorAndAmountRemaining;
     }
 
-    public boolean verifyAmountsUpdatedInDonationsTable(String donorName, Double newAmountRemaining) {
+    private boolean verifyAmountsUpdatedInDonationsTable(String donorName, Double newAmountRemaining) {
         String verifyQuery = "SELECT * FROM donations_manager.donations WHERE DonorName=\"" + donorName
                 + "\" AND Remaining =" + newAmountRemaining;
 
         logger.log(Level.INFO, "Distribute(): Running query: " + verifyQuery);
-        boolean result = sqlConnectAndExecute(verifyQuery);
+        boolean result = DataAccess.sqlConnectAndExecute(verifyQuery);
         logger.log(Level.INFO, "Result of query execution: " + result);
         return result;
-    }
-
-    // #region DB execute query methods
-
-    private static List<Map<String, Object>> sqlConnectAndRunQuery(String query) {
-        String connectionUrl = "jdbc:mysql://localhost:3306/donations_manager";
-
-        List<Map<String, Object>> resultList = new ArrayList<>();
-
-        try (Connection connection = DriverManager.getConnection(connectionUrl, "starrp", "ABCD****1234");
-                PreparedStatement ps = connection.prepareStatement(query);
-                ResultSet rs = ps.executeQuery()) {
-            ResultSetMetaData metaData = rs.getMetaData();
-            Integer columnCount = metaData.getColumnCount();
-            while (rs.next()) {
-                Map<String, Object> row = new HashMap<>();
-                for (int i = 1; i <= columnCount; i++) {
-                    row.put(metaData.getColumnName(i), rs.getObject(i));
-                }
-                resultList.add(row);
-            }
-        } catch (SQLException e) {
-            // for now just print out SQL Exception contents, but in real app, do
-            // appropriate action...
-            System.out.println("SQLException experienced: " + e.getErrorCode() + "; " + e.getLocalizedMessage());
-        }
-
-        return resultList;
-    }
-
-    private static boolean sqlConnectAndExecute(String query) {
-        String connectionUrl = "jdbc:mysql://localhost:3306/donations_manager";
-        boolean result = false;
-        try {
-            Connection connection = DriverManager.getConnection(connectionUrl, "starrp", "ABCD****1234");
-            PreparedStatement ps = connection.prepareStatement(query);
-            result = ps.execute();
-        } catch (SQLException e) {
-            // for now just print out SQL Exception contents, but in real app, do
-            // appropriate action...
-            System.out.println("SQLException experienced: " + e.getErrorCode() + "; " + e.getLocalizedMessage());
-        }
-        return result;
-    }
-
-    private static List<String> sqlConnectAndRunSimpleQuery(String query) {
-        String connectionUrl = "jdbc:mysql://localhost:3306/donations_manager";
-
-        List<String> resultList = new ArrayList<>();
-
-        try (Connection connection = DriverManager.getConnection(connectionUrl, "starrp", "ABCD****1234");
-                PreparedStatement ps = connection.prepareStatement(query);
-                ResultSet rs = ps.executeQuery()) {
-            ResultSetMetaData metaData = rs.getMetaData();
-            Integer columnCount = metaData.getColumnCount();
-            while (rs.next()) {
-                String row = "";
-                for (int i = 1; i <= columnCount; i++) {
-                    row = (rs.getObject(i)).toString();
-                    resultList.add(row);
-                }
-            }
-        } catch (SQLException e) {
-            // for now just print out SQL Exception contents, but in real app, do
-            // appropriate action...
-            System.out.println("SQLException experienced: " + e.getErrorCode() + "; " + e.getLocalizedMessage());
-        }
-
-        return resultList;
     }
     // #endregion
 
     // #region Reports generation
+
+    // ToDo: use sql query methods in section above to generate more general reports
 
     // Your solution should have the capacity to generate two types of reports:
     // (1) An inventory report displaying the current status of donations, grouped

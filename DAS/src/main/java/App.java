@@ -28,9 +28,9 @@ import org.json.simple.parser.JSONParser;
 //   DONE //ToDo: determine if amount expected of given DonationType is present in remaining/existing donations (not already distributed)
 //   DONE //ToDo: add logic to determine if distribution data was successfully inserted or not
 //   
-// 2. Add unit testing
-// 3. (Add more logging - minor)
-// 4. Improve reporting (even though trivial without better formatting - see below/FUTURE)
+// 2. Improve reporting (even though trivial without better formatting - see below/FUTURE)
+// 3. Add unit testing
+// 4. (Add more logging - minor)
 // 
 // FUTURE: Augment reporting functionality with a UI to render the output if customer was wanting such.
 // 
@@ -42,11 +42,17 @@ public class App {
         // initial dev work
         // sqlTestConnection();
 
+        // behavior steering parameters - could add as input args if preferred
+        // ...or support some other input format (config file?)
+        boolean logCandidates = false;
+        boolean logSummary = true;
+        boolean logInputs = false;
+        boolean distributeFunds = true;
+
         LocalDateTime nowForTestUse = LocalDateTime.now();
         System.out.println("\nDateTime.now: " + nowForTestUse);
 
         // set the following to control amount of distribution
-        boolean distributeFunds = true;
         LocalDateTime date = nowForTestUse;
         Donation.DonationType type = Donation.DonationType.CLOTHING;
         Double amount = 244.20;
@@ -88,6 +94,9 @@ public class App {
 
         Donation donationInfo = new Donation();
 
+        if (logSummary) {
+            System.out.println("Summary inputs:");
+        }
         // read in donors.json file and process by calling donation.register for each
         JSONArray donorsList = new JSONArray();
         JSONParser parser = new JSONParser();
@@ -128,10 +137,6 @@ public class App {
                 Long donationValue = (Long) donate.get("value");
                 Double jsonValue = donationValue.doubleValue();
 
-                // fix this below:
-                // DEBUGGING: Exception hit... Text '03/01/2024' could not be parsed at index 2,
-                // [Ljava.lang.StackTraceElement;@c7ba306
-
                 String dateStr = (String) donate.get("date");
                 dateStr = dateStr.replaceAll("-", "").replaceAll("/", "");
                 if (dateStr.length() < 7) {
@@ -139,7 +144,7 @@ public class App {
                 } else if (dateStr.length() < 8) {
                     dateStr = "0" + dateStr.substring(0, dateStr.length());
                 }
-                System.out.println(dateStr);
+                // System.out.println(dateStr);
                 LocalDate jsonDate = LocalDate.parse(dateStr, DateTimeFormatter.ofPattern("MMddyyyy"));
                 LocalTime time = LocalTime.of(0, 0, 0, 0);
                 LocalDateTime dateTime = LocalDateTime.of(jsonDate, time);
@@ -147,11 +152,36 @@ public class App {
                 donationInfo.setDonationType(jsonType);
                 donationInfo.setDonationAmount(jsonValue);
                 donationInfo.setDonationDate(dateTime);
-                System.out.println("DEBUGGING: " + donationInfo.getDonorName() + ":" + donationInfo.getDonationType()
-                        + ":" + donationInfo.getDonationAmount() + ":" + donationInfo.getDonationDate());
+                if (logSummary) {
+                    if (((donationInfo.getDonorName()).toString()).length() > 15) {
+                        if (donationInfo.getDonationType() == Donation.DonationType.CLOTHING) {
+                            System.out
+                                    .println(donationInfo.getDonorName() + "\t:" + donationInfo.getDonationType()
+                                            + "\t:" + donationInfo.getDonationAmount() + "\t\t:"
+                                            + donationInfo.getDonationDate());
+                        } else {
+                            System.out
+                                    .println(donationInfo.getDonorName() + "\t:" + donationInfo.getDonationType()
+                                            + "\t\t:" + donationInfo.getDonationAmount() + "\t\t:"
+                                            + donationInfo.getDonationDate());
+                        }
+                    } else {
+                        if (donationInfo.getDonationType() == Donation.DonationType.CLOTHING) {
+                            System.out
+                                    .println(donationInfo.getDonorName() + "\t\t:" + donationInfo.getDonationType()
+                                            + "\t:" + donationInfo.getDonationAmount() + "\t\t:"
+                                            + donationInfo.getDonationDate());
+                        } else {
+                            System.out
+                                    .println(donationInfo.getDonorName() + "\t\t:" + donationInfo.getDonationType()
+                                            + "\t\t:" + donationInfo.getDonationAmount() + "\t\t:"
+                                            + donationInfo.getDonationDate());
+                        }
+                    }
+                }
 
                 donationInfo.register(donationInfo.getDonorName(), donationInfo.getDonationType(),
-                        donationInfo.getDonationAmount(), donationInfo.getDonationDate());
+                        donationInfo.getDonationAmount(), donationInfo.getDonationDate(), logInputs);
             }
 
         } catch (Exception e) {
@@ -166,7 +196,7 @@ public class App {
         // 2024-03-12 12:18:00.756 [main] ERROR Donation - Unable to find any donations
         // of sufficient value to satisfy expected donation distribution
         if (distributeFunds) {
-            donationInfo.distribute(type, amount, date);
+            donationInfo.distribute(type, amount, date, logCandidates);
         }
 
         // In a production app, I would back this functionality with exporting the data
