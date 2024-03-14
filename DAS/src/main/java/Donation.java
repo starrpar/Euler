@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -163,8 +164,8 @@ public class Donation {
         // determine there is enough of given donationtype to distribute
         List<Map<String, Object>> availableDonations = determineSufficientDonationsExist(type, amountDonated, date);
 
-        logger.log(Level.INFO, "Determine if sufficient funds exist - ");
         if (logCandidates) {
+            logger.log(Level.INFO, "Determine if sufficient funds exist - ");
             logger.log(Level.INFO, "\tpotential donations to select from:");
         }
 
@@ -197,12 +198,9 @@ public class Donation {
         KeyValuePair selectedDonor = null; // winner, winner, chicken dinner...
 
         for (KeyValuePair donorAndAmount : amounts) {
-            logger.log(Level.INFO, donorAndAmount.getKey() + ": " + donorAndAmount.getValue());
             if (Double.valueOf(donorAndAmount.getValue()) >= amountDonated) {
                 selectedDonor = new KeyValuePair(donorAndAmount.getKey(), donorAndAmount.getValue());
-                // logger.log(Level.INFO, "Winner: " + donorAndAmount.getKey() + ": " +
-                // donorAndAmount.getValue());
-                logger.log(Level.INFO, "Winner: " + selectedDonor);
+                logger.log(Level.INFO, "Determine if sufficient funds exist... winner: " + selectedDonor);
                 break;
             }
         }
@@ -224,8 +222,14 @@ public class Donation {
         if (sufficientFundsOfTypeExist) {
             kvp = registerDistribution(selectedDonor, type, amountDonated, date);
 
-            boolean updatedSuccessfully = verifyAmountsUpdatedInDonationsTable(kvp.getKey(),
-                    (Double.valueOf(kvp.getValue())));
+            String donorName = kvp.getKey();
+            Double amountRemaining = (Double.valueOf(kvp.getValue()));
+
+            // clean up value
+            int temp = (int) (amountRemaining * 100.0);
+            double amtRemaining = ((double) temp) / 100.0;
+
+            boolean updatedSuccessfully = verifyAmountsUpdatedInDonationsTable(donorName, amtRemaining);
             if (updatedSuccessfully) {
                 logger.log(Level.INFO, "updatedSuccessfully: " + updatedSuccessfully);
             }
@@ -243,7 +247,7 @@ public class Donation {
         String checkForResourcesQuery = "SELECT * FROM donations_manager.donations WHERE DonationType=\"" + type
                 + "\" AND Remaining >=" + amountDonated;
 
-        logger.log(Level.INFO, "Distribute(): Running query: " + checkForResourcesQuery);
+        logger.log(Level.INFO, "Distribute(): Query: " + checkForResourcesQuery);
         List<Map<String, Object>> results = DataAccess.sqlConnectAndRunQuery(checkForResourcesQuery);
 
         return results;
@@ -251,31 +255,37 @@ public class Donation {
 
     private KeyValuePair registerDistribution(KeyValuePair donorAndAmount, DonationType type, Double amountDonated,
             LocalDateTime date) {
-        String distributeQuery = "INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values(\""
-                + type + "\"," + amountDonated + ",\"" + date + "\")";
 
         Double newRemainingAmount = Double.valueOf(donorAndAmount.getValue()) - amountDonated;
-        String reduceRemainingQuery = "UPDATE donations_manager.donations SET Remaining = " + newRemainingAmount
-                + " WHERE ID = " + donorAndAmount.getKey();
+
+        // clean up value
+        int temp = (int) (newRemainingAmount * 100.0);
+        double amtRemaining = ((double) temp) / 100.0;
 
         String getNameFromIDQuery = "SELECT DonorName FROM donations_manager.donations WHERE ID = "
                 + donorAndAmount.getKey();
-
-        // record such distribution was excersized...
-        logger.log(Level.INFO, "Distribute(): Running query: " + distributeQuery);
-        DataAccess.sqlConnectAndExecute(distributeQuery);
-
-        logger.log(Level.INFO, "Distribute(): Running query: " + reduceRemainingQuery);
-        DataAccess.sqlConnectAndExecute(reduceRemainingQuery);
 
         KeyValuePair donorAndAmountRemaining = null;
 
         List<String> names = DataAccess.sqlConnectAndRunSimpleQuery(getNameFromIDQuery);
         for (String name : names) {
-            logger.log(Level.INFO, "name: " + name);
-            donorAndAmountRemaining = new KeyValuePair(name, newRemainingAmount.toString());
+            donorAndAmountRemaining = new KeyValuePair(name, ((Double) amtRemaining).toString());
             break;
         }
+        String donorName = donorAndAmountRemaining.getKey();
+
+        String distributeQuery = "INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date,Notes) values(\""
+                + type + "\"," + amountDonated + ",\"" + date + "\",\"" + donorName + "\")";
+
+        // record such distribution was excersized...
+        logger.log(Level.INFO, "Distribute(): Query: " + distributeQuery);
+        DataAccess.sqlConnectAndExecute(distributeQuery);
+
+        String reduceRemainingQuery = "UPDATE donations_manager.donations SET Remaining = " + amtRemaining
+                + " WHERE ID = " + donorAndAmount.getKey();
+
+        logger.log(Level.INFO, "Distribute(): Query: " + reduceRemainingQuery);
+        DataAccess.sqlConnectAndExecute(reduceRemainingQuery);
 
         return donorAndAmountRemaining;
     }
@@ -284,7 +294,7 @@ public class Donation {
         String verifyQuery = "SELECT * FROM donations_manager.donations WHERE DonorName=\"" + donorName
                 + "\" AND Remaining =" + newAmountRemaining;
 
-        logger.log(Level.INFO, "Distribute(): Running query: " + verifyQuery);
+        logger.log(Level.INFO, "Distribute(): Query: " + verifyQuery);
         boolean result = DataAccess.sqlConnectAndExecute(verifyQuery);
         logger.log(Level.INFO, "Result of query execution: " + result);
         return result;

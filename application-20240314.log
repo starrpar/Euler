@@ -1,0 +1,1234 @@
+2024-03-14 11:49:24.654 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 11:49:24.716 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 11:49:24.717 [main] INFO  Donation - 761: 505.8
+2024-03-14 11:49:24.717 [main] INFO  Donation - Winner: 761=505.8
+2024-03-14 11:49:24.718 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T11:49:23.829070500")
+2024-03-14 11:49:24.749 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 261.6 WHERE ID = 761
+2024-03-14 11:49:24.806 [main] INFO  Donation - name: Michelle Sonnenberg
+2024-03-14 11:49:24.806 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =261.6
+2024-03-14 11:49:24.837 [main] INFO  Donation - Result of query execution: true
+2024-03-14 11:49:24.838 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 11:49:24.839 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 11:49:24.839 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 11:49:24.840 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T11:49:23.829070500
+2024-03-14 11:49:24.841 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 11:49:24.842 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 11:49:24.843 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 11:55:47.564 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 11:55:47.605 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 11:55:47.607 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 11:55:47.608 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 11:55:47.609 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 11:55:47.611 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 11:55:47.613 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 11:55:47.621 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 11:55:47.625 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 11:55:47.626 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 11:55:47.628 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 11:55:47.630 [main] INFO  TestInputs - Funny Duckling		:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 11:55:47.637 [main] INFO  TestInputs - Earle S Grates		:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 11:55:47.638 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 11:55:47.640 [main] INFO  TestInputs - Willie J Smoots		:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 11:55:47.643 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 11:55:48.294 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 11:55:48.341 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 11:55:48.341 [main] INFO  Donation - 761: 261.6
+2024-03-14 11:55:48.342 [main] INFO  Donation - Winner: 761=261.6
+2024-03-14 11:55:48.342 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T11:55:47.656580200")
+2024-03-14 11:55:48.372 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 17.400000000000034 WHERE ID = 761
+2024-03-14 11:55:48.437 [main] INFO  Donation - name: Michelle Sonnenberg
+2024-03-14 11:55:48.438 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =17.400000000000034
+2024-03-14 11:55:48.456 [main] INFO  Donation - Result of query execution: true
+2024-03-14 11:55:48.457 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 11:55:48.458 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 11:55:48.458 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 11:55:48.459 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T11:55:47.656580200
+2024-03-14 11:55:48.460 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 11:55:48.461 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 11:55:48.462 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 11:56:34.475 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 11:56:34.510 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 11:56:34.513 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 11:56:34.514 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 11:56:34.515 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 11:56:34.516 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 11:56:34.518 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 11:56:34.520 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 11:56:34.523 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 11:56:34.525 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 11:56:34.527 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 11:56:34.528 [main] INFO  TestInputs - Funny Duckling		:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 11:56:34.529 [main] INFO  TestInputs - Earle S Grates		:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 11:56:34.530 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 11:56:34.530 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 11:56:34.531 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 11:56:35.225 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 11:56:35.288 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 11:56:35.290 [main] INFO  Donation - 762: 3500.0
+2024-03-14 11:56:35.290 [main] INFO  Donation - Winner: 762=3500.0
+2024-03-14 11:56:35.291 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T11:56:34.544360500")
+2024-03-14 11:56:35.328 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 3255.8 WHERE ID = 762
+2024-03-14 11:56:35.386 [main] INFO  Donation - name: Gertrude Dux
+2024-03-14 11:56:35.388 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =3255.8
+2024-03-14 11:56:35.413 [main] INFO  Donation - Result of query execution: true
+2024-03-14 11:56:35.414 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 11:56:35.415 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 11:56:35.415 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 11:56:35.416 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T11:56:34.544360500
+2024-03-14 11:56:35.417 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 11:56:35.417 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 11:56:35.420 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 11:57:07.336 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 11:57:07.376 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 11:57:07.378 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 11:57:07.379 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 11:57:07.381 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 11:57:07.382 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 11:57:07.383 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 11:57:07.384 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 11:57:07.384 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 11:57:07.385 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 11:57:07.387 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 11:57:07.392 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 11:57:07.393 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 11:57:07.395 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 11:57:07.396 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 11:57:07.396 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 11:57:08.066 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 11:57:08.125 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 11:57:08.127 [main] INFO  Donation - 762: 3255.8
+2024-03-14 11:57:08.127 [main] INFO  Donation - Winner: 762=3255.8
+2024-03-14 11:57:08.128 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T11:57:07.402671700")
+2024-03-14 11:57:08.155 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 3011.6000000000004 WHERE ID = 762
+2024-03-14 11:57:08.215 [main] INFO  Donation - name: Gertrude Dux
+2024-03-14 11:57:08.216 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =3011.6000000000004
+2024-03-14 11:57:08.236 [main] INFO  Donation - Result of query execution: true
+2024-03-14 11:57:08.238 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 11:57:08.239 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 11:57:08.239 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 11:57:08.240 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T11:57:07.402671700
+2024-03-14 11:57:08.241 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 11:57:08.242 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 11:57:08.242 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:06:48.788 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:06:48.820 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:06:48.822 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:06:48.823 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:06:48.824 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:06:48.826 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:06:48.828 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:06:48.828 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:06:48.829 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:06:48.831 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:06:48.832 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:06:48.833 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:06:48.834 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:06:48.835 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:06:48.836 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:06:48.837 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:06:49.432 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:06:49.485 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:06:49.486 [main] INFO  Donation - 762: 3011.6
+2024-03-14 12:06:49.486 [main] INFO  Donation - Winner: 762=3011.6
+2024-03-14 12:06:49.487 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:06:48.847534200")
+2024-03-14 12:06:49.522 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2767.4 WHERE ID = 762
+2024-03-14 12:06:49.575 [main] INFO  Donation - name: Gertrude Dux
+2024-03-14 12:06:49.578 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2767.4
+2024-03-14 12:06:49.596 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:06:49.597 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:06:49.598 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:06:49.599 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:06:49.599 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:06:48.847534200
+2024-03-14 12:06:49.601 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:06:49.601 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:06:49.602 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:09:02.693 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:09:02.727 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:09:02.729 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:09:02.730 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:09:02.731 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:09:02.733 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:09:02.734 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:09:02.735 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:09:02.737 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:09:02.739 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:09:02.740 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:09:02.741 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:09:02.743 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:09:02.745 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:09:02.746 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:09:02.747 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:09:03.309 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:09:03.362 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:09:03.363 [main] INFO  Donation - 762: 2767.4
+2024-03-14 12:09:03.363 [main] INFO  Donation - Winner: 762=2767.4
+2024-03-14 12:09:03.364 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:09:02.755576")
+2024-03-14 12:09:03.402 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2523.2000000000003 WHERE ID = 762
+2024-03-14 12:09:03.461 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2523.2000000000003
+2024-03-14 12:09:03.479 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:09:03.480 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:09:03.481 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:09:03.482 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:09:03.483 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:09:02.755576
+2024-03-14 12:09:03.486 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:09:03.487 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:09:03.487 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:10:25.604 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:10:25.645 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:10:25.647 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:10:25.648 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:10:25.649 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:10:25.651 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:10:25.657 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:10:25.666 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:10:25.668 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:10:25.680 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:10:25.683 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:10:25.685 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:10:25.695 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:10:25.697 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:10:25.699 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:10:25.700 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:10:26.248 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:10:26.319 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:10:26.326 [main] INFO  Donation - 762: 2523.2
+2024-03-14 12:10:26.327 [main] INFO  Donation - Winner: 762=2523.2
+2024-03-14 12:10:26.328 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:10:25.707779800")
+2024-03-14 12:10:26.405 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2279.0 WHERE ID = 762
+2024-03-14 12:10:26.464 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2279.0
+2024-03-14 12:10:26.482 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:10:26.483 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:10:26.484 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:10:26.484 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:10:26.485 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:10:25.707779800
+2024-03-14 12:10:26.486 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:10:26.487 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:10:26.488 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:14.803 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:11:14.836 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:11:14.838 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:11:14.839 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:11:14.841 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:11:14.843 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:11:14.846 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:11:14.847 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:11:14.848 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:11:14.850 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:11:14.851 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:11:14.852 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:11:14.854 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:11:14.857 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:11:14.861 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:11:14.862 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:11:15.441 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:15.487 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:15.488 [main] INFO  Donation - 762: 2279.0
+2024-03-14 12:11:15.488 [main] INFO  Donation - Winner: 762=2279.0
+2024-03-14 12:11:15.489 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:15.524 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2034.8 WHERE ID = 762
+2024-03-14 12:11:15.570 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2034.8
+2024-03-14 12:11:15.596 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:15.596 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:15.597 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:15.598 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:15.598 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:15.600 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:15.600 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:15.601 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:15.647 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:15.666 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:15.667 [main] INFO  Donation - 762: 2034.8
+2024-03-14 12:11:15.667 [main] INFO  Donation - Winner: 762=2034.8
+2024-03-14 12:11:15.668 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:15.698 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1790.6 WHERE ID = 762
+2024-03-14 12:11:15.747 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1790.6
+2024-03-14 12:11:15.770 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:15.771 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:15.772 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:15.775 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:15.776 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:15.778 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:15.778 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:15.778 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:15.809 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:15.829 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:15.830 [main] INFO  Donation - 762: 1790.6
+2024-03-14 12:11:15.830 [main] INFO  Donation - Winner: 762=1790.6
+2024-03-14 12:11:15.830 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:15.863 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1546.3999999999999 WHERE ID = 762
+2024-03-14 12:11:15.912 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1546.3999999999999
+2024-03-14 12:11:15.933 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:15.939 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:15.948 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:15.950 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:15.951 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:15.956 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:15.958 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:15.963 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:15.994 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.019 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.021 [main] INFO  Donation - 762: 1546.4
+2024-03-14 12:11:16.021 [main] INFO  Donation - Winner: 762=1546.4
+2024-03-14 12:11:16.022 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.069 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1302.2 WHERE ID = 762
+2024-03-14 12:11:16.116 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1302.2
+2024-03-14 12:11:16.134 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.134 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.135 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.136 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.136 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.139 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.139 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.141 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:16.172 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.190 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.191 [main] INFO  Donation - 762: 1302.2
+2024-03-14 12:11:16.191 [main] INFO  Donation - Winner: 762=1302.2
+2024-03-14 12:11:16.191 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.209 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1058.0 WHERE ID = 762
+2024-03-14 12:11:16.249 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1058.0
+2024-03-14 12:11:16.264 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.265 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.265 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.266 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.266 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.268 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.268 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.268 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:16.301 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.321 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.322 [main] INFO  Donation - 762: 1058.0
+2024-03-14 12:11:16.322 [main] INFO  Donation - Winner: 762=1058.0
+2024-03-14 12:11:16.323 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.342 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 813.8 WHERE ID = 762
+2024-03-14 12:11:16.385 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =813.8
+2024-03-14 12:11:16.400 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.400 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.401 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.401 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.402 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.403 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.403 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.403 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:16.438 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.458 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.461 [main] INFO  Donation - 762: 813.8
+2024-03-14 12:11:16.461 [main] INFO  Donation - Winner: 762=813.8
+2024-03-14 12:11:16.461 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.484 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 569.5999999999999 WHERE ID = 762
+2024-03-14 12:11:16.524 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =569.5999999999999
+2024-03-14 12:11:16.538 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.538 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.539 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.542 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.543 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.545 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.545 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.546 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:16.572 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.589 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.589 [main] INFO  Donation - 762: 569.6
+2024-03-14 12:11:16.592 [main] INFO  Donation - Winner: 762=569.6
+2024-03-14 12:11:16.593 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.616 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 325.40000000000003 WHERE ID = 762
+2024-03-14 12:11:16.663 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =325.40000000000003
+2024-03-14 12:11:16.679 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.679 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.680 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.681 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.681 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.682 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.682 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.682 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:16.704 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.721 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.722 [main] INFO  Donation - 762: 325.4
+2024-03-14 12:11:16.722 [main] INFO  Donation - Winner: 762=325.4
+2024-03-14 12:11:16.724 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.743 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 81.19999999999999 WHERE ID = 762
+2024-03-14 12:11:16.781 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =81.19999999999999
+2024-03-14 12:11:16.793 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.794 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.795 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.795 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.796 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.797 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.797 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.797 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:16.819 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.835 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.835 [main] INFO  Donation - 764: 999.0
+2024-03-14 12:11:16.836 [main] INFO  Donation - Winner: 764=999.0
+2024-03-14 12:11:16.836 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.853 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 754.8 WHERE ID = 764
+2024-03-14 12:11:16.884 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =754.8
+2024-03-14 12:11:16.896 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.897 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.897 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.898 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.898 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.899 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.899 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.900 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:16.918 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:16.932 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:16.932 [main] INFO  Donation - 764: 754.8
+2024-03-14 12:11:16.933 [main] INFO  Donation - Winner: 764=754.8
+2024-03-14 12:11:16.933 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:16.953 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 510.59999999999997 WHERE ID = 764
+2024-03-14 12:11:16.984 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =510.59999999999997
+2024-03-14 12:11:16.995 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:16.995 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:16.996 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.996 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:16.997 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:16.998 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:16.998 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:16.998 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:17.017 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:17.031 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:17.031 [main] INFO  Donation - 764: 510.6
+2024-03-14 12:11:17.031 [main] INFO  Donation - Winner: 764=510.6
+2024-03-14 12:11:17.032 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:17.049 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 266.40000000000003 WHERE ID = 764
+2024-03-14 12:11:17.086 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =266.40000000000003
+2024-03-14 12:11:17.098 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:17.099 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:17.099 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.100 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:17.100 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:17.102 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.102 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:17.102 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:17.120 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:17.132 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:17.133 [main] INFO  Donation - 764: 266.4
+2024-03-14 12:11:17.133 [main] INFO  Donation - Winner: 764=266.4
+2024-03-14 12:11:17.133 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:17.151 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 22.19999999999999 WHERE ID = 764
+2024-03-14 12:11:17.180 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =22.19999999999999
+2024-03-14 12:11:17.190 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:17.190 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:17.191 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.192 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:17.192 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:17.194 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.194 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:17.194 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:17.210 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:17.222 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:17.223 [main] INFO  Donation - 768: 1090.0
+2024-03-14 12:11:17.224 [main] INFO  Donation - Winner: 768=1090.0
+2024-03-14 12:11:17.224 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:17.243 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 845.8 WHERE ID = 768
+2024-03-14 12:11:17.311 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =845.8
+2024-03-14 12:11:17.326 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:17.327 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:17.328 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.328 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:17.329 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:17.330 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.330 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:17.330 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:11:17.351 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:11:17.369 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:11:17.370 [main] INFO  Donation - 768: 845.8
+2024-03-14 12:11:17.370 [main] INFO  Donation - Winner: 768=845.8
+2024-03-14 12:11:17.370 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:11:14.867245900")
+2024-03-14 12:11:17.387 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 601.5999999999999 WHERE ID = 768
+2024-03-14 12:11:17.416 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =601.5999999999999
+2024-03-14 12:11:17.428 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:11:17.429 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:11:17.430 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.431 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:11:17.431 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:11:14.867245900
+2024-03-14 12:11:17.432 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:11:17.433 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:11:17.433 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:48.827 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:12:48.868 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:12:48.873 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:12:48.874 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:12:48.875 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:12:48.882 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:12:48.889 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:12:48.901 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:12:48.904 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:12:48.920 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:12:48.924 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:12:48.926 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:12:48.927 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:12:48.939 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:12:48.942 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:12:48.947 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:12:49.730 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:49.778 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:49.780 [main] INFO  Donation - 768: 601.6
+2024-03-14 12:12:49.781 [main] INFO  Donation - Winner: 768=601.6
+2024-03-14 12:12:49.782 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:49.809 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 357.40000000000003 WHERE ID = 768
+2024-03-14 12:12:49.860 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =357.40000000000003
+2024-03-14 12:12:49.881 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:49.882 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:49.883 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:49.883 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:49.884 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:49.885 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:49.885 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:49.886 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:49.918 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:49.943 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:49.944 [main] INFO  Donation - 768: 357.4
+2024-03-14 12:12:49.945 [main] INFO  Donation - Winner: 768=357.4
+2024-03-14 12:12:49.945 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:49.976 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 113.19999999999999 WHERE ID = 768
+2024-03-14 12:12:50.027 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =113.19999999999999
+2024-03-14 12:12:50.047 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:50.048 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:50.049 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.050 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.050 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.051 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.052 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.052 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.082 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.105 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.106 [main] ERROR Donation - Unable to find any donations of sufficient value to satisfy expected donation distribution
+2024-03-14 12:12:50.106 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.107 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.107 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.108 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.109 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.109 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.132 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.153 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.154 [main] INFO  Donation - 798: 750.0
+2024-03-14 12:12:50.154 [main] INFO  Donation - Winner: 798=750.0
+2024-03-14 12:12:50.154 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:50.184 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 505.8 WHERE ID = 798
+2024-03-14 12:12:50.226 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =505.8
+2024-03-14 12:12:50.242 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:50.242 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:50.243 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.243 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.244 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.245 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.246 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.246 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.271 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.289 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.290 [main] INFO  Donation - 798: 505.8
+2024-03-14 12:12:50.291 [main] INFO  Donation - Winner: 798=505.8
+2024-03-14 12:12:50.292 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:50.337 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 261.6 WHERE ID = 798
+2024-03-14 12:12:50.381 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =261.6
+2024-03-14 12:12:50.396 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:50.396 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:50.397 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.397 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.398 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.399 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.399 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.400 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.431 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.447 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.449 [main] INFO  Donation - 798: 261.6
+2024-03-14 12:12:50.449 [main] INFO  Donation - Winner: 798=261.6
+2024-03-14 12:12:50.450 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:50.473 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 17.400000000000034 WHERE ID = 798
+2024-03-14 12:12:50.512 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =17.400000000000034
+2024-03-14 12:12:50.533 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:50.534 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:50.535 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.536 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.536 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.538 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.538 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.538 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.563 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.578 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.579 [main] INFO  Donation - 799: 3500.0
+2024-03-14 12:12:50.579 [main] INFO  Donation - Winner: 799=3500.0
+2024-03-14 12:12:50.581 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:50.604 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 3255.8 WHERE ID = 799
+2024-03-14 12:12:50.639 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =3255.8
+2024-03-14 12:12:50.653 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:50.654 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:50.655 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.655 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.656 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.657 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.657 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.657 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.682 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.696 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.697 [main] INFO  Donation - 799: 3255.8
+2024-03-14 12:12:50.698 [main] INFO  Donation - Winner: 799=3255.8
+2024-03-14 12:12:50.698 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:50.725 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 3011.6000000000004 WHERE ID = 799
+2024-03-14 12:12:50.768 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =3011.6000000000004
+2024-03-14 12:12:50.782 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:50.782 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:50.783 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.783 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.784 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.785 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.785 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.786 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.822 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.838 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.838 [main] INFO  Donation - 799: 3011.6
+2024-03-14 12:12:50.839 [main] INFO  Donation - Winner: 799=3011.6
+2024-03-14 12:12:50.839 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:50.857 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2767.4 WHERE ID = 799
+2024-03-14 12:12:50.892 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2767.4
+2024-03-14 12:12:50.904 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:50.905 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:50.906 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.906 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:50.906 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:50.908 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:50.908 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:50.908 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:50.929 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:50.945 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:50.947 [main] INFO  Donation - 799: 2767.4
+2024-03-14 12:12:50.947 [main] INFO  Donation - Winner: 799=2767.4
+2024-03-14 12:12:50.948 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:50.965 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2523.2000000000003 WHERE ID = 799
+2024-03-14 12:12:51.002 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2523.2000000000003
+2024-03-14 12:12:51.019 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:51.020 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:51.021 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.021 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:51.021 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:51.023 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.023 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:51.024 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:51.043 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:51.059 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:51.059 [main] INFO  Donation - 799: 2523.2
+2024-03-14 12:12:51.059 [main] INFO  Donation - Winner: 799=2523.2
+2024-03-14 12:12:51.060 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:51.077 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2279.0 WHERE ID = 799
+2024-03-14 12:12:51.108 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2279.0
+2024-03-14 12:12:51.120 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:51.121 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:51.121 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.122 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:51.122 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:51.123 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.123 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:51.124 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:51.142 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:51.160 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:51.160 [main] INFO  Donation - 799: 2279.0
+2024-03-14 12:12:51.160 [main] INFO  Donation - Winner: 799=2279.0
+2024-03-14 12:12:51.161 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:51.177 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 2034.8 WHERE ID = 799
+2024-03-14 12:12:51.207 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2034.8
+2024-03-14 12:12:51.223 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:51.224 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:51.224 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.225 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:51.225 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:51.226 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.227 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:51.227 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:51.248 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:51.269 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:51.270 [main] INFO  Donation - 799: 2034.8
+2024-03-14 12:12:51.270 [main] INFO  Donation - Winner: 799=2034.8
+2024-03-14 12:12:51.270 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:51.296 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1790.6 WHERE ID = 799
+2024-03-14 12:12:51.351 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1790.6
+2024-03-14 12:12:51.363 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:51.364 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:51.365 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.366 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:51.366 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:51.367 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.367 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:51.368 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:51.389 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:51.404 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:51.404 [main] INFO  Donation - 799: 1790.6
+2024-03-14 12:12:51.404 [main] INFO  Donation - Winner: 799=1790.6
+2024-03-14 12:12:51.405 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:51.424 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1546.3999999999999 WHERE ID = 799
+2024-03-14 12:12:51.455 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1546.3999999999999
+2024-03-14 12:12:51.471 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:51.471 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:51.472 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.472 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:51.473 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:51.474 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.475 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:51.475 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:12:51.526 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:12:51.543 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:12:51.544 [main] INFO  Donation - 799: 1546.4
+2024-03-14 12:12:51.545 [main] INFO  Donation - Winner: 799=1546.4
+2024-03-14 12:12:51.549 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:12:48.957266800")
+2024-03-14 12:12:51.576 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1302.2 WHERE ID = 799
+2024-03-14 12:12:51.622 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1302.2
+2024-03-14 12:12:51.636 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:12:51.637 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:12:51.637 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.637 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:12:51.638 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:12:48.957266800
+2024-03-14 12:12:51.639 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:12:51.639 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:12:51.639 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:52.455 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:14:52.500 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:14:52.502 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:14:52.503 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:14:52.505 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:14:52.507 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:14:52.508 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:14:52.508 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:14:52.509 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:14:52.510 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:14:52.510 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:14:52.511 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:14:52.512 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:14:52.513 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:14:52.513 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:14:52.514 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:14:53.068 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:53.122 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:53.125 [main] INFO  Donation - Winner: 799=1302.2
+2024-03-14 12:14:53.125 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:53.166 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 1058.0 WHERE ID = 799
+2024-03-14 12:14:53.216 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1058.0
+2024-03-14 12:14:53.236 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:53.237 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:53.240 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.240 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:53.241 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:53.242 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.243 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:53.243 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:53.273 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:53.298 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:53.312 [main] INFO  Donation - Winner: 799=1058.0
+2024-03-14 12:14:53.313 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:53.338 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 813.8 WHERE ID = 799
+2024-03-14 12:14:53.389 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =813.8
+2024-03-14 12:14:53.409 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:53.409 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:53.410 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.411 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:53.411 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:53.412 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.412 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:53.413 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:53.438 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:53.460 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:53.463 [main] INFO  Donation - Winner: 799=813.8
+2024-03-14 12:14:53.464 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:53.490 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 569.5999999999999 WHERE ID = 799
+2024-03-14 12:14:53.541 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =569.5999999999999
+2024-03-14 12:14:53.557 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:53.558 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:53.559 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.560 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:53.560 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:53.561 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.562 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:53.562 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:53.588 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:53.604 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:53.605 [main] INFO  Donation - Winner: 799=569.6
+2024-03-14 12:14:53.605 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:53.628 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 325.40000000000003 WHERE ID = 799
+2024-03-14 12:14:53.667 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =325.40000000000003
+2024-03-14 12:14:53.684 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:53.685 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:53.687 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.689 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:53.689 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:53.691 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.691 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:53.692 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:53.718 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:53.733 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:53.734 [main] INFO  Donation - Winner: 799=325.4
+2024-03-14 12:14:53.734 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:53.755 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 81.19999999999999 WHERE ID = 799
+2024-03-14 12:14:53.817 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =81.19999999999999
+2024-03-14 12:14:53.832 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:53.833 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:53.834 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.834 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:53.835 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:53.836 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:53.837 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:53.838 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:53.871 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:53.910 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:53.911 [main] INFO  Donation - Winner: 801=999.0
+2024-03-14 12:14:53.911 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:53.939 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 754.8 WHERE ID = 801
+2024-03-14 12:14:53.996 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =754.8
+2024-03-14 12:14:54.012 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:54.015 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:54.016 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.016 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:54.017 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:54.019 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.019 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:54.019 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:54.086 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:54.134 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:54.134 [main] INFO  Donation - Winner: 801=754.8
+2024-03-14 12:14:54.135 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:54.158 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 510.59999999999997 WHERE ID = 801
+2024-03-14 12:14:54.233 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =510.59999999999997
+2024-03-14 12:14:54.261 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:54.262 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:54.262 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.263 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:54.263 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:54.264 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.264 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:54.265 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:54.318 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:54.359 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:54.364 [main] INFO  Donation - Winner: 801=510.6
+2024-03-14 12:14:54.374 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:54.400 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 266.40000000000003 WHERE ID = 801
+2024-03-14 12:14:54.446 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =266.40000000000003
+2024-03-14 12:14:54.460 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:54.461 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:54.468 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.480 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:54.482 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:54.496 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.499 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:54.502 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:54.543 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:54.574 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:54.576 [main] INFO  Donation - Winner: 801=266.4
+2024-03-14 12:14:54.578 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:54.598 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 22.19999999999999 WHERE ID = 801
+2024-03-14 12:14:54.644 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Ed Foote" AND Remaining =22.19999999999999
+2024-03-14 12:14:54.658 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:54.659 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:54.659 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.660 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:54.660 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:54.662 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.662 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:54.662 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:54.689 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:54.703 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:54.704 [main] INFO  Donation - Winner: 805=1090.0
+2024-03-14 12:14:54.704 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:54.721 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 845.8 WHERE ID = 805
+2024-03-14 12:14:54.752 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =845.8
+2024-03-14 12:14:54.778 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:54.781 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:54.782 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.782 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:54.783 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:54.784 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.784 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:54.784 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:54.821 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:54.844 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:54.845 [main] INFO  Donation - Winner: 805=845.8
+2024-03-14 12:14:54.845 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:54.874 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 601.5999999999999 WHERE ID = 805
+2024-03-14 12:14:54.923 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =601.5999999999999
+2024-03-14 12:14:54.934 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:54.935 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:54.935 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.936 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:54.936 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:54.938 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:54.939 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:54.939 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:54.957 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:54.972 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:54.973 [main] INFO  Donation - Winner: 805=601.6
+2024-03-14 12:14:54.973 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:54.990 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 357.40000000000003 WHERE ID = 805
+2024-03-14 12:14:55.031 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =357.40000000000003
+2024-03-14 12:14:55.043 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:55.046 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:55.047 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.047 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:55.048 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:55.049 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.049 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:55.050 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:55.071 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:55.083 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:55.084 [main] INFO  Donation - Winner: 805=357.4
+2024-03-14 12:14:55.084 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:55.102 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 113.19999999999999 WHERE ID = 805
+2024-03-14 12:14:55.134 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Funny Duckling" AND Remaining =113.19999999999999
+2024-03-14 12:14:55.146 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:55.146 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:55.147 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.147 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:55.148 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:55.149 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.149 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:55.149 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:55.167 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:55.181 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:55.182 [main] INFO  Donation - Winner: 813=750.0
+2024-03-14 12:14:55.182 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:55.200 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 505.8 WHERE ID = 813
+2024-03-14 12:14:55.256 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =505.8
+2024-03-14 12:14:55.271 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:55.272 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:55.273 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.273 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:55.273 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:55.276 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.276 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:55.276 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:14:55.296 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:14:55.316 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:14:55.316 [main] INFO  Donation - Winner: 813=505.8
+2024-03-14 12:14:55.316 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:14:52.519077900")
+2024-03-14 12:14:55.337 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 261.6 WHERE ID = 813
+2024-03-14 12:14:55.366 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =261.6
+2024-03-14 12:14:55.380 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:14:55.381 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:14:55.381 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.382 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:14:55.382 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:14:52.519077900
+2024-03-14 12:14:55.383 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:14:55.383 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:14:55.383 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:17:27.177 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:17:27.209 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:17:27.210 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:17:27.211 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:17:27.212 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:17:27.214 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:17:27.217 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:17:27.218 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:17:27.219 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:17:27.220 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:17:27.220 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:17:27.221 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:17:27.222 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:17:27.223 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:17:27.223 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:17:27.224 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:17:28.374 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:17:28.419 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:17:28.421 [main] INFO  Donation - Winner: 813=261.6
+2024-03-14 12:17:28.421 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:17:27.230499400")
+2024-03-14 12:17:28.444 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 17.400000000000034 WHERE ID = 813
+2024-03-14 12:17:28.487 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg" AND Remaining =17.400000000000034
+2024-03-14 12:17:28.503 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:17:28.506 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:17:28.508 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:17:28.509 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:17:28.509 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:17:27.230499400
+2024-03-14 12:17:28.511 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:17:28.511 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:17:28.512 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:17:44.319 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:17:44.367 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:17:44.371 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:17:44.373 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:17:44.376 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:17:44.380 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:17:44.383 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:17:44.387 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:17:44.388 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:17:44.389 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:17:44.390 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:17:44.391 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:17:44.394 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:17:44.395 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:17:44.396 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:17:44.399 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:17:45.373 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:17:45.409 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:17:45.410 [main] INFO  Donation - Winner: 814=3500.0
+2024-03-14 12:17:45.411 [main] INFO  Donation - Distribute(): Running query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:17:44.428381600")
+2024-03-14 12:17:45.434 [main] INFO  Donation - Distribute(): Running query: UPDATE donations_manager.donations SET Remaining = 3255.8 WHERE ID = 814
+2024-03-14 12:17:45.481 [main] INFO  Donation - Distribute(): Running query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =3255.8
+2024-03-14 12:17:45.498 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:17:45.501 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:17:45.502 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:17:45.503 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:17:45.503 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:17:44.428381600
+2024-03-14 12:17:45.506 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:17:45.507 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:17:45.507 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:19:37.393 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:19:37.429 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:19:37.431 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:19:37.432 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:19:37.433 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:19:37.434 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:19:37.434 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:19:37.435 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:19:37.436 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:19:37.436 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:19:37.438 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:19:37.439 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:19:37.445 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:19:37.446 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:19:37.447 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:19:37.447 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:19:38.591 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:19:38.632 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:19:38.634 [main] INFO  Donation - Winner: 814=3255.8
+2024-03-14 12:19:38.635 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:19:37.453662100")
+2024-03-14 12:19:38.658 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 3011.6000000000004 WHERE ID = 814
+2024-03-14 12:19:38.725 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =3011.6000000000004
+2024-03-14 12:19:38.753 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:19:38.765 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:19:38.766 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:19:38.767 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:19:38.767 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:19:37.453662100
+2024-03-14 12:19:38.769 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:19:38.769 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:19:38.769 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:25:19.475 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:25:19.524 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:25:19.529 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:25:19.533 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:25:19.535 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:25:19.538 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:25:19.539 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:25:19.540 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:25:19.542 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:25:19.545 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:25:19.550 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:25:19.552 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:25:19.553 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:25:19.554 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:25:19.554 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:25:19.555 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:25:20.903 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:25:20.953 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:25:20.954 [main] INFO  Donation - Winner: 814=3011.6
+2024-03-14 12:25:20.955 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:25:19.569457")
+2024-03-14 12:25:20.983 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 2767.4 WHERE ID = 814
+2024-03-14 12:25:21.033 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2767.39990234375
+2024-03-14 12:25:21.050 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:25:21.051 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:25:21.052 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:25:21.052 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:25:21.053 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:25:19.569457
+2024-03-14 12:25:21.054 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:25:21.054 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:25:21.055 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:28:33.811 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:28:33.849 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:28:33.851 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:28:33.853 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:28:33.854 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:28:33.856 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:28:33.858 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:28:33.859 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:28:33.861 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:28:33.862 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:28:33.863 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:28:33.864 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:28:33.865 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:28:33.865 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:28:33.866 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:28:33.867 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:28:35.014 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:28:35.055 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:28:35.057 [main] INFO  Donation - Winner: 814=2767.4
+2024-03-14 12:28:35.058 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:28:33.874513300")
+2024-03-14 12:28:35.085 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 2523.2000000000003 WHERE ID = 814
+2024-03-14 12:28:35.136 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2523.2000000000003
+2024-03-14 12:28:35.156 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:28:35.157 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:28:35.158 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:28:35.158 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:28:35.159 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:28:33.874513300
+2024-03-14 12:28:35.160 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:28:35.161 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:28:35.161 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:34:30.655 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:34:30.688 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:34:30.690 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:34:30.691 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:34:30.692 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:34:30.692 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:34:30.698 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:34:30.702 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:34:30.704 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:34:30.706 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:34:30.707 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:34:30.709 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:34:30.715 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:34:30.717 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:34:30.718 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:34:30.719 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:34:31.734 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:34:31.772 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:34:31.773 [main] INFO  Donation - Winner: 814=2523.2
+2024-03-14 12:34:31.774 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:34:30.735019300")
+2024-03-14 12:34:31.802 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 2279.0 WHERE ID = 814
+2024-03-14 12:34:31.840 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2279.0
+2024-03-14 12:34:31.856 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:34:31.856 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:34:31.857 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:34:31.858 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:34:31.858 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:34:30.735019300
+2024-03-14 12:34:31.860 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:34:31.860 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:34:31.861 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:35:06.693 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:35:06.749 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:35:06.752 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:35:06.754 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:35:06.755 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:35:06.756 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:35:06.757 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:35:06.757 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:35:06.758 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:35:06.759 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:35:06.759 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:35:06.760 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:35:06.761 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:35:06.762 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:35:06.767 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:35:06.769 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:35:07.795 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:35:07.836 [main] INFO  Donation - Determine if sufficient funds exist - 
+2024-03-14 12:35:07.837 [main] INFO  Donation - Winner: 814=2279.0
+2024-03-14 12:35:07.838 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:35:06.777184100")
+2024-03-14 12:35:07.861 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 2034.8 WHERE ID = 814
+2024-03-14 12:35:07.906 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =2034.8
+2024-03-14 12:35:07.924 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:35:07.925 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:35:07.927 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:35:07.927 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:35:07.928 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:35:06.777184100
+2024-03-14 12:35:07.931 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:35:07.933 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:35:07.933 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:37:28.340 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:37:28.378 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:37:28.380 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:37:28.381 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:37:28.382 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:37:28.384 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:37:28.386 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:37:28.389 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:37:28.395 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:37:28.397 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:37:28.398 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:37:28.400 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:37:28.403 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:37:28.404 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:37:28.411 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:37:28.413 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:37:29.383 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:37:29.418 [main] INFO  Donation - "Determine if sufficient funds exist - winner: 814=2034.8
+2024-03-14 12:37:29.419 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:37:28.434249900")
+2024-03-14 12:37:29.443 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 1790.6 WHERE ID = 814
+2024-03-14 12:37:29.495 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1790.6
+2024-03-14 12:37:29.511 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:37:29.512 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:37:29.512 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:37:29.513 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:37:29.513 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:37:28.434249900
+2024-03-14 12:37:29.515 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:37:29.515 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:37:29.516 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:38:16.731 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:38:16.770 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:38:16.772 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:38:16.773 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:38:16.774 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:38:16.779 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:38:16.780 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:38:16.781 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:38:16.782 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:38:16.783 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:38:16.784 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:38:16.785 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:38:16.786 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:38:16.786 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:38:16.789 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:38:16.790 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:38:17.879 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:38:17.919 [main] INFO  Donation - Determine if sufficient funds exist... winner: 814=1790.6
+2024-03-14 12:38:17.921 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:38:16.798191200")
+2024-03-14 12:38:17.952 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 1546.3999999999999 WHERE ID = 814
+2024-03-14 12:38:18.003 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1546.4
+2024-03-14 12:38:18.019 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:38:18.020 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:38:18.021 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:38:18.034 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:38:18.039 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:38:16.798191200
+2024-03-14 12:38:18.053 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:38:18.054 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:38:18.055 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:43:39.562 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:43:39.607 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:43:39.609 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:43:39.610 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:43:39.612 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:43:39.614 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:43:39.615 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:43:39.617 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:43:39.618 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:43:39.618 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:43:39.619 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:43:39.620 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:43:39.621 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:43:39.622 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:43:39.622 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:43:39.623 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:43:40.767 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:43:40.810 [main] INFO  Donation - Determine if sufficient funds exist... winner: 814=1546.4
+2024-03-14 12:43:40.820 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date) values("CLOTHING",244.2,"2024-03-14T12:43:39.635276")
+2024-03-14 12:43:40.843 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 1302.2 WHERE ID = 814
+2024-03-14 12:43:40.893 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1302.2
+2024-03-14 12:43:40.910 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:43:40.911 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:43:40.915 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:43:40.915 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:43:40.916 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:43:39.635276
+2024-03-14 12:43:40.917 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:43:40.918 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:43:40.918 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor
+2024-03-14 12:54:32.826 [main] INFO  TestInputs - Summary inputs:
+2024-03-14 12:54:32.885 [main] INFO  TestInputs - John S Dewey		:MONEY		:100.0		:2024-03-01T00:00
+2024-03-14 12:54:32.890 [main] INFO  TestInputs - Michael Jones		:MONEY		:4000.0		:2024-02-25T00:00
+2024-03-14 12:54:32.897 [main] INFO  TestInputs - Edward S Sweeney	:FOOD		:9999.0		:2024-01-01T00:00
+2024-03-14 12:54:32.905 [main] INFO  TestInputs - Michelle Sonnenberg	:CLOTHING	:750.0		:2024-02-01T00:00
+2024-03-14 12:54:32.910 [main] INFO  TestInputs - Gertrude Dux		:CLOTHING	:3500.0		:2024-01-01T00:00
+2024-03-14 12:54:32.918 [main] INFO  TestInputs - Jeremiah L Books	:FOOD		:2500.0		:2024-03-14T00:00
+2024-03-14 12:54:32.931 [main] INFO  TestInputs - Ed Foote		:CLOTHING	:999.0		:2024-03-07T00:00
+2024-03-14 12:54:32.944 [main] INFO  TestInputs - Wylie Coyote		:MONEY		:1600.0		:2024-01-15T00:00
+2024-03-14 12:54:32.957 [main] INFO  TestInputs - Jennifer Dowling	:FOOD		:3000.0		:2024-01-15T00:00
+2024-03-14 12:54:32.960 [main] INFO  TestInputs - Scape E Goat		:MONEY		:150.0		:2024-03-02T00:00
+2024-03-14 12:54:32.961 [main] INFO  TestInputs - Funny Duckling	:CLOTHING	:1090.0		:2024-03-01T00:00
+2024-03-14 12:54:32.965 [main] INFO  TestInputs - Earle S Grates	:MONEY		:9000.0		:2024-03-01T00:00
+2024-03-14 12:54:32.967 [main] INFO  TestInputs - Jerry Smith		:FOOD		:1843.0		:2024-02-29T00:00
+2024-03-14 12:54:32.973 [main] INFO  TestInputs - Willie J Smoots	:MISC		:649.0		:2024-01-01T00:00
+2024-03-14 12:54:32.975 [main] INFO  TestInputs - Mike Dewey		:MISC		:1000.0		:2024-02-28T00:00
+2024-03-14 12:54:34.231 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonationType="CLOTHING" AND Remaining >=244.2
+2024-03-14 12:54:34.282 [main] INFO  Donation - Determine if sufficient funds exist... winner: 814=1302.2
+2024-03-14 12:54:34.308 [main] INFO  Donation - Distribute(): Query: INSERT INTO donations_manager.distributions(DonationType,DollarValue,Date,Notes) values("CLOTHING",244.2,"2024-03-14T12:54:32.982283800","Gertrude Dux")
+2024-03-14 12:54:34.338 [main] INFO  Donation - Distribute(): Query: UPDATE donations_manager.donations SET Remaining = 1058.0 WHERE ID = 814
+2024-03-14 12:54:34.373 [main] INFO  Donation - Distribute(): Query: SELECT * FROM donations_manager.donations WHERE DonorName="Gertrude Dux" AND Remaining =1058.0
+2024-03-14 12:54:34.394 [main] INFO  Donation - Result of query execution: true
+2024-03-14 12:54:34.394 [main] INFO  Donation - updatedSuccessfully: true
+2024-03-14 12:54:34.395 [main] INFO  Donation - GenerateInventoryReport(): Connecting to DB: MySQL_database
+2024-03-14 12:54:34.395 [main] INFO  Donation - GenerateInventoryReport(): query: 
+2024-03-14 12:54:34.396 [main] INFO  Donation - GenerateInventoryReport(): Creating a report for donation inventory by type for "as of" date of: 2024-03-14T12:54:32.982283800
+2024-03-14 12:54:34.397 [main] INFO  Donation - GenerateDonatorReport(): Connecting to DB: MySQL_database
+2024-03-14 12:54:34.398 [main] INFO  Donation - GenerateDonatorReport(): query: 
+2024-03-14 12:54:34.398 [main] INFO  Donation - GenerateDonatorReport(): Creating a report for donations summary by donor

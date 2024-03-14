@@ -3,9 +3,11 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
+import java.util.List;
+import java.util.ArrayList;
+// import org.json.simple.JSONArray;
+// import org.json.simple.JSONObject;
+// import org.json.simple.parser.JSONParser;
 
 // Requirements:
 
@@ -39,164 +41,41 @@ public class App {
 
     public static void main(String[] args) {
 
-        // initial dev work
-        // sqlTestConnection();
-
         // behavior steering parameters - could add as input args if preferred
         // ...or support some other input format (config file?)
-        boolean logCandidates = false;
+        boolean logCandidateData = false;
         boolean logSummary = true;
         boolean logInputs = false;
         boolean distributeFunds = true;
 
-        LocalDateTime nowForTestUse = LocalDateTime.now();
-        System.out.println("\nDateTime.now: " + nowForTestUse);
+        String JSONFileLocation = "C:\\Git\\Euler\\DAS\\src\\main\\resources\\donors.json";
+        List<Donation> donations = new ArrayList<>();
+        Donation donationInstance = new Donation();
+        TestInputs testInputsInstance = new TestInputs();
+        donations = testInputsInstance.ReadInDataFromJSONFile(JSONFileLocation, logSummary);
 
         // set the following to control amount of distribution
+        LocalDateTime nowForTestUse = LocalDateTime.now();
+        System.out.println("\nDateTime.now: " + nowForTestUse);
         LocalDateTime date = nowForTestUse;
         Donation.DonationType type = Donation.DonationType.CLOTHING;
         Double amount = 244.20;
 
-        // #region input from JSON file
+        for (Donation donationInfo : donations) {
 
-        // Values read from JSON input file:
-        // {"date":"03\/01\/2024","name":"John S.
-        // Dewey","donationType":"money","value":100}
-        // {"date":"2-25-2024","name":"Michael
-        // Jones","donationType":"Money","value":4000}
-        // {"date":"1\/1\/2024","name":"Edward S
-        // Sweeney","donationType":"Food","value":10000}
-        // {"date":"02\/01\/2024","name":"Michelle
-        // Sonnenberg","donationType":"clothing","value":750}
-        // {"date":"01-01-2024","name":"Gertrude
-        // Dux","donationType":"CLOTHING","value":3500}
-        // {"date":"03\/14\/2024","name":"Jeremiah L.
-        // Books","donationType":"food","value":2500}
-        // {"date":"3\/7\/2024","name":"Ed Foote","donationType":"Clothing","value":999}
-        // {"date":"1\/15\/2024","name":"Wylie
-        // Coyote","donationType":"MONEY","value":1600}
-        // {"date":"1-15-2024","name":"Jennifer
-        // Dowling","donationType":"FOOD","value":3000}
-        // {"date":"03\/02\/2024","name":"Scape E.
-        // Goat","donationType":"money","value":150}
-        // {"date":"3\/1\/2024","name":"Funny
-        // Duckling","donationType":"clothing","value":1090}
-        // {"date":"03\/01\/2024","name":"Earle S.
-        // Grates","donationType":"Money","value":10000}
-        // {"date":"02\/29\/2024","name":"Jerry
-        // Smith","donationType":"Food","value":1843.5}
-        // {"date":"01\/01\/2024","name":"Willie J.
-        // Smoots","donationType":"Misc","value":649.55}
-        // {"date":"2-28-2024","name":"Mike
-        // Dewey","donationType":"miscellaneous","value":1000}
-
-        // #endregion
-
-        Donation donationInfo = new Donation();
-
-        if (logSummary) {
-            System.out.println("Summary inputs:");
-        }
-        // read in donors.json file and process by calling donation.register for each
-        JSONArray donorsList = new JSONArray();
-        JSONParser parser = new JSONParser();
-        try {
-
-            JSONObject jsonObj = (JSONObject) parser
-                    .parse(new FileReader("C:\\Git\\Euler\\DAS\\src\\main\\resources\\donors.json"));
-            donorsList = (JSONArray) jsonObj.get("Donors");
-
-            for (Object obj : donorsList) {
-
-                JSONObject donate = (JSONObject) obj;
-
-                String donorName = (String) donate.get("name");
-                Donation.DonorName jsonName = new Donation.DonorName();
-                jsonName = jsonName.SetName(donorName);
-
-                Donation.DonationType jsonType = Donation.DonationType.MISC;
-                String donationType = ((String) donate.get("donationType")).toLowerCase();
-                switch (donationType) {
-                    case "money":
-                        jsonType = Donation.DonationType.MONEY;
-                        break;
-                    case "clothing":
-                        jsonType = Donation.DonationType.CLOTHING;
-                        break;
-                    case "food":
-                        jsonType = Donation.DonationType.FOOD;
-                        break;
-                    case "misc":
-                        jsonType = Donation.DonationType.MISC;
-                        break;
-                    default:
-                        jsonType = Donation.DonationType.MISC;
-                        break;
-                }
-
-                Long donationValue = (Long) donate.get("value");
-                Double jsonValue = donationValue.doubleValue();
-
-                String dateStr = (String) donate.get("date");
-                dateStr = dateStr.replaceAll("-", "").replaceAll("/", "");
-                if (dateStr.length() < 7) {
-                    dateStr = "0" + dateStr.substring(0, 1) + "0" + dateStr.substring(1, dateStr.length());
-                } else if (dateStr.length() < 8) {
-                    dateStr = "0" + dateStr.substring(0, dateStr.length());
-                }
-                // System.out.println(dateStr);
-                LocalDate jsonDate = LocalDate.parse(dateStr, DateTimeFormatter.ofPattern("MMddyyyy"));
-                LocalTime time = LocalTime.of(0, 0, 0, 0);
-                LocalDateTime dateTime = LocalDateTime.of(jsonDate, time);
-                donationInfo.setDonorName(jsonName);
-                donationInfo.setDonationType(jsonType);
-                donationInfo.setDonationAmount(jsonValue);
-                donationInfo.setDonationDate(dateTime);
-                if (logSummary) {
-                    if (((donationInfo.getDonorName()).toString()).length() > 15) {
-                        if (donationInfo.getDonationType() == Donation.DonationType.CLOTHING) {
-                            System.out
-                                    .println(donationInfo.getDonorName() + "\t:" + donationInfo.getDonationType()
-                                            + "\t:" + donationInfo.getDonationAmount() + "\t\t:"
-                                            + donationInfo.getDonationDate());
-                        } else {
-                            System.out
-                                    .println(donationInfo.getDonorName() + "\t:" + donationInfo.getDonationType()
-                                            + "\t\t:" + donationInfo.getDonationAmount() + "\t\t:"
-                                            + donationInfo.getDonationDate());
-                        }
-                    } else {
-                        if (donationInfo.getDonationType() == Donation.DonationType.CLOTHING) {
-                            System.out
-                                    .println(donationInfo.getDonorName() + "\t\t:" + donationInfo.getDonationType()
-                                            + "\t:" + donationInfo.getDonationAmount() + "\t\t:"
-                                            + donationInfo.getDonationDate());
-                        } else {
-                            System.out
-                                    .println(donationInfo.getDonorName() + "\t\t:" + donationInfo.getDonationType()
-                                            + "\t\t:" + donationInfo.getDonationAmount() + "\t\t:"
-                                            + donationInfo.getDonationDate());
-                        }
-                    }
-                }
-
-                donationInfo.register(donationInfo.getDonorName(), donationInfo.getDonationType(),
-                        donationInfo.getDonationAmount(), donationInfo.getDonationDate(), logInputs);
-            }
-
-        } catch (Exception e) {
-            System.out.println("DEBUGGING: Exception hit... " + e.getLocalizedMessage() + ", " + e.getStackTrace());
+            donationInfo.register(donationInfo.getDonorName(), donationInfo.getDonationType(),
+                    donationInfo.getDonationAmount(), donationInfo.getDonationDate(), logInputs);
         }
 
-        // Uncomment next line to trigger error in attempt to distribute too large an
+        // Uncomment next line to trigger error: attempt to distribute too large an
         // amount
         // amount = 50000.00;
-
-        // FYI: what it looks like in the log
+        // what the error looks like in the log
         // 2024-03-12 12:18:00.756 [main] ERROR Donation - Unable to find any donations
         // of sufficient value to satisfy expected donation distribution
+
         if (distributeFunds) {
-            donationInfo.distribute(type, amount, date, logCandidates);
+            donationInstance.distribute(type, amount, date, logCandidateData);
         }
 
         // In a production app, I would back this functionality with exporting the data
@@ -204,37 +83,7 @@ public class App {
         // I'm still learning React currently, so am not ready to do that yet...
         // however, this method does attempt to output the data in an organized form
         // that could be employed by users in the interim
-        donationInfo.generateReports(date);
-    }
+        donationInstance.generateReports(date);
 
-    // #region testing MySQL connection
-    /*
-     * //sqlTestConnection()
-     * private static void sqlTestConnection(){
-     * String sqlQuery = "SELECT * FROM donations_manager.donations";
-     * String connectionUrl = "jdbc:mysql://localhost:3306/donations_manager";
-     * 
-     * try(Connection connection = DriverManager.getConnection(connectionUrl,
-     * "starrp", "ABCD****1234");
-     * PreparedStatement ps = connection.prepareStatement(sqlQuery);
-     * ResultSet rs = ps.executeQuery()) {
-     * while (rs.next()){
-     * int id = rs.getInt("ID");
-     * String donationType = rs.getString("DonationType");
-     * Double dollarValue = rs.getDouble("DollarValue");
-     * String date = rs.getString("Date");
-     * 
-     * System.out.println("DB data: " + id + "; " + donationType + "; " +
-     * dollarValue + "; " + date);
-     * }
-     * 
-     * }
-     * catch(SQLException e){
-     * //for now, log and swallow exception...
-     * //or simply print out
-     * System.out.println("\nSQLException: " + e.getErrorCode());
-     * }
-     * }
-     */
-    // #endregion
+    }
 }
