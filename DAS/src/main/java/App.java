@@ -1,10 +1,8 @@
-import java.io.FileReader;
-import java.time.LocalDate;
-import java.time.LocalTime;
+
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.ArrayList;
+
 // import org.json.simple.JSONArray;
 // import org.json.simple.JSONObject;
 // import org.json.simple.parser.JSONParser;
@@ -20,7 +18,6 @@ import java.util.ArrayList;
 
 // TO DO List:
 // DONE Move instructions to README file for GitHub repository
-// (do so before next checkin; but get some other ToDo's done first)
 // 
 // DONE - 0. Add JSON file data intake
 //   (FUTURE: could eventually be REST API from a UI for query support)
@@ -30,9 +27,11 @@ import java.util.ArrayList;
 //   DONE //ToDo: determine if amount expected of given DonationType is present in remaining/existing donations (not already distributed)
 //   DONE //ToDo: add logic to determine if distribution data was successfully inserted or not
 //   
-// 2. Improve reporting (even though trivial without better formatting - see below/FUTURE)
-// 3. Add unit testing
-// 4. (Add more logging - minor)
+// 2. (ONGOING) Improve reporting (even though trivial without better formatting - see below/FUTURE)
+//
+// 3. (NEXT)    Add unit testing
+//
+// 4. DONE - (Add more logging - minor)
 // 
 // FUTURE: Augment reporting functionality with a UI to render the output if customer was wanting such.
 // 
@@ -44,6 +43,7 @@ public class App {
         // behavior steering parameters - could add as input args if preferred
         // ...or support some other input format (config file?)
         boolean logCandidateData = false;
+        boolean logReportListing = true;
         boolean logSummary = true;
         boolean logInputs = false;
         boolean distributeFunds = true;
@@ -83,7 +83,7 @@ public class App {
         // I'm still learning React currently, so am not ready to do that yet...
         // however, this method does attempt to output the data in an organized form
         // that could be employed by users in the interim
-        donationInstance.generateReports(date);
+        donationInstance.generateReports(date, logReportListing);
 
     }
 }
