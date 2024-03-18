@@ -4,92 +4,92 @@
         {
             "name": "John S. Dewey",
             "donationType": "money",
-            "value": 100,
-            "date": "03/01/2024"
+            "value": 1000,
+            "date": "02/01/2024"
         },
         {
             "name": "Michael Jones",
-            "donationType": "Money",
-            "value": 4000,
+            "donationType": "Clothing",
+            "value": 335,
             "date": "2-25-2024"
         },
         {
             "name": "Edward S Sweeney",
-            "donationType": "Food",
-            "value": 9999,
-            "date": "1/1/2024"
+            "donationType": "Clothing",
+            "value": 1250,
+            "date": "02/01/2024"
         },
         {
             "name": "Michelle Sonnenberg",
-            "donationType": "clothing",
-            "value": 750,
+            "donationType": "money",
+            "value": 3000,
             "date": "02/01/2024"
         },
         {
             "name": "Gertrude Dux",
-            "donationType": "CLOTHING",
-            "value": 3500,
-            "date": "01-01-2024"
+            "donationType": "MONEY",
+            "value": 500,
+            "date": "02/01/2024"
         },
         {
             "name": "Jeremiah L. Books",
             "donationType": "food",
-            "value": 2500,
-            "date": "03/14/2024"
+            "value": 300,
+            "date": "1-15-2024"
         },
         {
             "name": "Ed Foote",
-            "donationType": "Clothing",
-            "value": 999,
-            "date": "3/7/2024"
+            "donationType": "misc",
+            "value": 450,
+            "date": "1-15-2024"
         },
         {
             "name": "Wylie Coyote",
-            "donationType": "MONEY",
-            "value": 1600,
+            "donationType": "Food",
+            "value": 2000,
             "date": "1/15/2024"
         },
         {
             "name": "Jennifer Dowling",
             "donationType": "FOOD",
-            "value": 3000,
+            "value": 400,
             "date": "1-15-2024"
         },
         {
             "name": "Scape E. Goat",
-            "donationType": "money",
-            "value": 150,
-            "date": "03/02/2024"
+            "donationType": "clothing",
+            "value": 800,
+            "date": "01/01/2024"
         },
         {
             "name": "Funny Duckling",
-            "donationType": "clothing",
-            "value": 1090,
-            "date": "3/1/2024"
+            "donationType": "misc",
+            "value": 500,
+            "date": "1-15-2024"
         },
         {
             "name": "Earle S. Grates",
             "donationType": "Money",
-            "value": 9000,
-            "date": "03/01/2024"
+            "value": 250,
+            "date": "1-15-2024"
         },
         {
             "name": "Jerry Smith",
-            "donationType": "Food",
-            "value": 1843,
-            "date": "02/29/2024"
+            "donationType": "clothing",
+            "value": 740,
+            "date": "01/01/2024"
         },
         {
             "name": "Willie J. Smoots",
-            "donationType": "Misc",
-            "value": 649,
+            "donationType": "Money",
+            "value": 3000,
             "date": "01/01/2024"
         },
         {
             "name": "Mike Dewey",
-            "donationType": "miscellaneous",
-            "value": 1000,
-            "date": "2-28-2024"
+            "donationType": "Money",
+            "value": 500,
+            "date": "01/01/2024"
         }
     ]
 }

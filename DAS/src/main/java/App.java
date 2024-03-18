@@ -58,8 +58,8 @@ public class App {
         LocalDateTime nowForTestUse = LocalDateTime.now();
         System.out.println("\nDateTime.now: " + nowForTestUse);
         LocalDateTime date = nowForTestUse;
-        Donation.DonationType type = Donation.DonationType.CLOTHING;
-        Double amount = 244.20;
+        Donation.DonationType type = Donation.DonationType.MONEY;
+        Double amount = 1800.00;
 
         for (Donation donationInfo : donations) {
 

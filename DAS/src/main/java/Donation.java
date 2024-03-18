@@ -313,8 +313,21 @@ public class Donation {
     public void generateReports(LocalDateTime date, boolean logCandidates) {
         logger.log(Level.INFO, "\nGenerateReports():");
 
+        List<List<Map<String, Object>>> inventory = new ArrayList<>();
+
         for (DonationType type : DonationType.values()) {
-            generateInventoryReport(type, logCandidates);
+            inventory.add(generateInventoryReport(type, logCandidates));
+        }
+
+        for (List<Map<String, Object>> donationTypesList : inventory) {
+            for (Map<String, Object> map : donationTypesList) {
+                if (logCandidates) {
+                    logger.log(Level.INFO, "Donation:");
+                    for (String str : map.keySet()) {
+                        logger.log(Level.INFO, "\t" + str + ": " + map.get(str));
+                    }
+                }
+            }
         }
 
         DonorName name = new DonorName();
@@ -322,29 +335,14 @@ public class Donation {
         name.mI = "S";
         name.lastName = "Dewey";
 
-        List<Map<String, Map<String, Object>>> listOfDonations = new ArrayList<>();
+        Map<String, List<KeyValuePair>> listOfDonationsByDonor = new HashMap<>();
         Map<String, List<Integer>> donorList = getDonorList();
-        listOfDonations = generateDonatorReport(donorList);
+        listOfDonationsByDonor = generateDonatorReport(donorList);
 
-        for (Map<String, Map<String, Object>> map : listOfDonations) {
-            for (Map<String, Object> map2 : map.values()) {
-                for (String donorName : map2.keySet()) {
-                    logger.log(Level.INFO, "\nDonation: " + donorName + ", details: " + map2.get(name));
-                }
-            }
+        for (String donorName : listOfDonationsByDonor.keySet()) {
+            logger.log(Level.INFO,
+                    "\n\nDonor: " + donorName + ", \nDonations: " + listOfDonationsByDonor.get(donorName));
         }
-    }
-
-    public void addNotes(DonorName name) {
-        // write notes to database; associate with donor by name (or DBID)
-
-        // likely a desired functionality...
-        System.out.println("notes");
-    }
-
-    public void trivialMethod() {
-        // do nothing
-        System.out.println(" ");
     }
 
     public List<Map<String, Object>> generateInventoryReport(DonationType type, boolean logCandidates) {
@@ -355,7 +353,7 @@ public class Donation {
                 "\n\nCreating a report for donation inventory by type for type: " + type);
 
         // output values by donation type
-        System.out.println("\nInventory report by donation type:");
+        // System.out.println("\nInventory report by donation type:");
         List<Map<String, Object>> availableDonations = new ArrayList<>();
 
         switch (type) {
@@ -373,46 +371,6 @@ public class Donation {
                 break;
         }
 
-        Integer id = 0;
-        String donor = "";
-        String donationType = "";
-        Double value = 0.00;
-        LocalDateTime donationDate = LocalDateTime.now();
-        Double remaining = 0.00;
-
-        for (Map<String, Object> map : availableDonations) {
-            if (logCandidates) {
-                logger.log(Level.INFO, "Candidate:");
-            }
-            for (String str : map.keySet()) {
-
-                if (str.contains("ID")) {
-                    id = (Integer) map.get(str);
-                }
-                if (str.contains("DonorName")) {
-                    // donor = (DonorName) map.get(str);
-                    donor = (String) map.get(str);
-                }
-                if (str.contains("DonationType")) {
-                    // donationType = (DonationType) map.get(str);
-                    donationType = (String) map.get(str);
-                }
-                if (str.contains("DollarValue")) {
-                    value = Double.valueOf(map.get(str).toString());
-                }
-                if (str.contains("Date")) {
-                    donationDate = (LocalDateTime) map.get(str);
-                }
-                if (str.contains("Remaining")) {
-                    remaining = Double.valueOf(map.get(str).toString());
-                }
-
-                if (logCandidates) {
-                    logger.log(Level.INFO, "\t" + str + ": " + map.get(str));
-                }
-            }
-        }
-
         return availableDonations;
     }
 
@@ -422,7 +380,7 @@ public class Donation {
 
         logger.log(Level.INFO, "Distribute(): Query: " + getDonationsForGivenType);
         List<Map<String, Object>> results = DataAccess.sqlConnectAndRunQuery(getDonationsForGivenType);
-        logger.log(Level.INFO, "results: " + results.size());
+
         return results;
     }
 
@@ -451,94 +409,65 @@ public class Donation {
                 } else {
                     List<Integer> tmpList = new ArrayList<>();
                     tmpList.add(id);
-                    donorIdList.put(donor, tmpList);
+                    if (donor != "") {
+                        donorIdList.put(donor, tmpList);
+                    }
                 }
             }
         }
         return donorIdList;
     }
 
-    public List<Map<String, Map<String, Object>>> generateDonatorReport(Map<String, List<Integer>> donorList) {
+    public Map<String, List<KeyValuePair>> generateDonatorReport(Map<String, List<Integer>> donorList) {
 
-        /*
-         * 2024-03-14 23:55:01.438 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Michelle Sonnenberg"
-         * 2024-03-14 23:55:01.455 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.456 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Wylie Coyote"
-         * 2024-03-14 23:55:01.471 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.472 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Edward S Sweeney"
-         * 2024-03-14 23:55:01.493 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.494 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Mike Dewey"
-         * 2024-03-14 23:55:01.512 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.513 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Jerry Smith"
-         * 2024-03-14 23:55:01.534 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.535 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Michael Jones"
-         * 2024-03-14 23:55:01.564 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.566 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Willie J Smoots"
-         * 2024-03-14 23:55:01.587 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.588 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Funny Duckling"
-         * 2024-03-14 23:55:01.607 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.608 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Gertrude Dux"
-         * 2024-03-14 23:55:01.623 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.623 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Jeremiah L Books"
-         * 2024-03-14 23:55:01.641 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.642 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Earle S Grates"
-         * 2024-03-14 23:55:01.661 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.662 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="John S Dewey"
-         * 2024-03-14 23:55:01.678 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.679 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Jennifer Dowling"
-         * 2024-03-14 23:55:01.699 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.705 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Ed Foote"
-         * 2024-03-14 23:55:01.722 [main] INFO Donation - results: 10
-         * 2024-03-14 23:55:01.724 [main] INFO Donation - Distribute(): Query: SELECT *
-         * FROM donations_manager.donations WHERE DonorName="Scape E Goat"
-         * 2024-03-14 23:55:01.742 [main] INFO Donation - results: 10
-         */
-        List<Map<String, Map<String, Object>>> donationsByDonor = new ArrayList<>();
+        Map<String, List<KeyValuePair>> donorDonations = new HashMap<>();
+        logger.log(Level.INFO, "Report of All Donations by Donor\n");
+
         for (String name : donorList.keySet()) {
 
             String getDonationsByDonor = "SELECT * FROM donations_manager.donations WHERE DonorName=\"" + name
                     + "\"";
 
+            logger.log(Level.INFO, "\n\nGathering data for report for all donations by Donor: " + name);
             logger.log(Level.INFO, "Distribute(): Query: " + getDonationsByDonor);
             List<Map<String, Object>> results = DataAccess.sqlConnectAndRunQuery(getDonationsByDonor);
-            logger.log(Level.INFO, "results: " + results.size());
 
             Integer id = 0;
             String donor = "";
             String donationType = "";
             Double value = 0.00;
-            LocalDateTime donationDate = LocalDateTime.now();
-            Double remaining = 0.00;
-
-            Map<String, Map<String, Object>> donorDonations = new HashMap<>();
+            KeyValuePair giftTypeAmountPairs = null;
+            List<KeyValuePair> gifts = new ArrayList<>();
 
             for (Map<String, Object> map : results) {
                 for (String str : map.keySet()) {
+                    if (str.contains("ID")) {
+                        id = (Integer) map.get(str);
+                    }
                     if (str.contains("DonorName")) {
                         donor = (String) map.get(str);
                     }
-                    if (donorList.containsKey(donor)) {
-                        donorDonations.put(donor, map);
+                    if (str.contains("DonationType")) {
+                        donationType = (String) map.get(str);
+                    }
+                    if (str.contains("DollarValue")) {
+                        value = Double.valueOf(map.get(str).toString());
                     }
                 }
-                donationsByDonor.add(donorDonations);
+                if (donor != null && donationType != "" && value > 0.00) {
+                    giftTypeAmountPairs = new KeyValuePair(donationType, ((Double) value).toString());
+                    if (donorDonations.keySet().contains(donor)) {
+                        donorDonations.get(donor).add(giftTypeAmountPairs);
+                    } else {
+                        gifts.add(giftTypeAmountPairs);
+                        if (donor != "") {
+                            donorDonations.put(donor, gifts);
+                        }
+                    }
+                }
             }
         }
-        return donationsByDonor;
+        return donorDonations;
     }
 
     public void outputListOfDonorsAndAmounts(Map<DonorName, Double> donorAmountList) {
