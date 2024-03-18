@@ -14,7 +14,9 @@ import java.util.ArrayList;
 // Here are the core functionalities your solution should address:
 // DONE - Donation Registration: A feature that allows the shelter staff to record details of the donations, such as the donor's name, type of donation (money, food, clothing, etc.), quantity or amount donated, and the date of the donation.
 // DONE - Donation Distribution: A feature to log when and how much of the donations are distributed, capturing the type of donation, quantity or amount distributed, and the date of distribution.
-// PARTIALLY DONE - Donation Reports: Your solution should have the capacity to generate two types of reports: (1) An inventory report displaying the current status of donations, grouped by type. (2) A donator report, summarizing the total contributions received from each donor.
+// DONE - Donation Reports: Your solution should have the capacity to generate two types of reports: (1) An inventory report displaying the current status of donations, grouped by type. (2) A donator report, summarizing the total contributions received from each donor.
+
+// build jar file command: jar cvf DonationsDistribution.jar -C target\classes .
 
 // TO DO List:
 // DONE Move instructions to README file for GitHub repository
@@ -27,7 +29,7 @@ import java.util.ArrayList;
 //   DONE //ToDo: determine if amount expected of given DonationType is present in remaining/existing donations (not already distributed)
 //   DONE //ToDo: add logic to determine if distribution data was successfully inserted or not
 //   
-// 2. (ONGOING) Improve reporting (even though trivial without better formatting - see below/FUTURE)
+// 2. DONE - Improve reporting (even though trivial without better formatting - see below/FUTURE)
 //
 // 3. (NEXT)    Add unit testing
 //
